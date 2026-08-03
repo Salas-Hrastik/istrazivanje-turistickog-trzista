@@ -1,0 +1,1188 @@
+{
+  "izvor": {
+    "oznaka": "prirucnik",
+    "naslov": "Istraživanje turističkog tržišta",
+    "podnaslov": "Udžbenik za studente 3. godine prijediplomskog studija",
+    "vrsta": "Veleučilišni priručnik",
+    "ustanova": "Veleučilište Baltazar Zaprešić",
+    "kolegij": "Istraživanje turističkog tržišta",
+    "studij": "Management u turizmu i ugostiteljstvu",
+    "ukupno_stranica": 72,
+    "paginacija": "procijenjena"
+  },
+  "poglavlja": [
+    {
+      "broj": 1,
+      "naslov": "Uvod u istraživanje turističkog tržišta",
+      "dio": "DIO I · Temelji i priprema istraživanja",
+      "stranica_od": 8,
+      "stranica_do": 16,
+      "odjeljci": [
+        {
+          "broj": 1,
+          "oznaka": "",
+          "naslov": "Uvod",
+          "stranica_od": 8,
+          "stranica_do": 8,
+          "podnaslovi": []
+        },
+        {
+          "broj": 2,
+          "oznaka": "1.0",
+          "naslov": "Ishodi učenja poglavlja",
+          "stranica_od": 8,
+          "stranica_do": 8,
+          "podnaslovi": []
+        },
+        {
+          "broj": 3,
+          "oznaka": "",
+          "naslov": "Ključni pojmovi",
+          "stranica_od": 8,
+          "stranica_do": 9,
+          "podnaslovi": []
+        },
+        {
+          "broj": 4,
+          "oznaka": "1.1",
+          "naslov": "Pojam, uloga i značaj istraživanja u turizmu",
+          "stranica_od": 9,
+          "stranica_do": 10,
+          "podnaslovi": [
+            {
+              "naslov": "1.1.1 Definicije i teorijski okvir",
+              "stranica": 9
+            },
+            {
+              "naslov": "1.1.2 Specifičnosti turizma kao kompleksne uslužne djelatnosti",
+              "stranica": 10
+            }
+          ]
+        },
+        {
+          "broj": 5,
+          "oznaka": "1.2",
+          "naslov": "Osobitosti turističkog tržišta",
+          "stranica_od": 10,
+          "stranica_do": 11,
+          "podnaslovi": [
+            {
+              "naslov": "1.2.1 Sezonalnost",
+              "stranica": 10
+            },
+            {
+              "naslov": "1.2.2 Elastičnost potražnje",
+              "stranica": 11
+            },
+            {
+              "naslov": "1.2.3 Prostorna koncentracija",
+              "stranica": 11
+            },
+            {
+              "naslov": "1.2.4 Nematerijalnost i percipirani rizik",
+              "stranica": 11
+            }
+          ]
+        },
+        {
+          "broj": 6,
+          "oznaka": "1.3",
+          "naslov": "Marketing informacijski sustav (MIS) u turizmu",
+          "stranica_od": 11,
+          "stranica_do": 12,
+          "podnaslovi": [
+            {
+              "naslov": "1.3.1 Pojam i struktura",
+              "stranica": 11
+            },
+            {
+              "naslov": "1.3.2 Uloga MIS-a u odlučivanju",
+              "stranica": 12
+            }
+          ]
+        },
+        {
+          "broj": 7,
+          "oznaka": "1.4",
+          "naslov": "Područja primjene istraživanja",
+          "stranica_od": 12,
+          "stranica_do": 13,
+          "podnaslovi": []
+        },
+        {
+          "broj": 8,
+          "oznaka": "1.5",
+          "naslov": "Studija slučaja (Hrvatska): TOMAS – korištenje podataka u strateškom planiranju",
+          "stranica_od": 13,
+          "stranica_do": 14,
+          "podnaslovi": []
+        },
+        {
+          "broj": 9,
+          "oznaka": "1.6",
+          "naslov": "Praktični zadatak",
+          "stranica_od": 14,
+          "stranica_do": 14,
+          "podnaslovi": []
+        },
+        {
+          "broj": 10,
+          "oznaka": "1.7",
+          "naslov": "Interaktivna provjera znanja",
+          "stranica_od": 14,
+          "stranica_do": 15,
+          "podnaslovi": []
+        },
+        {
+          "broj": 11,
+          "oznaka": "1.8",
+          "naslov": "Sažetak",
+          "stranica_od": 15,
+          "stranica_do": 15,
+          "podnaslovi": []
+        },
+        {
+          "broj": 12,
+          "oznaka": "1.9",
+          "naslov": "Preporučeno daljnje čitanje",
+          "stranica_od": 15,
+          "stranica_do": 16,
+          "podnaslovi": []
+        },
+        {
+          "broj": 13,
+          "oznaka": "1.10",
+          "naslov": "Literatura (Poglavlje 1)",
+          "stranica_od": 16,
+          "stranica_do": 16,
+          "podnaslovi": []
+        }
+      ]
+    },
+    {
+      "broj": 2,
+      "naslov": "Proces i planiranje istraživanja tržišta",
+      "dio": "DIO I · Temelji i priprema istraživanja",
+      "stranica_od": 17,
+      "stranica_do": 25,
+      "odjeljci": [
+        {
+          "broj": 14,
+          "oznaka": "",
+          "naslov": "Uvod",
+          "stranica_od": 17,
+          "stranica_do": 17,
+          "podnaslovi": []
+        },
+        {
+          "broj": 15,
+          "oznaka": "2.0",
+          "naslov": "Ishodi učenja poglavlja",
+          "stranica_od": 17,
+          "stranica_do": 17,
+          "podnaslovi": []
+        },
+        {
+          "broj": 16,
+          "oznaka": "",
+          "naslov": "Ključni pojmovi",
+          "stranica_od": 17,
+          "stranica_do": 18,
+          "podnaslovi": []
+        },
+        {
+          "broj": 17,
+          "oznaka": "2.1",
+          "naslov": "Faze u procesu istraživanja turističkog tržišta",
+          "stranica_od": 18,
+          "stranica_do": 19,
+          "podnaslovi": [
+            {
+              "naslov": "2.1.1 Definiranje problema i ciljeva istraživanja",
+              "stranica": 18
+            },
+            {
+              "naslov": "2.1.2 Izrada plana (dizajna) istraživanja",
+              "stranica": 18
+            },
+            {
+              "naslov": "2.1.3 Prikupljanje podataka (terenski rad)",
+              "stranica": 18
+            },
+            {
+              "naslov": "2.1.4 Obrada i analiza podataka",
+              "stranica": 18
+            },
+            {
+              "naslov": "2.1.5 Interpretacija i donošenje zaključaka",
+              "stranica": 18
+            },
+            {
+              "naslov": "2.1.6 Izrada izvješća i prezentacija rezultata",
+              "stranica": 18
+            },
+            {
+              "naslov": "2.1.7 Primjena rezultata i evaluacija",
+              "stranica": 18
+            }
+          ]
+        },
+        {
+          "broj": 18,
+          "oznaka": "2.2",
+          "naslov": "Definiranje problema istraživanja: simptomi nasuprot uzrocima",
+          "stranica_od": 19,
+          "stranica_do": 20,
+          "podnaslovi": []
+        },
+        {
+          "broj": 19,
+          "oznaka": "2.3",
+          "naslov": "Postavljanje istraživačkih pitanja i hipoteza",
+          "stranica_od": 20,
+          "stranica_do": 21,
+          "podnaslovi": [
+            {
+              "naslov": "2.3.1 Istraživačka pitanja",
+              "stranica": 20
+            },
+            {
+              "naslov": "2.3.2 Hipoteze",
+              "stranica": 20
+            }
+          ]
+        },
+        {
+          "broj": 20,
+          "oznaka": "2.4",
+          "naslov": "Izrada i struktura plana (dizajna) istraživanja",
+          "stranica_od": 21,
+          "stranica_do": 21,
+          "podnaslovi": []
+        },
+        {
+          "broj": 21,
+          "oznaka": "2.5",
+          "naslov": "Studija slučaja (Hrvatska): Overtourism u Dubrovniku",
+          "stranica_od": 21,
+          "stranica_do": 22,
+          "podnaslovi": []
+        },
+        {
+          "broj": 22,
+          "oznaka": "2.6",
+          "naslov": "Praktični zadatak",
+          "stranica_od": 22,
+          "stranica_do": 23,
+          "podnaslovi": []
+        },
+        {
+          "broj": 23,
+          "oznaka": "2.7",
+          "naslov": "Interaktivna provjera znanja",
+          "stranica_od": 23,
+          "stranica_do": 24,
+          "podnaslovi": []
+        },
+        {
+          "broj": 24,
+          "oznaka": "2.8",
+          "naslov": "Sažetak",
+          "stranica_od": 24,
+          "stranica_do": 24,
+          "podnaslovi": []
+        },
+        {
+          "broj": 25,
+          "oznaka": "2.9",
+          "naslov": "Preporučeno daljnje čitanje",
+          "stranica_od": 24,
+          "stranica_do": 24,
+          "podnaslovi": []
+        },
+        {
+          "broj": 26,
+          "oznaka": "2.10",
+          "naslov": "Literatura (Poglavlje 2)",
+          "stranica_od": 24,
+          "stranica_do": 25,
+          "podnaslovi": []
+        }
+      ]
+    },
+    {
+      "broj": 3,
+      "naslov": "Izvori, vrste i prikupljanje podataka",
+      "dio": "DIO II · Prikupljanje i obrada podataka",
+      "stranica_od": 26,
+      "stranica_do": 33,
+      "odjeljci": [
+        {
+          "broj": 27,
+          "oznaka": "",
+          "naslov": "Uvod",
+          "stranica_od": 26,
+          "stranica_do": 26,
+          "podnaslovi": []
+        },
+        {
+          "broj": 28,
+          "oznaka": "3.0",
+          "naslov": "Ishodi učenja poglavlja",
+          "stranica_od": 26,
+          "stranica_do": 26,
+          "podnaslovi": []
+        },
+        {
+          "broj": 29,
+          "oznaka": "",
+          "naslov": "Ključni pojmovi",
+          "stranica_od": 26,
+          "stranica_do": 27,
+          "podnaslovi": []
+        },
+        {
+          "broj": 30,
+          "oznaka": "3.1",
+          "naslov": "Sekundarni podaci u turizmu",
+          "stranica_od": 27,
+          "stranica_do": 28,
+          "podnaslovi": [
+            {
+              "naslov": "3.1.1 Interni sekundarni izvori",
+              "stranica": 27
+            },
+            {
+              "naslov": "3.1.2 Eksterni sekundarni izvori",
+              "stranica": 27
+            }
+          ]
+        },
+        {
+          "broj": 31,
+          "oznaka": "3.2",
+          "naslov": "Primarni podaci u turizmu",
+          "stranica_od": 28,
+          "stranica_do": 29,
+          "podnaslovi": [
+            {
+              "naslov": "3.2.1 Kvalitativne metode",
+              "stranica": 28
+            },
+            {
+              "naslov": "3.2.2 Kvantitativne metode",
+              "stranica": 29
+            }
+          ]
+        },
+        {
+          "broj": 32,
+          "oznaka": "3.3",
+          "naslov": "Vrste istraživanja prema svrsi",
+          "stranica_od": 29,
+          "stranica_do": 30,
+          "podnaslovi": []
+        },
+        {
+          "broj": 33,
+          "oznaka": "3.4",
+          "naslov": "Web analitika i analiza online sentimenta",
+          "stranica_od": 30,
+          "stranica_do": 30,
+          "podnaslovi": [
+            {
+              "naslov": "3.4.1 Web analitika",
+              "stranica": 30
+            },
+            {
+              "naslov": "3.4.2 Analiza online sentimenta",
+              "stranica": 30
+            }
+          ]
+        },
+        {
+          "broj": 34,
+          "oznaka": "3.5",
+          "naslov": "Studija slučaja (Hrvatska): eVisitor kao nacionalni izvor u stvarnom vremenu",
+          "stranica_od": 30,
+          "stranica_do": 31,
+          "podnaslovi": []
+        },
+        {
+          "broj": 35,
+          "oznaka": "3.6",
+          "naslov": "Praktični zadatak",
+          "stranica_od": 31,
+          "stranica_do": 32,
+          "podnaslovi": []
+        },
+        {
+          "broj": 36,
+          "oznaka": "3.7",
+          "naslov": "Interaktivna provjera znanja",
+          "stranica_od": 32,
+          "stranica_do": 32,
+          "podnaslovi": []
+        },
+        {
+          "broj": 37,
+          "oznaka": "3.8",
+          "naslov": "Sažetak",
+          "stranica_od": 32,
+          "stranica_do": 33,
+          "podnaslovi": []
+        },
+        {
+          "broj": 38,
+          "oznaka": "3.9",
+          "naslov": "Preporučeno daljnje čitanje",
+          "stranica_od": 33,
+          "stranica_do": 33,
+          "podnaslovi": []
+        },
+        {
+          "broj": 39,
+          "oznaka": "3.10",
+          "naslov": "Literatura (Poglavlje 3)",
+          "stranica_od": 33,
+          "stranica_do": 33,
+          "podnaslovi": []
+        }
+      ]
+    },
+    {
+      "broj": 4,
+      "naslov": "Određivanje uzorka i oblikovanje instrumenata",
+      "dio": "DIO II · Prikupljanje i obrada podataka",
+      "stranica_od": 34,
+      "stranica_do": 42,
+      "odjeljci": [
+        {
+          "broj": 40,
+          "oznaka": "",
+          "naslov": "Uvod",
+          "stranica_od": 34,
+          "stranica_do": 34,
+          "podnaslovi": []
+        },
+        {
+          "broj": 41,
+          "oznaka": "4.0",
+          "naslov": "Ishodi učenja poglavlja",
+          "stranica_od": 34,
+          "stranica_do": 34,
+          "podnaslovi": []
+        },
+        {
+          "broj": 42,
+          "oznaka": "",
+          "naslov": "Ključni pojmovi",
+          "stranica_od": 34,
+          "stranica_do": 34,
+          "podnaslovi": []
+        },
+        {
+          "broj": 43,
+          "oznaka": "4.1",
+          "naslov": "Metode izbora uzorka u turističkim istraživanjima",
+          "stranica_od": 34,
+          "stranica_do": 36,
+          "podnaslovi": [
+            {
+              "naslov": "4.1.1 Probabilističke (slučajne) metode",
+              "stranica": 35
+            },
+            {
+              "naslov": "4.1.2 Neprobabilističke (neslučajne) metode",
+              "stranica": 35
+            },
+            {
+              "naslov": "4.1.3 Određivanje veličine uzorka",
+              "stranica": 35
+            }
+          ]
+        },
+        {
+          "broj": 44,
+          "oznaka": "4.2",
+          "naslov": "Oblikovanje instrumenata istraživanja",
+          "stranica_od": 36,
+          "stranica_do": 37,
+          "podnaslovi": [
+            {
+              "naslov": "4.2.1 Struktura i redoslijed upitnika",
+              "stranica": 36
+            },
+            {
+              "naslov": "4.2.2 Vrste pitanja i skale mjerenja",
+              "stranica": 36
+            },
+            {
+              "naslov": "4.2.3 Vodiči za intervjue i obrasci za promatranje",
+              "stranica": 37
+            }
+          ]
+        },
+        {
+          "broj": 45,
+          "oznaka": "4.3",
+          "naslov": "Kako dizajnirati Likertovu skalu",
+          "stranica_od": 37,
+          "stranica_do": 39,
+          "podnaslovi": [
+            {
+              "naslov": "4.3.1 Osnovna struktura",
+              "stranica": 37
+            },
+            {
+              "naslov": "4.3.2 Koliko stupnjeva koristiti?",
+              "stranica": 37
+            },
+            {
+              "naslov": "4.3.3 Pravila dobrog dizajna",
+              "stranica": 37
+            },
+            {
+              "naslov": "4.3.4 Preporučeni formati prikaza",
+              "stranica": 38
+            },
+            {
+              "naslov": "4.3.5 Česte greške koje treba izbjegavati",
+              "stranica": 38
+            },
+            {
+              "naslov": "4.3.6 Primjer dobre baterije pitanja",
+              "stranica": 38
+            }
+          ]
+        },
+        {
+          "broj": 46,
+          "oznaka": "4.4",
+          "naslov": "Česte greške u formulaciji pitanja",
+          "stranica_od": 39,
+          "stranica_do": 39,
+          "podnaslovi": []
+        },
+        {
+          "broj": 47,
+          "oznaka": "4.5",
+          "naslov": "Studija slučaja (Hrvatska): Anketiranje u Zračnoj luci Sveti Jeronim i Zračnoj luci Ruđer Bošković",
+          "stranica_od": 39,
+          "stranica_do": 40,
+          "podnaslovi": []
+        },
+        {
+          "broj": 48,
+          "oznaka": "4.6",
+          "naslov": "Praktični zadatak",
+          "stranica_od": 40,
+          "stranica_do": 40,
+          "podnaslovi": []
+        },
+        {
+          "broj": 49,
+          "oznaka": "4.7",
+          "naslov": "Interaktivna provjera znanja",
+          "stranica_od": 40,
+          "stranica_do": 41,
+          "podnaslovi": []
+        },
+        {
+          "broj": 50,
+          "oznaka": "4.8",
+          "naslov": "Sažetak",
+          "stranica_od": 41,
+          "stranica_do": 41,
+          "podnaslovi": []
+        },
+        {
+          "broj": 51,
+          "oznaka": "4.9",
+          "naslov": "Preporučeno daljnje čitanje",
+          "stranica_od": 41,
+          "stranica_do": 41,
+          "podnaslovi": []
+        },
+        {
+          "broj": 52,
+          "oznaka": "4.10",
+          "naslov": "Literatura (Poglavlje 4)",
+          "stranica_od": 41,
+          "stranica_do": 42,
+          "podnaslovi": []
+        }
+      ]
+    },
+    {
+      "broj": 5,
+      "naslov": "Obrada i analiza prikupljenih podataka",
+      "dio": "DIO II · Prikupljanje i obrada podataka",
+      "stranica_od": 43,
+      "stranica_do": 49,
+      "odjeljci": [
+        {
+          "broj": 53,
+          "oznaka": "",
+          "naslov": "Uvod",
+          "stranica_od": 43,
+          "stranica_do": 43,
+          "podnaslovi": []
+        },
+        {
+          "broj": 54,
+          "oznaka": "5.0",
+          "naslov": "Ishodi učenja poglavlja",
+          "stranica_od": 43,
+          "stranica_do": 43,
+          "podnaslovi": []
+        },
+        {
+          "broj": 55,
+          "oznaka": "",
+          "naslov": "Ključni pojmovi",
+          "stranica_od": 43,
+          "stranica_do": 44,
+          "podnaslovi": []
+        },
+        {
+          "broj": 56,
+          "oznaka": "5.1",
+          "naslov": "Priprema i unos podataka za analizu",
+          "stranica_od": 44,
+          "stranica_do": 44,
+          "podnaslovi": []
+        },
+        {
+          "broj": 57,
+          "oznaka": "5.2",
+          "naslov": "Deskriptivna statistička analiza",
+          "stranica_od": 44,
+          "stranica_do": 45,
+          "podnaslovi": [
+            {
+              "naslov": "5.2.1 Kategoričke varijable",
+              "stranica": 44
+            },
+            {
+              "naslov": "5.2.2 Numeričke varijable",
+              "stranica": 44
+            }
+          ]
+        },
+        {
+          "broj": 58,
+          "oznaka": "5.3",
+          "naslov": "Bivarijatna i multivarijatna statistička analiza",
+          "stranica_od": 45,
+          "stranica_do": 46,
+          "podnaslovi": [
+            {
+              "naslov": "5.3.1 Hi-kvadrat test (χ²)",
+              "stranica": 45
+            },
+            {
+              "naslov": "5.3.2 t-test i ANOVA",
+              "stranica": 45
+            },
+            {
+              "naslov": "5.3.3 Korelacijska analiza",
+              "stranica": 45
+            },
+            {
+              "naslov": "5.3.4 Faktorska analiza",
+              "stranica": 46
+            },
+            {
+              "naslov": "5.3.5 Klasterska analiza",
+              "stranica": 46
+            }
+          ]
+        },
+        {
+          "broj": 59,
+          "oznaka": "5.4",
+          "naslov": "Analiza kvalitativnih podataka",
+          "stranica_od": 46,
+          "stranica_do": 47,
+          "podnaslovi": []
+        },
+        {
+          "broj": 60,
+          "oznaka": "5.5",
+          "naslov": "Studija slučaja (Hrvatska): Faktori zadovoljstva i segmentacija u nautičkom turizmu",
+          "stranica_od": 47,
+          "stranica_do": 47,
+          "podnaslovi": []
+        },
+        {
+          "broj": 61,
+          "oznaka": "5.6",
+          "naslov": "Praktični zadatak",
+          "stranica_od": 47,
+          "stranica_do": 48,
+          "podnaslovi": []
+        },
+        {
+          "broj": 62,
+          "oznaka": "5.7",
+          "naslov": "Interaktivna provjera znanja",
+          "stranica_od": 48,
+          "stranica_do": 49,
+          "podnaslovi": []
+        },
+        {
+          "broj": 63,
+          "oznaka": "5.8",
+          "naslov": "Sažetak",
+          "stranica_od": 49,
+          "stranica_do": 49,
+          "podnaslovi": []
+        },
+        {
+          "broj": 64,
+          "oznaka": "5.9",
+          "naslov": "Preporučeno daljnje čitanje",
+          "stranica_od": 49,
+          "stranica_do": 49,
+          "podnaslovi": []
+        },
+        {
+          "broj": 65,
+          "oznaka": "5.10",
+          "naslov": "Literatura (Poglavlje 5)",
+          "stranica_od": 49,
+          "stranica_do": 49,
+          "podnaslovi": []
+        }
+      ]
+    },
+    {
+      "broj": 6,
+      "naslov": "Izvještavanje, prezentacija i primjena rezultata",
+      "dio": "DIO III · Primjena i odgovornost",
+      "stranica_od": 50,
+      "stranica_do": 56,
+      "odjeljci": [
+        {
+          "broj": 66,
+          "oznaka": "",
+          "naslov": "Uvod",
+          "stranica_od": 50,
+          "stranica_do": 50,
+          "podnaslovi": []
+        },
+        {
+          "broj": 67,
+          "oznaka": "6.0",
+          "naslov": "Ishodi učenja poglavlja",
+          "stranica_od": 50,
+          "stranica_do": 50,
+          "podnaslovi": []
+        },
+        {
+          "broj": 68,
+          "oznaka": "",
+          "naslov": "Ključni pojmovi",
+          "stranica_od": 50,
+          "stranica_do": 50,
+          "podnaslovi": []
+        },
+        {
+          "broj": 69,
+          "oznaka": "6.1",
+          "naslov": "Interpretacija rezultata i donošenje zaključaka",
+          "stranica_od": 50,
+          "stranica_do": 51,
+          "podnaslovi": []
+        },
+        {
+          "broj": 70,
+          "oznaka": "6.2",
+          "naslov": "Izrada pisanog izvještaja",
+          "stranica_od": 51,
+          "stranica_do": 52,
+          "podnaslovi": [
+            {
+              "naslov": "6.2.1 Struktura stručnog izvještaja",
+              "stranica": 51
+            },
+            {
+              "naslov": "6.2.2 Znanstveni format",
+              "stranica": 51
+            }
+          ]
+        },
+        {
+          "broj": 71,
+          "oznaka": "6.3",
+          "naslov": "Prezentacija i vizualizacija podataka",
+          "stranica_od": 52,
+          "stranica_do": 52,
+          "podnaslovi": []
+        },
+        {
+          "broj": 72,
+          "oznaka": "6.4",
+          "naslov": "Primjena rezultata u marketingu i upravljanju destinacijom (DMO)",
+          "stranica_od": 52,
+          "stranica_do": 53,
+          "podnaslovi": [
+            {
+              "naslov": "6.4.1 STP strategija: segmentacija, targetiranje, pozicioniranje",
+              "stranica": 52
+            },
+            {
+              "naslov": "6.4.2 Upravljanje proizvodom, cijenama i održivošću",
+              "stranica": 53
+            }
+          ]
+        },
+        {
+          "broj": 73,
+          "oznaka": "6.5",
+          "naslov": "Studija slučaja (Hrvatska): Brendiranje i segmentacija unutrašnjosti Istre",
+          "stranica_od": 53,
+          "stranica_do": 54,
+          "podnaslovi": []
+        },
+        {
+          "broj": 74,
+          "oznaka": "6.6",
+          "naslov": "Praktični zadatak",
+          "stranica_od": 54,
+          "stranica_do": 54,
+          "podnaslovi": []
+        },
+        {
+          "broj": 75,
+          "oznaka": "6.7",
+          "naslov": "Interaktivna provjera znanja",
+          "stranica_od": 54,
+          "stranica_do": 55,
+          "podnaslovi": []
+        },
+        {
+          "broj": 76,
+          "oznaka": "6.8",
+          "naslov": "Sažetak",
+          "stranica_od": 55,
+          "stranica_do": 55,
+          "podnaslovi": []
+        },
+        {
+          "broj": 77,
+          "oznaka": "6.9",
+          "naslov": "Preporučeno daljnje čitanje",
+          "stranica_od": 55,
+          "stranica_do": 56,
+          "podnaslovi": []
+        },
+        {
+          "broj": 78,
+          "oznaka": "6.10",
+          "naslov": "Literatura (Poglavlje 6)",
+          "stranica_od": 56,
+          "stranica_do": 56,
+          "podnaslovi": []
+        }
+      ]
+    },
+    {
+      "broj": 7,
+      "naslov": "Etika u istraživanju turističkog tržišta",
+      "dio": "DIO III · Primjena i odgovornost",
+      "stranica_od": 57,
+      "stranica_do": 64,
+      "odjeljci": [
+        {
+          "broj": 79,
+          "oznaka": "",
+          "naslov": "Uvod",
+          "stranica_od": 57,
+          "stranica_do": 57,
+          "podnaslovi": []
+        },
+        {
+          "broj": 80,
+          "oznaka": "7.0",
+          "naslov": "Ishodi učenja poglavlja",
+          "stranica_od": 57,
+          "stranica_do": 57,
+          "podnaslovi": []
+        },
+        {
+          "broj": 81,
+          "oznaka": "",
+          "naslov": "Ključni pojmovi",
+          "stranica_od": 57,
+          "stranica_do": 58,
+          "podnaslovi": []
+        },
+        {
+          "broj": 82,
+          "oznaka": "7.1",
+          "naslov": "Etička načela pri prikupljanju podataka",
+          "stranica_od": 58,
+          "stranica_do": 58,
+          "podnaslovi": [
+            {
+              "naslov": "7.1.1 Dobrovoljnost i informirani pristanak",
+              "stranica": 58
+            },
+            {
+              "naslov": "7.1.2 Zaštita ranjivih skupina",
+              "stranica": 58
+            },
+            {
+              "naslov": "7.1.3 Nezloupotreba i poštovanje dostojanstva",
+              "stranica": 58
+            }
+          ]
+        },
+        {
+          "broj": 83,
+          "oznaka": "7.2",
+          "naslov": "Zaštita privatnosti i GDPR u istraživanjima",
+          "stranica_od": 58,
+          "stranica_do": 60,
+          "podnaslovi": [
+            {
+              "naslov": "7.2.1 Temeljna načela GDPR-a relevantna za istraživanje",
+              "stranica": 58
+            },
+            {
+              "naslov": "7.2.2 Primjer teksta informiranog pristanka (online anketa)",
+              "stranica": 59
+            },
+            {
+              "naslov": "7.2.3 Anonimizacija i pseudonimizacija u praksi",
+              "stranica": 59
+            },
+            {
+              "naslov": "7.2.4 Sigurno pohranjivanje i rokovi čuvanja",
+              "stranica": 60
+            }
+          ]
+        },
+        {
+          "broj": 84,
+          "oznaka": "7.3",
+          "naslov": "Objektivnost i profesionalni integritet istraživača",
+          "stranica_od": 60,
+          "stranica_do": 61,
+          "podnaslovi": []
+        },
+        {
+          "broj": 85,
+          "oznaka": "7.4",
+          "naslov": "Studija slučaja (Hrvatska): GDPR u hotelskim lancima i anketiranju gostiju",
+          "stranica_od": 61,
+          "stranica_do": 61,
+          "podnaslovi": []
+        },
+        {
+          "broj": 86,
+          "oznaka": "7.5",
+          "naslov": "Praktični zadatak",
+          "stranica_od": 61,
+          "stranica_do": 62,
+          "podnaslovi": []
+        },
+        {
+          "broj": 87,
+          "oznaka": "7.6",
+          "naslov": "Interaktivna provjera znanja",
+          "stranica_od": 62,
+          "stranica_do": 63,
+          "podnaslovi": []
+        },
+        {
+          "broj": 88,
+          "oznaka": "7.7",
+          "naslov": "Sažetak",
+          "stranica_od": 63,
+          "stranica_do": 63,
+          "podnaslovi": []
+        },
+        {
+          "broj": 89,
+          "oznaka": "7.8",
+          "naslov": "Preporučeno daljnje čitanje",
+          "stranica_od": 63,
+          "stranica_do": 63,
+          "podnaslovi": []
+        },
+        {
+          "broj": 90,
+          "oznaka": "7.9",
+          "naslov": "Literatura (Poglavlje 7)",
+          "stranica_od": 63,
+          "stranica_do": 64,
+          "podnaslovi": []
+        }
+      ]
+    },
+    {
+      "broj": 8,
+      "naslov": "Dodaci — banka pitanja, prilozi i literatura",
+      "dio": "Dodaci",
+      "stranica_od": 2,
+      "stranica_do": 72,
+      "odjeljci": [
+        {
+          "broj": 91,
+          "oznaka": "",
+          "naslov": "O udžbeniku i okvir kolegija",
+          "stranica_od": 2,
+          "stranica_do": 2,
+          "podnaslovi": []
+        },
+        {
+          "broj": 92,
+          "oznaka": "",
+          "naslov": "Opći podaci o kolegiju",
+          "stranica_od": 2,
+          "stranica_do": 2,
+          "podnaslovi": []
+        },
+        {
+          "broj": 93,
+          "oznaka": "",
+          "naslov": "Cilj kolegija",
+          "stranica_od": 2,
+          "stranica_do": 2,
+          "podnaslovi": []
+        },
+        {
+          "broj": 94,
+          "oznaka": "",
+          "naslov": "Ishodi učenja kolegija",
+          "stranica_od": 2,
+          "stranica_do": 2,
+          "podnaslovi": []
+        },
+        {
+          "broj": 95,
+          "oznaka": "",
+          "naslov": "Kako je udžbenik strukturiran",
+          "stranica_od": 2,
+          "stranica_do": 3,
+          "podnaslovi": []
+        },
+        {
+          "broj": 96,
+          "oznaka": "",
+          "naslov": "Banka pitanja – Poglavlje 1",
+          "stranica_od": 65,
+          "stranica_do": 65,
+          "podnaslovi": []
+        },
+        {
+          "broj": 97,
+          "oznaka": "",
+          "naslov": "Višestruki izbor",
+          "stranica_od": 65,
+          "stranica_do": 66,
+          "podnaslovi": []
+        },
+        {
+          "broj": 98,
+          "oznaka": "",
+          "naslov": "Točno / Netočno",
+          "stranica_od": 66,
+          "stranica_do": 66,
+          "podnaslovi": []
+        },
+        {
+          "broj": 99,
+          "oznaka": "",
+          "naslov": "Kratki odgovor",
+          "stranica_od": 66,
+          "stranica_do": 67,
+          "podnaslovi": []
+        },
+        {
+          "broj": 100,
+          "oznaka": "",
+          "naslov": "Spajanje i scenarij",
+          "stranica_od": 67,
+          "stranica_do": 67,
+          "podnaslovi": []
+        },
+        {
+          "broj": 101,
+          "oznaka": "",
+          "naslov": "Prilozi",
+          "stranica_od": 68,
+          "stranica_do": 68,
+          "podnaslovi": []
+        },
+        {
+          "broj": 102,
+          "oznaka": "",
+          "naslov": "Prilog A: Predložak strukturiranog upitnika (opći)",
+          "stranica_od": 68,
+          "stranica_do": 68,
+          "podnaslovi": []
+        },
+        {
+          "broj": 103,
+          "oznaka": "",
+          "naslov": "Prilog B: Obrazac informiranog pristanka (HR + EN)",
+          "stranica_od": 68,
+          "stranica_do": 69,
+          "podnaslovi": []
+        },
+        {
+          "broj": 104,
+          "oznaka": "",
+          "naslov": "Prilog C: Rubrika za ocjenjivanje praktičnih zadataka",
+          "stranica_od": 69,
+          "stranica_do": 69,
+          "podnaslovi": []
+        },
+        {
+          "broj": 105,
+          "oznaka": "",
+          "naslov": "Prilog D: Popis kratica",
+          "stranica_od": 69,
+          "stranica_do": 70,
+          "podnaslovi": []
+        },
+        {
+          "broj": 106,
+          "oznaka": "",
+          "naslov": "Prilog E: Rječnik ključnih statističkih i metodoloških pojmova",
+          "stranica_od": 70,
+          "stranica_do": 70,
+          "podnaslovi": []
+        },
+        {
+          "broj": 107,
+          "oznaka": "",
+          "naslov": "Prilog F: Kazalo glavnih pojmova",
+          "stranica_od": 70,
+          "stranica_do": 71,
+          "podnaslovi": []
+        },
+        {
+          "broj": 108,
+          "oznaka": "",
+          "naslov": "Prilog G: Zbirna literatura (Harvard stil)",
+          "stranica_od": 71,
+          "stranica_do": 72,
+          "podnaslovi": []
+        },
+        {
+          "broj": 109,
+          "oznaka": "",
+          "naslov": "Prilog H: Preporučena struktura cjelovitog studentskog istraživačkog projekta",
+          "stranica_od": 72,
+          "stranica_do": 72,
+          "podnaslovi": []
+        }
+      ]
+    }
+  ]
+}

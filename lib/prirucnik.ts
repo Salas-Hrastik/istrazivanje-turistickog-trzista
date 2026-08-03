@@ -35,18 +35,34 @@ export interface SegPoglavlje {
   lekcije: SegLekcija[];
 }
 
-/** Poglavlje u koje idu Predgovor, Pojmovnik i Literatura. */
-export const DODACI_BROJ = 11;
-export const DODACI_NASLOV = 'Dodaci — predgovor, pojmovnik i literatura';
+/**
+ * Poglavlje u koje idu prednji i stražnji dijelovi knjige: predgovor, banka
+ * pitanja, prilozi, pojmovnik i literatura. Udžbenik ima 7 nastavnih poglavlja.
+ */
+export const DODACI_BROJ = 8;
+export const DODACI_NASLOV = 'Dodaci — banka pitanja, prilozi i literatura';
 
 export function dioZaPoglavlje(broj: number): string {
-  if (broj <= 5) return 'DIO I · Temelji ponašanja potrošača';
-  if (broj <= 10) return 'DIO II · Digitalno doba i umjetna inteligencija';
+  if (broj <= 2) return 'DIO I · Temelji i priprema istraživanja';
+  if (broj <= 5) return 'DIO II · Prikupljanje i obrada podataka';
+  if (broj <= 7) return 'DIO III · Primjena i odgovornost';
   return 'Dodaci';
 }
 
-/** "01 · Uvod u ponašanje potrošača" → {broj: 1, naslov: "Uvod u ponašanje potrošača"} */
+/**
+ * Kazalo na početku knjige ponavlja naslove svih poglavlja. U dohvatu je štetno:
+ * pogađa gotovo svaki upit, a ne nosi gradivo — pa se preskače.
+ */
+const KAZALO = /^Detaljan sadržaj/i;
+
+/**
+ * Naslov poglavlja. Podržana su oba oblika koja se pojavljuju u priručnicima:
+ *   "01 · Uvod u istraživanje"      (oznaka pa razdjelnik)
+ *   "Poglavlje 1: Uvod u istraživanje"
+ */
 function razlomiNaslovPoglavlja(tekst: string): { broj: number; naslov: string } | null {
+  const sRijecju = /^Poglavlje\s+(\d{1,2})\s*[:.\-–]\s*(.+)$/i.exec(tekst);
+  if (sRijecju) return { broj: parseInt(sRijecju[1], 10), naslov: sRijecju[2].trim() };
   const m = /^(\d{1,2})\s*[·.\-–]\s*(.+)$/.exec(tekst);
   if (!m) return null;
   return { broj: parseInt(m[1], 10), naslov: m[2].trim() };
@@ -98,8 +114,18 @@ export function segmentirajPrirucnik(
     return lek;
   };
 
+  // Kazalo se preskače u cijelosti, zajedno sa svojim odjeljcima, sve do
+  // sljedećeg naslova prve razine.
+  let uKazalu = false;
+
   for (const o of odlomci) {
     if (o.vrsta === 'naslov1') {
+      uKazalu = KAZALO.test(o.tekst);
+      if (uKazalu) {
+        tekuce = null;
+        tekucaLekcija = null;
+        continue;
+      }
       const raz = razlomiNaslovPoglavlja(o.tekst);
       if (raz) {
         tekuce = otvoriPoglavlje(raz.broj, raz.naslov, o.stranicaOd);
@@ -112,6 +138,8 @@ export function segmentirajPrirucnik(
       }
       continue;
     }
+
+    if (uKazalu) continue;
 
     if (o.vrsta === 'naslov2' && tekuce) {
       const { oznaka, naslov } = razlomiNaslovLekcije(o.tekst);

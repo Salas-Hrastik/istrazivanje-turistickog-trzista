@@ -26,20 +26,31 @@ async function main() {
   const putanja = path.resolve(process.cwd(), config.prirucnikDocxPath);
   console.log(`[struktura] Čitam priručnik: ${putanja}`);
 
-  const { odlomci, ukupnoStranica } = await readDocx(putanja);
+  const { odlomci, ukupnoStranica, paginacijaProcijenjena } = await readDocx(putanja);
   const poglavlja = segmentirajPrirucnik(odlomci, ukupnoStranica);
+
+  if (paginacijaProcijenjena) {
+    console.warn(
+      '[struktura] UPOZORENJE: dokument nema Wordovu paginaciju (nijedan\n' +
+        '            w:lastRenderedPageBreak), pa su brojevi stranica PROCIJENJENI\n' +
+        '            iz duljine teksta. Citati će voditi na približnu stranicu.\n' +
+        '            Otvorite li priručnik u Wordu i spremite ga, paginacija se\n' +
+        '            upisuje u datoteku — ponovite tada `npm run struktura` i `npm run ingest`.',
+    );
+  }
 
   let brojOdjeljka = 0;
   const izlaz = {
     izvor: {
       oznaka: 'prirucnik',
       naslov: 'Istraživanje turističkog tržišta',
-      podnaslov: 'Od klasičnih čimbenika odlučivanja do interneta i umjetne inteligencije',
+      podnaslov: 'Udžbenik za studente 3. godine prijediplomskog studija',
       vrsta: 'Veleučilišni priručnik',
       ustanova: config.ustanova,
       kolegij: config.kolegij,
       studij: config.studij,
       ukupno_stranica: ukupnoStranica,
+      paginacija: paginacijaProcijenjena ? 'procijenjena' : 'word',
     },
     poglavlja: poglavlja.map((p) => ({
       broj: p.broj,

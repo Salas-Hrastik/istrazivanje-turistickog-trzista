@@ -30,7 +30,25 @@ export interface DocxOdlomak {
 export interface DocxDokument {
   odlomci: DocxOdlomak[];
   ukupnoStranica: number;
+  /**
+   * true kad Word dokument NIKAD nije paginirao (nema `w:lastRenderedPageBreak`),
+   * pa su brojevi stranica procijenjeni iz duljine teksta. Vidi PROCJENA_ZNAKOVA.
+   */
+  paginacijaProcijenjena: boolean;
 }
+
+/**
+ * Znakova po stranici pri procjeni paginacije.
+ *
+ * Dokumenti generirani programski (bez otvaranja u Wordu) nemaju nijedan
+ * `w:lastRenderedPageBreak`, pa bi bez procjene cijelo poglavlje završilo na
+ * jednoj stranici i citat „str. 4" ne bi značio ništa. Vrijednost odgovara
+ * gusto ispisanoj A4 stranici udžbenika (~330 riječi).
+ *
+ * Procjena je zamjena, ne istina: čim se dokument jednom otvori i spremi u
+ * Wordu, prava paginacija ima prednost i ingest je treba ponoviti.
+ */
+const PROCJENA_ZNAKOVA = 2000;
 
 const STIL_U_VRSTU: Record<string, ParaVrsta> = {
   Heading1: 'naslov1',
@@ -54,6 +72,30 @@ export async function readDocx(putanja: string): Promise<DocxDokument> {
 export function parseDocumentXml(xml: string): DocxDokument {
   const odlomci: DocxOdlomak[] = [];
   let stranica = 1;
+  // Usporedna, procijenjena paginacija — vodi se uvijek, a koristi samo ako
+  // dokument nema Wordovu. Tvrdi prijelom otvara novu stranicu, a unutar
+  // stranice se broji tekst.
+  const procjena: { od: number; do: number }[] = [];
+  let stranicaProc = 1;
+  let znakoviNaStranici = 0;
+  let imaPravuPaginaciju = false;
+
+  /** Upisuje procijenjeni raspon stranica za odlomak i pomiče brojač. */
+  const zabiljeziProcjenu = (duljina: number) => {
+    const od = stranicaProc;
+    znakoviNaStranici += duljina;
+    while (znakoviNaStranici >= PROCJENA_ZNAKOVA) {
+      znakoviNaStranici -= PROCJENA_ZNAKOVA;
+      stranicaProc += 1;
+    }
+    procjena.push({ od, do: stranicaProc });
+  };
+
+  const tvrdiPrijelom = () => {
+    stranica += 1;
+    stranicaProc += 1;
+    znakoviNaStranici = 0;
+  };
 
   // Stanje tekućeg odlomka (w:p) odnosno tablice (w:tbl).
   let uOdlomku = false;
@@ -81,6 +123,7 @@ export function parseDocumentXml(xml: string): DocxDokument {
         stranicaOd: pocetnaStranica,
         stranicaDo: stranica,
       });
+      zabiljeziProcjenu(tekst.length);
     }
     uOdlomku = false;
     stil = '';
@@ -126,6 +169,7 @@ export function parseDocumentXml(xml: string): DocxDokument {
         const tekst = tabliceUMarkdown(redoviTablice);
         if (tekst) {
           odlomci.push({ vrsta: 'tablica', tekst, stranicaOd: pocetnaStranica, stranicaDo: stranica });
+          zabiljeziProcjenu(tekst.length);
         }
         redoviTablice = [];
       }
@@ -156,15 +200,16 @@ export function parseDocumentXml(xml: string): DocxDokument {
       case 'w:pageBreakBefore':
         // Word bilježi prijelom prije odlomka; odlomak time počinje na novoj stranici.
         if (!tag.includes('w:val="0"')) {
-          stranica += 1;
+          tvrdiPrijelom();
           pocetnaStranica = stranica;
         }
         break;
       case 'w:lastRenderedPageBreak':
         stranica += 1;
+        imaPravuPaginaciju = true;
         break;
       case 'w:br':
-        if (/w:type="page"/.test(tag)) stranica += 1;
+        if (/w:type="page"/.test(tag)) tvrdiPrijelom();
         break;
       case 'w:t':
         if (!tag.endsWith('/')) uTekstu = true;
@@ -179,7 +224,16 @@ export function parseDocumentXml(xml: string): DocxDokument {
 
   if (uOdlomku) zavrsiOdlomak();
 
-  return { odlomci, ukupnoStranica: stranica };
+  if (imaPravuPaginaciju) return { odlomci, ukupnoStranica: stranica, paginacijaProcijenjena: false };
+
+  // Bez Wordove paginacije brojevi stranica se procjenjuju, inače cijelo
+  // poglavlje dijeli jedan broj i citat „str. 4" ne znači ništa.
+  odlomci.forEach((o, i) => {
+    o.stranicaOd = procjena[i].od;
+    o.stranicaDo = procjena[i].do;
+  });
+
+  return { odlomci, ukupnoStranica: stranicaProc, paginacijaProcijenjena: true };
 }
 
 function dekodiraj(s: string): string {

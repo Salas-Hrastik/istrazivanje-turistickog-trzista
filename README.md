@@ -15,10 +15,10 @@ granularnost dohvatu, pa svaki citat zna iz kojeg je odjeljka i s koje stranice.
 Stack: **Next.js 14 (App Router) + Supabase (Postgres + pgvector) + Claude
 (Anthropic Messages API) + OpenAI (embeddinzi, Whisper ASR, TTS, Realtime)**.
 
-> **Instanca je nova, priručnik još nije napisan.** Kod je prenesen iz asistenta
-> za kolegij *Ponašanje potrošača u turizmu* i podešen za ovaj kolegij; sadržaja
-> u bazi još nema. Plan knjige je u [`data/plan-knjige.json`](data/plan-knjige.json),
-> a što treba napisati i kojim redom u
+> **Instanca je nova.** Kod je prenesen iz asistenta za kolegij *Ponašanje
+> potrošača u turizmu* i podešen za ovaj kolegij. Udžbenik je isporučen i njegova
+> je struktura izvučena u [`data/sadrzaj.json`](data/sadrzaj.json) (8 cjelina,
+> 109 odjeljaka); u bazi sadržaja još nema. Analiza dokumenta i što slijedi:
 > [`docs/PLAN-KNJIGE.md`](docs/PLAN-KNJIGE.md).
 
 ---
