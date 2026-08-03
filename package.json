@@ -1,0 +1,44 @@
+{
+  "name": "istrazivanje-turistickog-trzista-ai-tutor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Samostalni obrazovni AI asistent za kolegij Istraživanje turističkog tržišta (Veleučilište Baltazar Zaprešić, Management u turizmu i ugostiteljstvu) — odgovara isključivo prema priloženom priručniku, uz citiranje poglavlja i stranice.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "struktura": "tsx --env-file=.env.local scripts/izvuci-strukturu.ts",
+    "ingest": "tsx --env-file=.env.local scripts/ingest.ts",
+    "ingest:dopunski": "tsx --env-file=.env.local scripts/ingest-dopunski.ts",
+    "nacrti": "tsx --env-file=.env.local scripts/generiraj-nacrte.ts",
+    "kviz:uvezi": "tsx --env-file=.env.local scripts/uvezi-kviz.ts",
+    "rag:debug": "tsx --env-file=.env.local scripts/rag-debug.ts",
+    "mediji": "tsx --env-file=.env.local scripts/uvezi-medije.ts",
+    "slajdovi": "tsx --env-file=.env.local scripts/tumaci-slajdove.ts",
+    "knjiga:mjere": "tsx --env-file=.env.local scripts/izmjeri-knjigu.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.45.0",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@types/pdf-parse": "^1.1.4",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35",
+    "jszip": "^3.10.1",
+    "pdf-parse": "1.1.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}

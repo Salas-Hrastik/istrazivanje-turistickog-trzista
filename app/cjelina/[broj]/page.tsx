@@ -1,0 +1,62 @@
+import { notFound } from 'next/navigation';
+import { getCjelina, getPoglavlja } from '@/lib/content';
+import { supabaseAdmin } from '@/lib/supabase';
+import CjelinaRadniProstor from '@/components/CjelinaRadniProstor';
+import { config } from '@/lib/config';
+
+/**
+ * Nastavna cjelina = poglavlje. Stranica je STATIČKA ruta: sadržaj (ciljevi,
+ * sažetak, kartice, mediji, kviz) ne ovisi o korisniku, pa se predgenerira i
+ * poslužuje s CDN-a. Napredak se dohvaća na klijentu (NapredakOznaka), tako da
+ * se cache ne razbija po korisniku.
+ *
+ * revalidate: sadržaj se mijenja samo ponovnim ingestom, pa je sat vremena
+ * dovoljno da se izmjene prošire bez ponovnog builda.
+ */
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  try {
+    const { data } = await supabaseAdmin().from('poglavlja').select('broj');
+    return (data ?? []).map((p) => ({ broj: String(p.broj) }));
+  } catch {
+    // Baza nije dostupna pri buildu (npr. prvi deploy prije ingesta) —
+    // stranice se tada generiraju na zahtjev.
+    return [];
+  }
+}
+
+export default async function CjelinaPage({ params }: { params: { broj: string } }) {
+  const broj = Number(params.broj);
+  if (!Number.isFinite(broj)) return notFound();
+
+  const [detalji, sveCjeline] = await Promise.all([getCjelina(broj), getPoglavlja()]);
+  if (!detalji) return notFound();
+  const { poglavlje, odjeljci, ciljevi, kartice, mediji, slajdovi, brojPitanja } = detalji;
+
+  const indeks = sveCjeline.findIndex((p) => p.broj === broj);
+  const prethodna = indeks > 0 ? sveCjeline[indeks - 1] : null;
+  const sljedeca = indeks >= 0 && indeks < sveCjeline.length - 1 ? sveCjeline[indeks + 1] : null;
+
+  return (
+    <div className="page-cjelina-okvir">
+      <CjelinaRadniProstor
+        broj={broj}
+        naslov={poglavlje.naslov}
+        dio={`${poglavlje.dio} · CJELINA ${poglavlje.broj}`}
+        stranicaOd={poglavlje.stranica_od}
+        stranicaDo={poglavlje.stranica_do}
+        sazetakMd={poglavlje.sazetak_md ?? ''}
+        odjeljci={odjeljci}
+        ciljevi={ciljevi}
+        kartice={kartice}
+        mediji={mediji}
+        slajdovi={slajdovi}
+        brojPitanja={brojPitanja}
+        prethodna={prethodna}
+        sljedeca={sljedeca}
+        realtime={config.realtimeUkljucen}
+      />
+    </div>
+  );
+}

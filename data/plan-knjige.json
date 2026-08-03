@@ -1,0 +1,355 @@
+{
+  "_napomena": "PLAN knjige, ne izvor istine. Stvarni data/sadrzaj.json nastaje iz DOCX-a naredbom `npm run struktura`; ovaj plan je predložak prema kojemu se DOCX piše. Brojevi stranica su zato 0 — poznati su tek kad tekst postoji.",
+  "izvor": {
+    "oznaka": "prirucnik",
+    "naslov": "Istraživanje turističkog tržišta",
+    "podnaslov": "",
+    "vrsta": "Veleučilišni priručnik",
+    "ustanova": "Veleučilište Baltazar Zaprešić",
+    "kolegij": "Istraživanje turističkog tržišta",
+    "studij": "Management u turizmu i ugostiteljstvu",
+    "ukupno_stranica": 0
+  },
+  "poglavlja": [
+    {
+      "broj": 1,
+      "naslov": "Uvod u istraživanje turističkog tržišta",
+      "dio": "DIO I · Temelji i priprema istraživanja",
+      "stranica_od": 0,
+      "stranica_do": 0,
+      "odjeljci": [
+        {
+          "broj": 1,
+          "oznaka": "1.1",
+          "naslov": "Pojam, uloga i značaj istraživanja u turizmu",
+          "opis": "definiranje pojma; specifičnosti turizma kao uslužne i kompleksne djelatnosti",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 2,
+          "oznaka": "1.2",
+          "naslov": "Osobitosti i specifičnosti turističkog tržišta",
+          "opis": "sezonalnost, elastičnost potražnje, prostorna koncentracija i nematerijalnost usluga",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 3,
+          "oznaka": "1.3",
+          "naslov": "Marketing informacijski sustav (MIS) u turizmu",
+          "opis": "uloga MIS-a u odlučivanju; integracija internih i eksternih izvora",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 4,
+          "oznaka": "1.4",
+          "naslov": "Područja primjene istraživanja",
+          "opis": "upravljanje destinacijom (DMO), segmentacija tržišta, razvoj novih turističkih proizvoda",
+          "stranica_od": 0,
+          "stranica_do": 0
+        }
+      ],
+      "okviri": {
+        "studija_slucaja": "TOMAS – Stavovi i potrošnja turista u Hrvatskoj (Institut za turizam) i korištenje podataka u strateškom planiranju.",
+        "prakticni_zadatak": "Analiza izvješća HTZ-a i DZS-a te utvrđivanje ključnih pokazatelja potražnje za odabranu županiju.",
+        "provjera_znanja": {
+          "vrsta": "visestruki_izbor",
+          "opis": "Kviz s pitanjima višestrukog izbora na temu funkcija i strukture MIS-a u turizmu."
+        }
+      }
+    },
+    {
+      "broj": 2,
+      "naslov": "Proces i planiranje istraživanja tržišta",
+      "dio": "DIO I · Temelji i priprema istraživanja",
+      "stranica_od": 0,
+      "stranica_do": 0,
+      "odjeljci": [
+        {
+          "broj": 5,
+          "oznaka": "2.1",
+          "naslov": "Faze u procesu istraživanja turističkog tržišta",
+          "opis": "od definiranja problema do primjene rezultata u praksi",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 6,
+          "oznaka": "2.2",
+          "naslov": "Definiranje problema istraživanja",
+          "opis": "prepoznavanje simptoma nasuprot uzrocima problema",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 7,
+          "oznaka": "2.3",
+          "naslov": "Postavljanje istraživačkih pitanja i hipoteza",
+          "opis": "formuliranje radnih i znanstvenih hipoteza",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 8,
+          "oznaka": "2.4",
+          "naslov": "Izrada i struktura plana (dizajna) istraživanja",
+          "opis": "vremenski plan, troškovnik i odabir istraživačkog tima",
+          "stranica_od": 0,
+          "stranica_do": 0
+        }
+      ],
+      "okviri": {
+        "studija_slucaja": "Definiranje istraživačkog problema na primjeru prekomjernog turizma (overtourism) u Dubrovniku.",
+        "prakticni_zadatak": "Izrada nacrta plana istraživanja za obiteljski hotel u Istri koji želi uvesti wellness ponudu u zimskim mjesecima.",
+        "provjera_znanja": {
+          "vrsta": "spajanje_parova",
+          "opis": "Spajanje parova — povezivanje istraživačkih ciljeva s odgovarajućim vrstama hipoteza."
+        }
+      }
+    },
+    {
+      "broj": 3,
+      "naslov": "Izvori, vrste i prikupljanje podataka",
+      "dio": "DIO II · Prikupljanje i obrada podataka",
+      "stranica_od": 0,
+      "stranica_do": 0,
+      "odjeljci": [
+        {
+          "broj": 9,
+          "oznaka": "3.1",
+          "naslov": "Sekundarni podaci u turizmu",
+          "opis": "interni izvori (eVisitor, CRM, PMS); eksterni izvori (DZS, Eurostat, UN Tourism, Ministarstvo turizma i sporta, HTZ, Institut za turizam)",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 10,
+          "oznaka": "3.2",
+          "naslov": "Primarni podaci u turizmu",
+          "opis": "kvalitativne i kvantitativne metode",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 11,
+          "oznaka": "3.3",
+          "naslov": "Vrste istraživanja prema svrsi",
+          "opis": "izviđajna, opisna i uzročna istraživanja",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 12,
+          "oznaka": "3.4",
+          "naslov": "Web analitika i analiza online sentimenta",
+          "opis": "",
+          "stranica_od": 0,
+          "stranica_do": 0
+        }
+      ],
+      "okviri": {
+        "studija_slucaja": "eVisitor kao nacionalni izvor podataka u stvarnom vremenu.",
+        "prakticni_zadatak": "Pretraživanje baze DZS-a i izrada usporedne tablice dolazaka i noćenja domaćih i stranih turista u posljednjih pet godina.",
+        "provjera_znanja": {
+          "vrsta": "razvrstavanje",
+          "opis": "Razvrstavanje izvora na primarne i sekundarne, odnosno interne i eksterne."
+        }
+      }
+    },
+    {
+      "broj": 4,
+      "naslov": "Određivanje uzorka i oblikovanje instrumenata",
+      "dio": "DIO II · Prikupljanje i obrada podataka",
+      "stranica_od": 0,
+      "stranica_do": 0,
+      "odjeljci": [
+        {
+          "broj": 13,
+          "oznaka": "4.1",
+          "naslov": "Metode izbora uzorka u turističkim istraživanjima",
+          "opis": "probabilistički i neprobabilistički uzorci; određivanje veličine uzorka",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 14,
+          "oznaka": "4.2",
+          "naslov": "Oblikovanje instrumenata istraživanja",
+          "opis": "struktura upitnika, vrste pitanja i skale mjerenja; vodiči za intervjue i obrasci za promatranje",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 15,
+          "oznaka": "4.3",
+          "naslov": "Kako dizajnirati Likertovu skalu",
+          "opis": "broj stupnjeva, polovi, formati prikaza, česte greške",
+          "stranica_od": 0,
+          "stranica_do": 0
+        }
+      ],
+      "okviri": {
+        "studija_slucaja": "Anketiranje putnika u zračnim lukama Split i Dubrovnik.",
+        "prakticni_zadatak": "Konstrukcija anketnog upitnika za mjerenje zadovoljstva gostiju manifestacijom „Advent u Zagrebu\" uz primjenu Likertove skale.",
+        "provjera_znanja": {
+          "vrsta": "prepoznavanje_pogresaka",
+          "opis": "Prepoznavanje metodoloških pogrešaka u loše formuliranim anketnim pitanjima."
+        }
+      }
+    },
+    {
+      "broj": 5,
+      "naslov": "Obrada i analiza prikupljenih podataka",
+      "dio": "DIO II · Prikupljanje i obrada podataka",
+      "stranica_od": 0,
+      "stranica_do": 0,
+      "odjeljci": [
+        {
+          "broj": 16,
+          "oznaka": "5.1",
+          "naslov": "Priprema i unos podataka za analizu",
+          "opis": "kodiranje, čišćenje baze i tretman nedostajućih vrijednosti",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 17,
+          "oznaka": "5.2",
+          "naslov": "Deskriptivna statistička analiza",
+          "opis": "frekvencije, aritmetička sredina, medijan, mod, standardna devijacija",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 18,
+          "oznaka": "5.3",
+          "naslov": "Bivarijatna i multivarijatna statistička analiza",
+          "opis": "hi-kvadrat, t-test, ANOVA, korelacija; uvod u faktorsku i klastersku analizu",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 19,
+          "oznaka": "5.4",
+          "naslov": "Analiza kvalitativnih podataka",
+          "opis": "kodiranje, tematska analiza i interpretacija",
+          "stranica_od": 0,
+          "stranica_do": 0
+        }
+      ],
+      "okviri": {
+        "studija_slucaja": "Faktori zadovoljstva i segmentacija u nautičkom turizmu Zadarske i Šibensko-kninske županije.",
+        "prakticni_zadatak": "Rad u MS Excelu ili SPSS-u — unos simuliranih podataka, izračun deskriptivne statistike i izrada grafičkih prikaza.",
+        "provjera_znanja": {
+          "vrsta": "visestruki_izbor",
+          "opis": "Odabir odgovarajuće statističke mjere na temelju ponuđenog skupa podataka."
+        }
+      }
+    },
+    {
+      "broj": 6,
+      "naslov": "Izvještavanje, prezentacija i primjena rezultata",
+      "dio": "DIO III · Primjena i odgovornost",
+      "stranica_od": 0,
+      "stranica_do": 0,
+      "odjeljci": [
+        {
+          "broj": 20,
+          "oznaka": "6.1",
+          "naslov": "Interpretacija rezultata i donošenje zaključaka",
+          "opis": "pretvaranje podataka u upotrebljive marketinške informacije",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 21,
+          "oznaka": "6.2",
+          "naslov": "Izrada pisanog izvještaja",
+          "opis": "struktura stručnog i znanstvenog izvješća",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 22,
+          "oznaka": "6.3",
+          "naslov": "Prezentacija i vizualizacija podataka",
+          "opis": "grafikoni, infografike, prilagodba dionicima",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 23,
+          "oznaka": "6.4",
+          "naslov": "Primjena rezultata u marketingu i upravljanju destinacijom (DMO)",
+          "opis": "segmentacija, targetiranje, pozicioniranje",
+          "stranica_od": 0,
+          "stranica_do": 0
+        }
+      ],
+      "okviri": {
+        "studija_slucaja": "Brendiranje i segmentacija ponude unutrašnjosti Istre (Istra Gourmet, Istra Outdoor).",
+        "prakticni_zadatak": "Izrada infografike i sažetka za upravu (Executive Summary) o navikama ekomotiviranih turista.",
+        "provjera_znanja": {
+          "vrsta": "odlucivanje",
+          "opis": "Donošenje marketinške odluke na temelju interpretacije ponuđenih nalaza."
+        }
+      }
+    },
+    {
+      "broj": 7,
+      "naslov": "Etika u istraživanju turističkog tržišta",
+      "dio": "DIO III · Primjena i odgovornost",
+      "stranica_od": 0,
+      "stranica_do": 0,
+      "odjeljci": [
+        {
+          "broj": 24,
+          "oznaka": "7.1",
+          "naslov": "Etička načela pri prikupljanju podataka",
+          "opis": "dobrovoljno sudjelovanje, informirani pristanak, zaštita ranjivih skupina",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 25,
+          "oznaka": "7.2",
+          "naslov": "Zaštita privatnosti i osobnih podataka (GDPR)",
+          "opis": "anonimizacija, pseudonimizacija, sigurno pohranjivanje",
+          "stranica_od": 0,
+          "stranica_do": 0
+        },
+        {
+          "broj": 26,
+          "oznaka": "7.3",
+          "naslov": "Objektivnost i profesionalni integritet istraživača",
+          "opis": "izbjegavanje manipulacije i pristranog prikazivanja",
+          "stranica_od": 0,
+          "stranica_do": 0
+        }
+      ],
+      "okviri": {
+        "studija_slucaja": "Prilagodba prikupljanja osobnih podataka u sustavima rezervacija i anketiranja pravilima GDPR-a u hrvatskim hotelskim lancima.",
+        "prakticni_zadatak": "Sastavljanje obrasca za informirani pristanak prema GDPR-u za online anketu među stranim turistima.",
+        "provjera_znanja": {
+          "vrsta": "scenariji",
+          "opis": "Kviz sa scenarijima iz prakse („Etički ili neetički postupak?\")."
+        }
+      }
+    },
+    {
+      "broj": 8,
+      "naslov": "Dodaci",
+      "dio": "Dodaci",
+      "stranica_od": 0,
+      "stranica_do": 0,
+      "odjeljci": [
+        { "broj": 27, "oznaka": "", "naslov": "Predgovor", "opis": "", "stranica_od": 0, "stranica_do": 0 },
+        { "broj": 28, "oznaka": "", "naslov": "Pojmovnik", "opis": "", "stranica_od": 0, "stranica_do": 0 },
+        { "broj": 29, "oznaka": "", "naslov": "Literatura", "opis": "", "stranica_od": 0, "stranica_do": 0 }
+      ],
+      "okviri": null
+    }
+  ]
+}
