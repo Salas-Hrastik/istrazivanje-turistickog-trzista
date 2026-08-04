@@ -38,7 +38,10 @@ export async function getPoglavlja(): Promise<PoglavljeSaOdjeljcima[]> {
       .select('id, poglavlje_id, broj, oznaka, naslov, stranica_od, stranica_do, redoslijed')
       .order('redoslijed'),
   ]);
-  if (e1 || !poglavlja) return [];
+  // Greška upita se NE guta u prazan popis: neispravan ključ tada izgleda
+  // jednako kao prazna baza, pa se pri postavljanju traži na krivom mjestu.
+  if (e1) throw new Error(`Dohvat poglavlja nije uspio: ${e1.message}`);
+  if (!poglavlja) return [];
   if (e2) return poglavlja.map((p) => ({ ...p, odjeljci: [] }));
 
   return poglavlja.map((p) => ({

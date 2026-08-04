@@ -14,7 +14,10 @@ export default async function NaslovnicaPage() {
   let bazaDostupna = true;
   try {
     poglavlja = await getPoglavlja();
-  } catch {
+  } catch (e) {
+    // Ispis ide u Vercelov Runtime log — ondje piše je li ključ odbijen ili
+    // varijabla nedostaje, umjesto da se sve svede na „nema sadržaja".
+    console.error('[naslovnica] baza nedostupna:', e);
     bazaDostupna = false;
   }
   const korisnik = await dohvatiKorisnika().catch(() => null);

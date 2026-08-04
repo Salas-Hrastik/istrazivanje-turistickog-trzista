@@ -5,7 +5,9 @@ import OralPracticePicker from '@/components/OralPracticePicker';
 export const dynamic = 'force-dynamic';
 
 export default async function UsmenaVjezbaPage() {
-  const poglavlja = await getPoglavlja();
+  // Baza može biti nedostupna prije postavljanja; stranica tada ostaje prazna
+  // umjesto da padne na 500.
+  const poglavlja = await getPoglavlja().catch(() => []);
 
   return (
     <div className="page page-usmena">
