@@ -23,12 +23,9 @@ export const maxDuration = 30;
 /**
  * Brana je OŠTRIJA nego u pismenom razgovoru. Ondje odgovor prolazi kroz JSON s
  * citatima, pa se promašaj vidi; izgovorenu tvrdnju ne provjerava nitko.
- *
- * Izmjereno na cjelini 1: pitanja iz gradiva postižu 0,53–0,69, a pitanja izvan
- * njega („cijena karte za Tokio", „vrijeme sutra", „recept za sarmu") 0,27–0,32.
- * Opća brana od 0,18 propušta i jedno i drugo; 0,41 ih čisto razdvaja.
+ * Vrijednost je izmjerena na ovom udžbeniku — vidi lib/config.ts.
  */
-const GOVORNA_BRANA = config.ragMinScore * 2.3;
+const GOVORNA_BRANA = config.ragGovorMinScore;
 
 async function POSTImpl(request: NextRequest) {
   const auth = await zahtijevajKorisnika();

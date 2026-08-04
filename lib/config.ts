@@ -71,7 +71,25 @@ export const config = {
   ragRerank: bool('RAG_RERANK', true),
   rerankModel: process.env.RERANK_MODEL || 'claude-haiku-4-5-20251001',
   ragContextCharBudget: int('RAG_CONTEXT_CHAR_BUDGET', 11000),
-  ragMinScore: num('RAG_MIN_SCORE', 0.18),
+  /**
+   * Brane pokrića. Apsolutne su i mjere se PO KNJIZI, jer ovise o gradivu, a ne
+   * o kodu — izvedene iz `ragMinScore` množenjem bile bi promašaj čim se osnovna
+   * vrijednost pomakne.
+   *
+   * Izmjereno na ovom udžbeniku (12 pitanja iz gradiva, 8 izvan njega):
+   *   u gradivu 0,47–0,77 · izvan gradiva 0,26–0,44
+   * Razmak je uzak jer je i ono „izvan" turističko („najbolje plaže na Hvaru"
+   * postiže 0,44), pa brana stoji tik iznad njega.
+   */
+  ragMinScore: num('RAG_MIN_SCORE', 0.45),
+  /**
+   * Govorna brana je stroža: izgovorenu tvrdnju nitko ne provjerava, a pitanje
+   * na rubu pokrića bolje je odbiti nego odgovoriti napola.
+   */
+  ragGovorMinScore: num('RAG_GOVOR_MIN_SCORE', 0.52),
+  /** Granice pouzdanosti odgovora koje se prikazuju uz citate. */
+  ragSigurnostVisoka: num('RAG_SIGURNOST_VISOKA', 0.65),
+  ragSigurnostSrednja: num('RAG_SIGURNOST_SREDNJA', 0.52),
 
   maxChunkTokens: int('MAX_CHUNK_TOKENS', 320),
   chunkOverlapTokens: int('CHUNK_OVERLAP_TOKENS', 60),
