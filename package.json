@@ -17,6 +17,7 @@
     "rag:debug": "tsx --env-file=.env.local scripts/rag-debug.ts",
     "mediji": "tsx --env-file=.env.local scripts/uvezi-medije.ts",
     "slajdovi": "tsx --env-file=.env.local scripts/tumaci-slajdove.ts",
+    "nastavno": "tsx --env-file=.env.local scripts/uvezi-nastavno.ts",
     "knjiga:mjere": "tsx --env-file=.env.local scripts/izmjeri-knjigu.ts"
   },
   "dependencies": {
