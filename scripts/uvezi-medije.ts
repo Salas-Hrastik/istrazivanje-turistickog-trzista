@@ -1,7 +1,8 @@
 /**
  * Povezuje multimedijske datoteke iz Supabase Storagea s nastavnom cjelinom.
  *
- * Datoteke se u Storage podižu ručno (bucket `mediji`, mapa „N cjelina"), a ova
+ * Datoteke se u Storage podižu ručno (bucket i obrazac mape podesivi su preko
+ * STORAGE_BUCKET i STORAGE_MAPA), a ova
  * skripta iz njih čita trajanje i upisuje redove u tablicu `mediji`.
  *
  * Trajanje se čita IZ ZAGLAVLJA, bez preuzimanja cijele datoteke: dohvaća se
@@ -14,6 +15,7 @@
  *   npm run mediji -- --poglavlje=3 --suho     # samo ispiši što bi upisao
  */
 import { supabaseAdmin } from '../lib/supabase';
+import { config, mapaCjeline } from '../lib/config';
 
 const ARGS = process.argv.slice(2);
 const POGLAVLJE = Number(ARGS.find((a) => a.startsWith('--poglavlje='))?.split('=')[1]);
@@ -134,8 +136,8 @@ async function main() {
     .single();
   if (!pog) throw new Error(`Nema cjeline ${POGLAVLJE}.`);
 
-  const mapa = `${POGLAVLJE} cjelina`;
-  const { data: datoteke, error } = await sb.storage.from('mediji').list(mapa, { limit: 200 });
+  const mapa = mapaCjeline(POGLAVLJE);
+  const { data: datoteke, error } = await sb.storage.from(config.storageBucket).list(mapa, { limit: 200 });
   if (error) throw new Error(`Storage: ${error.message}`);
   if (!datoteke?.length) {
     console.log(`[mediji] Mapa „${mapa}" je prazna ili ne postoji — nema što uvesti.`);
@@ -149,7 +151,7 @@ async function main() {
     .map((d) => ({ ime: d.name, tip: tipDatoteke(d.name)!, velicina: Number(d.metadata?.size ?? 0) }))
     .sort((a, b) => poredak[a.tip] - poredak[b.tip]);
 
-  const { data: javni } = sb.storage.from('mediji').getPublicUrl(mapa);
+  const { data: javni } = sb.storage.from(config.storageBucket).getPublicUrl(mapa);
   const baza = javni.publicUrl.replace(/\/$/, '');
 
   /**

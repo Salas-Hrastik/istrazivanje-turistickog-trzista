@@ -77,6 +77,15 @@ export const config = {
   chunkOverlapTokens: int('CHUNK_OVERLAP_TOKENS', 60),
 
   prirucnikDocxPath: process.env.PRIRUCNIK_DOCX_PATH || './materijali/prirucnik.docx',
+
+  /**
+   * Supabase Storage: naziv bucketa i obrazac mape po cjelini. Podesivi su jer
+   * se imenovanje razlikuje od projekta do projekta, a skripte za medije i
+   * slajdove inače traže mapu koje nema i tiho ne nađu ništa.
+   * U obrascu `{n}` je broj cjeline.
+   */
+  storageBucket: process.env.STORAGE_BUCKET || 'mediji',
+  storageMapa: process.env.STORAGE_MAPA || '{n} cjelina',
   dopunskiDir: process.env.DOPUNSKI_DIR || './materijali/dopunski',
 };
 
@@ -113,4 +122,9 @@ export function speechApiKey(): string {
   const v = process.env.SPEECH_API_KEY || process.env.OPENAI_API_KEY;
   if (!v || !v.trim()) throw new Error('Nedostaje SPEECH_API_KEY (ili OPENAI_API_KEY) za ASR/TTS.');
   return provjeriKljuc(ime, v);
+}
+
+/** Mapa cjeline u Storageu prema obrascu iz config.storageMapa („3 cjelina", „cjelina-3"…). */
+export function mapaCjeline(broj: number): string {
+  return config.storageMapa.replace('{n}', String(broj));
 }

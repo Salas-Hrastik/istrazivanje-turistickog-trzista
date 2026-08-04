@@ -18,7 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import JSZip from 'jszip';
 import Anthropic from '@anthropic-ai/sdk';
-import { config, requireEnv } from '../lib/config';
+import { config, mapaCjeline, requireEnv } from '../lib/config';
 import { supabaseAdmin } from '../lib/supabase';
 
 const ARGS = process.argv.slice(2);
@@ -140,12 +140,12 @@ Pravila:
   const slajdovi: Slajd[] = [];
   for (const s of slike) {
     // Slika slajda ide u Storage da se u aplikaciji može prikazati uz tumačenje.
-    const putanja = `${POGLAVLJE} cjelina/slajdovi/slajd-${String(s.broj).padStart(2, '0')}.${s.tip.split('/')[1]}`;
+    const putanja = `${mapaCjeline(POGLAVLJE)}/slajdovi/slajd-${String(s.broj).padStart(2, '0')}.${s.tip.split('/')[1]}`;
     const { error: greskaUpload } = await sb.storage
-      .from('mediji')
+      .from(config.storageBucket)
       .upload(putanja, s.slika, { contentType: s.tip, upsert: true });
     if (greskaUpload) throw new Error(`Upload slajda ${s.broj}: ${greskaUpload.message}`);
-    const slikaUrl = sb.storage.from('mediji').getPublicUrl(putanja).data.publicUrl;
+    const slikaUrl = sb.storage.from(config.storageBucket).getPublicUrl(putanja).data.publicUrl;
 
     const msg = await anthropic.messages.create({
       model: config.claudeModel,
