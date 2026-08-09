@@ -1,0 +1,90 @@
+{
+  "poglavlje": 3,
+  "prezentacija": "Tourism Data Architecture",
+  "slajdovi": [
+    {
+      "broj": 1,
+      "naslov": "Arhitektura turističkih podataka",
+      "tumacenje": "Ovo je naslovni slajd nastavne cjeline koji najavljuje temu izvora, vrsta i metoda prikupljanja podataka u turizmu. On označava da će se u nastavku sustavno obraditi razlikovanje primarnih i sekundarnih te internih i eksternih izvora podataka, kao i strategije njihova prikupljanja i korištenja. Slajd nema dodatan sadržaj s podacima ili definicijama, već služi kao uvodna najava strukture cjeline.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-01.png"
+    },
+    {
+      "broj": 2,
+      "naslov": "Temelj svake odluke: Kvaliteta podataka",
+      "tumacenje": "Slajd uvodno ističe da kvaliteta istraživanja tržišta izravno ovisi o kvaliteti podataka te da istraživači u turizmu raspolažu bogatim, ali nejednako pouzdanim izvorima podataka. Vizualno je to prikazano kontrastom nasumično razbacanih, neujednačenih oblika s lijeve strane i uredno posloženih, ujednačenih elemenata s desne strane, čime se simbolizira razlika između nesređenih i strukturiranih, pouzdanih podataka. Poruka slajda naglašava da je ključ uspješnog istraživanja u tome da se zna što mjeriti i gdje tražiti, od podataka administrativnih sustava u stvarnom vremenu (poput eVisitora) do korisnički generiranih sadržaja poput recenzija.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-02.png"
+    },
+    {
+      "broj": 3,
+      "naslov": "Karta podatkovnog ekosustava",
+      "tumacenje": "Slajd prikazuje matricu s dvije dimenzije podataka: primarni/sekundarni (originalni vs. postojeći podaci) i interni/eksterni (unutar sustava vs. izvan sustava), čime nastaje četiri kvadranta izvora podataka relevantnih za turizam. U primarno-internom kvadrantu nalaze se vlastite online ankete gostiju i interne fokus grupe, dok su u primarno-eksternom naručena TOMAS istraživanja i recenzije na mrežama. Sekundarno-interni kvadrant obuhvaća eVisitor, rezervacijske sustave, CRM baze i financijska izvješća, dok sekundarno-eksterni uključuje DZS, Eurostat, UN Tourism i HTZ analize. Ova karta studentima vizualno sistematizira klasifikaciju izvora podataka koja je temeljna za razumijevanje cijele nastavne cjeline.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-03.png"
+    },
+    {
+      "broj": 4,
+      "naslov": "Zlatno pravilo: Sekundarni podaci prvi",
+      "tumacenje": "Slajd naglašava temeljno pravilo istraživanja tržišta – prije skupog i dugotrajnog prikupljanja primarnih podataka treba prvo iscrpiti postojeće sekundarne izvore. Navode se tri glavne prednosti sekundarnih podataka: dostupnost i brzina (podaci su već prikupljeni, često u stvarnom vremenu), niži trošak (nacionalne baze i statistike su često besplatne) te autoritativnost (službene statistike omogućuju praćenje vremenskih serija). Naposljetku, slajd upozorava i na ograničenja sekundarnih podataka – prekomjerna agregiranost koja onemogućuje uvid na razini pojedinog objekta i neusklađenost definicija s konkretnim istraživačkim problemom. Ovaj slajd sažima logiku odabira izvora podataka koja povezuje sadržaje iz poglavlja o sekundarnim i primarnim podacima.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-04.png"
+    },
+    {
+      "broj": 5,
+      "naslov": "Hrvatski eksterni makro-sustav",
+      "tumacenje": "Slajd prikazuje shemu ključnih eksternih sekundarnih izvora turističkih podataka na hrvatskom i nadnacionalnom (makro) nivou. U središtu su nacionalni izvori – Državni zavod za statistiku (DZS) s podacima o dolascima i noćenjima, Hrvatska turistička zajednica (HTZ) s analizama tržišta i profilima emitivnih tržišta, te Institut za turizam sa serijom TOMAS, studijama nosivog kapaciteta i satelitskim računima. Uz njih su prikazani i međunarodni izvori, Eurostat za usporedbe na razini EU i UN Tourism za globalne statistike i barometre. Slajd ilustrira da su svi ovi izvori primjer eksternih sekundarnih podataka koji istraživaču omogućuju analizu tržišta bez potrebe za skupim primarnim istraživanjem.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-05.png"
+    },
+    {
+      "broj": 6,
+      "naslov": "eVisitor: Nacionalni motor u stvarnom vremenu",
+      "tumacenje": "Slajd prikazuje eVisitor kao interni sekundarni izvor podataka koji u stvarnom vremenu daje pokazatelje turističkog prometa poput dolazaka, noćenja i broja odjava, uz dnevne i tjedne stope promjena. Prikazan je i demografski profil gostiju (zemlja podrijetla, dobna i spolna struktura, vrsta smještaja), koji zajedno s podacima o prometu omogućuje DMO-ovima operativne odluke poput rasporeda komunalnih usluga, planiranja događanja i procjene potrebe za prijevozom. Time se ilustrira ključna prednost internih sekundarnih izvora – dostupnost podataka bez dodatnog trošenja sredstava na primarna istraživanja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-06.png"
+    },
+    {
+      "broj": 7,
+      "naslov": "Analiza slijepih pjega eVisitora",
+      "tumacenje": "Slajd prikazuje ograničenja internog sekundarnog izvora eVisitor kroz usporedbu onoga što sustav bilježi (volumen: registrirana noćenja, demografija gostiju, lokacija smještaja) i onoga što mu izmiče (jednodnevni posjetitelji poput kruzera, motivacija dolaska te stavovi i potrošnja gostiju). Time se ilustrira razlika između kvantitativnih administrativnih podataka i dubljih spoznaja o ponašanju i zadovoljstvu turista koje takav sustav ne može pružiti. Zaključak upućuje da se te praznine mogu popuniti anketnim istraživanjima poput TOMAS-a ili vlastitim primarnim istraživanjem, čime se povezuje gradivo o sekundarnim i primarnim izvorima podataka u turizmu.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-07.png"
+    },
+    {
+      "broj": 8,
+      "naslov": "Prelazak na primarne podatke",
+      "tumacenje": "Slajd prikazuje dijagram odlučivanja koji istraživaču pomaže odrediti treba li mu primarno istraživanje: nakon definiranja problema (Korak 1) provjerava se postoje li odgovori u eksternim sekundarnim izvorima kao što su eVisitor, DZS ili HTZ (Korak 2). Ako sekundarni podaci postoje (DA), istraživanje završava analizom sekundarnih podataka, dok se ako ih nema (NE) – jer nedostaju motivi, emocije ili ponašanje gostiju – pokreće primarno istraživanje. Napomena na slajdu podsjeća da su primarni podaci originalni podaci koje istraživač izravno prikuplja za potrebe konkretnog istraživanja, čime se ilustrira logika odabira izvora podataka opisana u cjelini.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-08.png"
+    },
+    {
+      "broj": 9,
+      "naslov": "Dijagnostika primarnih metoda: Kvalitativno vs. Kvantitativno",
+      "tumacenje": "Slajd uspoređuje kvalitativne metode (usmjerene na pitanja zašto i kako) s kvantitativnim metodama (usmjerenim na pitanja koliko i tko) prikupljanja primarnih podataka. Za kvalitativne metode navode se fokus grupe, dubinski intervjui te mystery shopping/promatranje, uz prednost dubokog uvida i manu manje generalizabilnosti zbog subjektivnosti. Za kvantitativne metode navode se osobne ankete (PAPI/CAPI, npr. TOMAS), online ankete (CAWI) i telefonske ankete (CATI), uz prednost statističke generalizacije i mjerenja, ali manu nedostatka dubljeg objašnjenja razloga. Slajd tako sažima ključne alate primarnog istraživanja i njihove komplementarne uloge u istraživanju turističkog tržišta.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-09.png"
+    },
+    {
+      "broj": 10,
+      "naslov": "Istraživački lijevak: Vrste istraživanja",
+      "tumacenje": "Slajd prikazuje tri vrste istraživanja poredane poput lijevka, prema stupnju smanjenja neizvjesnosti u praksi. Izviđajno (eksplorativno) istraživanje koristi se kada je problem nov ili nejasan, s ciljem generiranja hipoteza pomoću fokus grupa, pilot studija i dubinskih intervjua. Opisno (deskriptivno) istraživanje je najzastupljenije i profilira goste, potrošnju i zadovoljstvo putem masovnih anketa i strukturiranog promatranja, dok uzročno (kauzalno) istraživanje utvrđuje precizne uzročno-posljedične veze primjenom A/B eksperimenata i napredne statistike.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-10.png"
+    },
+    {
+      "broj": 11,
+      "naslov": "Digitalni trag: Web analitika",
+      "tumacenje": "Slajd prikazuje tri koraka web analitike kroz koje se prati ponašanje korisnika na digitalnim kanalima: izvore prometa (organski pretraživač, plaćeni oglasi, društvene mreže), ponašanje na stranici (broj stranica po sesiji, vrijeme zadržavanja, stopa napuštanja) i konverzije (rezervacije, upiti, preuzimanja materijala). Time se konkretizira pojam web analitike iz sažetka cjeline, odnosno mjerenje i analiza ponašanja korisnika na web stranicama i u digitalnim kanalima. Ključna poruka slajda jest da se ovi digitalni pokazatelji ne smiju promatrati izolirano, već ih je nužno povezati sa stvarnim poslovnim rezultatima destinacijskog marketinga.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-11.png"
+    },
+    {
+      "broj": 12,
+      "naslov": "Glas gosta: Analiza online sentimenta",
+      "tumacenje": "Slajd prikazuje proces analize online sentimenta kao sustavne obrade tekstualnih sadržaja poput recenzija na mrežama, gdje se putem obrade prirodnog jezika (NLP) klasificiraju stavovi gostiju u pozitivne (pohvale), neutralne (informacije) ili negativne (kriza reputacije). Time se prati ukupni stav i rano prepoznaju teme koje zahtijevaju pažnju menadžmenta. Metodološka napomena upozorava na pristranost ekstremnih mišljenja jer online podaci nisu reprezentativni – recenzije najčešće pišu ekstremno (ne)zadovoljni gosti – zbog čega je analiza sentimenta dopuna, a ne zamjena za anketna istraživanja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-12.png"
+    },
+    {
+      "broj": 13,
+      "naslov": "Sinteza: Ultimativna DMO nadzorna ploča",
+      "tumacenje": "Slajd objedinjuje prethodno obrađene izvore podataka u koncept jedinstvene nadzorne ploče za DMO (destinacijsku menadžment organizaciju), povezujući ih u tri cjeline: volumen i operativu putem eVisitora, namjeru i reputaciju putem web analitike i analize online sentimenta te motivaciju i vrijednost putem istraživanja poput TOMAS-a i anketa. Za svaku cjelinu prikazan je konkretan prikaz podataka i akcija koja iz njega proizlazi, čime se pokazuje kako se interni (eVisitor) i primarni (TOMAS, ankete) podaci nadopunjuju s podacima o digitalnom ponašanju. Slajd je važan jer sintetizira cijelu cjelinu pokazujući kako kombinacija različitih izvora podataka omogućuje sveobuhvatno upravljanje destinacijom - od kratkoročnih operativnih odluka do dugoročnog strateškog pozicioniranja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-13.png"
+    },
+    {
+      "broj": 14,
+      "naslov": "Izvršni sažetak: Uparivanje problema i izvora",
+      "tumacenje": "Slajd u tablici prikazuje pet konkretnih poslovnih pitanja iz turizma i uz svako navodi najprikladniji izvor odnosno metodu podataka, s naznakom njegove vrste (interni/eksterni, primarni/sekundarni, izviđajno ili kauzalno istraživanje) – primjerice eVisitor za praćenje noćenja, Eurostat za usporedbu s EU, fokus grupe za razumijevanje motiva gostiju, eksperiment za kauzalne odnose i analiza online sentimenta za problem čistoće. Time se sintetiziraju svi izvori i vrste podataka obrađeni u poglavlju, pokazujući studentima kako se teorijska klasifikacija primjenjuje u praksi. Zaključak slajda naglašava ključnu poruku cjeline: odabir izvora podataka izravno određuje na koja se poslovna pitanja istraživanjem uopće može odgovoriti.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-3/slajdovi/slajd-14.png"
+    }
+  ]
+}
