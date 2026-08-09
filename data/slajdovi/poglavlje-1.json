@@ -1,0 +1,96 @@
+{
+  "poglavlje": 1,
+  "prezentacija": "Tourism Decision Architecture",
+  "slajdovi": [
+    {
+      "broj": 1,
+      "naslov": "Arhitektura odlučivanja u suvremenom turizmu",
+      "tumacenje": "Ovo je naslovni slajd cjeline koji najavljuje temu prelaska s intuitivnog na sustavno, podacima utemeljeno odlučivanje u strateškom upravljanju destinacijama, uz oslonac na marketing informacijski sustav (MIS). Karta Hrvatske s naglašenim točkama simbolizira prostornu koncentraciju turističkog prometa i mrežu destinacija o kojima se prikupljaju podaci. Slajd naglašava da je sadržaj temeljen na Poglavlju 1 – Uvod u istraživanje turističkog tržišta, čime se studenta uvodi u problematiku koja slijedi.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-01.png"
+    },
+    {
+      "broj": 2,
+      "naslov": "Nekad: Oslanjanje na intuiciju / Danas: Sustavno smanjenje neizvjesnosti",
+      "tumacenje": "Slajd prikazuje usporedbu dva pristupa upravljanju u turizmu – nekadašnje odlučivanje temeljeno isključivo na prošlim iskustvima i osjećaju, te suvremeni pristup koji se oslanja na sustavno istraživanje turističkog tržišta radi smanjenja neizvjesnosti u strateškom odlučivanju. Naglašava se da su danas prisutne dinamične promjene preferencija, rastuća konkurencija i sezonalnost te zahtjevi održivosti i digitalizacije, koji zahtijevaju podatkovno potkrijepljeno odlučivanje umjesto intuicije. Ovaj kontrast ilustrira zašto istraživanje turističkog tržišta nije akademska vježba, već ključni alat za suočavanje sa složenošću suvremenog turističkog okruženja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-02.png"
+    },
+    {
+      "broj": 3,
+      "naslov": "Anatomija turističke usluge",
+      "tumacenje": "Slajd prikazuje četiri temeljne specifičnosti turizma kao uslužne djelatnosti raspoređene oko središnjeg pojma: nematerijalnost, istodobnost, heterogenost i visoku elastičnost. Uz svaku osobitost dan je kratak primjer i implikacija za istraživanje – primjerice, nematerijalnost zahtijeva proučavanje percepcija i očekivanja jer turist ne može isprobati proizvod prije kupnje, dok istodobnost proizvodnje i potrošnje traži prikupljanje podataka na samoj lokaciji (npr. promatranjem ili mystery shoppingom). Heterogenost upućuje na to da se turistički proizvod sastoji od više komponenti pa istraživanje samo jednog dijela daje nepotpunu sliku, a visoka elastičnost naglašava potrebu za longitudinalnim praćenjem poput TOMAS istraživanja zbog osjetljivosti na vanjske šokove. Ovaj prikaz sažima ključne razloge zašto istraživanje turističkog tržišta zahtijeva posebne metodološke pristupe u odnosu na druge djelatnosti.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-03.png"
+    },
+    {
+      "broj": 4,
+      "naslov": "Most povjerenja: od percipiranog rizika do iskustva destinacije",
+      "tumacenje": "Slajd prikazuje metaforu mosta koji povezuje turista u fazi planiranja (kod kojeg je zbog nematerijalnosti usluge percipirani rizik visok) s destinacijom, odnosno stvarnim iskustvom. Elementi mosta – online recenzije, analiza sentimenta na društvenim mrežama, preporuke i imidž te web analitika – predstavljaju digitalne izvore informacija na koje se turisti oslanjaju umjesto neposrednog iskustva prije kupnje. Poruka slajda je da istraživački instrumentarij mora mjeriti i mapirati upravo te digitalne tragove kako bi se premostio jaz između percepcije i stvarnosti, jer se turistička usluga ne može unaprijed isprobati.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-04.png"
+    },
+    {
+      "broj": 5,
+      "naslov": "Tri razine uloge istraživanja u turizmu (piramida)",
+      "tumacenje": "Slajd prikazuje piramidu s tri razine na kojima istraživanje turističkog tržišta podupire odlučivanje: stratešku, taktičku i operativnu. Strateška razina odnosi se na dugoročne vizije DMO-a, poput upravljanja nosivim kapacitetom destinacije, održivog razvoja i krovnog brendiranja. Taktička razina obuhvaća dizajniranje ponude kroz segmentaciju gostiju, razvoj novih proizvoda i paketa te pozicioniranje, dok operativna razina uključuje dnevne odluke kao što su prilagodba cijena, alokacija kapaciteta i sadržaj promocije. Prikaz jasno pokazuje kako se opseg i vremenski horizont istraživačkih zadataka mijenjaju od baze prema vrhu piramide.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-05.png"
+    },
+    {
+      "broj": 6,
+      "naslov": "Osobitost tržišta, poslovni izazov, istraživačko rješenje",
+      "tumacenje": "Slajd u tablici prikazuje tri ključne osobitosti hrvatskog turističkog tržišta – sezonalnost, elastičnost potražnje i prostornu koncentraciju – te za svaku navodi poslovni izazov koji ona uzrokuje i konkretno istraživačko rješenje (akciju). Primjerice, sezonalnost dovodi do pritiska na infrastrukturu ljeti i praznih kapaciteta zimi, pa se kao rješenje predlaže identifikacija motiva za deseasonalizaciju kroz MICE, eno-gastro i cikloturizam. Elastičnost potražnje povezana je s cjenovnom osjetljivošću različitih segmenata, što se istražuje cjenovnim eksperimentalnim istraživanjima i segmentacijom potrošnje, dok prostorna koncentracija (zagušenje jadranske obale nasuprot nerazvijenom kontinentu) zahtijeva analizu potencijala manje razvijenih resursa. Slajd tako pokazuje kako se teorijske osobitosti tržišta iz prethodnog dijela cjeline izravno prevode u praktične zadatke istraživanja turističkog tržišta.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-06.png"
+    },
+    {
+      "broj": 7,
+      "naslov": "Marketing informacijski sustav (MIS)",
+      "tumacenje": "Slajd prikazuje odnos marketing informacijskog sustava (MIS) i istraživanja turističkog tržišta pomoću grafičkog prikaza zupčanika unutar većeg kruga koji predstavlja MIS. Istraživanje tržišta je samo jedan dio, odnosno \"zupčanik\" unutar šireg, kontinuiranog i organiziranog sklopa ljudi, postupaka i tehnologije koji čini MIS. Poruka upozorenja naglašava da izolirana, ad-hoc istraživanja bez uklopljenosti u kvalitetan MIS teško doprinose svakodnevnom strateškom odlučivanju, čime se pojašnjava zašto je razlikovanje ova dva pojma važno za razumijevanje cjeline.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-07.png"
+    },
+    {
+      "broj": 8,
+      "naslov": "Menadžment destinacije (DMO)",
+      "tumacenje": "Slajd prikazuje četiri stupa istraživačkih izvora i alata na kojima DMO (Destination Management Organisation) temelji upravljanje destinacijom: interne izvore (poput podataka iz eVisitora, CRM sustava, financijskih izvještaja i rezervacija), marketinšku inteligenciju (kontinuirano praćenje konkurencije, medija i društvenih mreža), istraživanje tržišta (ad-hoc studije, ankete, fokus grupe, eksperimenti) i analitičke modele (dashboardi, prediktivna analitika i segmentacijski alati). Time se pokazuje kako se različiti tipovi podataka i metoda integriraju u marketing informacijski sustav (MIS) destinacije radi podrške strateškom i operativnom odlučivanju. Slajd je važan jer konkretizira teorijski okvir MIS-a na primjeru rada destinacijske organizacije u hrvatskom kontekstu.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-08.png"
+    },
+    {
+      "broj": 9,
+      "naslov": "Podaci i Istraživanje (DMO)",
+      "tumacenje": "Slajd prikazuje shemu s DMO (organizacijom za upravljanje destinacijom) u središtu, oko koje se granaju ključna područja primjene istraživanja tržišta: brendiranje i upravljanje imidžom, segmentacija prema motivima i potrošnji, razvoj proizvoda kroz testiranje atrakcija, cjenovna politika i yield management, održivi turizam i nosivi kapacitet te krizno upravljanje. Ovime se pokazuje da istraživanje tržišta nije ograničeno na jedno usko područje, već prožima sve razine djelovanja destinacijske organizacije, od operativnih do strateških odluka. Poruka na dnu slajda naglašava da se istraživanje disperzira u svaku poru upravljanja turističkom destinacijom, čime se vizualno sažima uloga istraživanja opisana u cjelini.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-09.png"
+    },
+    {
+      "broj": 10,
+      "naslov": "Hrvatski kontekst: Rastući pritisak i potreba za analitikom",
+      "tumacenje": "Slajd prikazuje ključne poslijepandemijske promjene u hrvatskom turizmu: brzi oporavak praćen strukturnim promjenama poput rasta last-minute rezervacija i individualnih putnika, jačanje gastronomije i outdoor aktivnosti kao motiva dolaska, te ekstreman pritisak na nosivi kapacitet obalnih destinacija u vrhuncu sezone, što je i grafički ilustrirano kartom Hrvatske s naglašenim popularnim destinacijama. Poruka u okviru pri dnu naglašava da bez kontinuiranih podataka nije moguće donositi informirane odluke o produljenju sezone ili upravljanju prekomjernim turizmom. Ovaj slajd konkretizira teorijske osobitosti turističkog tržišta (sezonalnost, prostorna koncentracija) na primjeru hrvatske prakse i pokazuje zašto je sustavno istraživanje tržišta nužno za strateško upravljanje destinacijama.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-10.png"
+    },
+    {
+      "broj": 11,
+      "naslov": "eVisitor i TOMAS – sinergija izvora podataka u MIS-u",
+      "tumacenje": "Slajd uspoređuje dva ključna izvora podataka hrvatskog marketing informacijskog sustava (MIS) u turizmu. eVisitor je interni izvor koji u stvarnom vremenu daje kvantitativne podatke o dolascima i noćenjima te odgovara na pitanje „što se događa upravo sada\", dok je TOMAS eksterno, longitudinalno istraživanje tržišta koje putem motiva, stavova i percepcije turista objašnjava „zašto gosti dolaze i kako se osjećaju\". Njihovom sinergijom – spajanjem kvantitativnih, real-time podataka i kvalitativnih, dugoročnih trendova – nastaje okosnica nacionalnog MIS okvira, što je važno jer omogućuje potpuniju sliku za donošenje odluka u turizmu.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-11.png"
+    },
+    {
+      "broj": 12,
+      "naslov": "eVisitor: Nacionalni registar u stvarnom vremenu",
+      "tumacenje": "Slajd prikazuje eVisitor kao ključni interni izvor podataka za hrvatski marketing informacijski sustav (MIS) – nacionalni sustav registracije turista koji podatke prikazuje u stvarnom vremenu (trenutni dolasci, noćenja danas, broj aktivnih objekata). Time se naglašava vrijednost sustava za praćenje KPI-jeva iz minute u minutu, što omogućuje transparentno izvještavanje dionika i pravovremenu alokaciju budžeta i resursa u odlučivanju o turizmu.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-12.png"
+    },
+    {
+      "broj": 13,
+      "naslov": "TOMAS: Longitudinalna dubina i praćenje trendova",
+      "tumacenje": "Slajd prikazuje vremensku liniju TOMAS istraživanja od uspostave metodološkog okvira 1987. godine (Institut za turizam) do provedbe u ciklusu 2022/2023., kada je obuhvaćeno više od 14.600 ispitanika s 19 najvažnijih emitivnih tržišta u hotelima, hostelima, kampovima i obiteljskom smještaju. Naglašava se da je TOMAS jedno od najstarijih kontinuiranih istraživanja u Europi, čija longitudinalna priroda omogućuje praćenje strukturnih promjena u turističkoj potražnji kroz desetljeća. Ta dugoročna dubina podataka smatra se neprocjenjivom za evaluaciju i oblikovanje turističkih politika.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-13.png"
+    },
+    {
+      "broj": 14,
+      "naslov": "Ključne značajke turističke potražnje u Hrvatskoj",
+      "tumacenje": "Slajd u obliku infografike prikazuje četiri ključna pokazatelja hrvatskog turističkog tržišta: prosječnu dnevnu potrošnju turista (oko 140 €), dominantnu dobnu skupinu gostiju (30-49 godina), snažan rast gastronomije i city break formata kao motiva dolaska te percepciju gužvi kao izražen negativan čimbenik u najposjećenijim destinacijama. Ovi podaci ilustriraju kako sustavno istraživanje turističkog tržišta (primjerice putem TOMAS istraživanja i drugih izvora) omogućuje praćenje strukture potražnje, potrošačkih navika i problema poput prostorne koncentracije gostiju. Takvi pokazatelji predstavljaju primjer KPI-jeva koji služe kao podloga za strateško i operativno odlučivanje u destinacijskom menadžmentu.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-14.png"
+    },
+    {
+      "broj": 15,
+      "naslov": "Od podataka do strategije: MIS proces u turizmu",
+      "tumacenje": "Slajd prikazuje dijagram u obliku \"pješčanog sata\" koji ilustrira funkcioniranje marketing informacijskog sustava (MIS) u tri faze: ulazni podaci, proces obrade i strateški izlazi. Kao ulazni podaci navode se eVisitor podaci u stvarnom vremenu, longitudinalni uvidi iz TOMAS istraživanja te podaci DZS-a, HTZ-a i Eurostata, koji se u fazi procesa obrađuju i analiziraju kroz MIS. Strateški izlazi tog procesa su konkretni dokumenti i odluke - strategija razvoja održivog turizma, godišnji programi rada HTZ-a, masterplanovi destinacija i privatne investicije - čime se naglašava poruka da istraživanje turističkog tržišta ne proizvodi samo izvještaje, već aktivno oblikuje održivu budućnost destinacije.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-15.png"
+    }
+  ]
+}
