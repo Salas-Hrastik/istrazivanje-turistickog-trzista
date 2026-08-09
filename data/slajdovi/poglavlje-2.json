@@ -6,91 +6,91 @@
       "broj": 1,
       "naslov": "Arhitektura istraživanja turističkog tržišta",
       "tumacenje": "Ovo je naslovni slajd nastavne cjeline, s podnaslovom „Od prepoznavanja problema do poslovnih rješenja\" koji nagovješćuje da će se istraživanje tržišta prikazati kao proces s više faza. Vizualna metafora ledenog brijega, čiji je veći dio skriven ispod površine i prikazan kao arhitektonski nacrt, simbolizira da su vidljivi poslovni problemi tek manji dio, dok se pravo razumijevanje temelji na sustavno prikupljenim i analiziranim podacima. Slajd nema dodatnog stručnog sadržaja, već služi kao uvodna, motivacijska najava teme istraživanja turističkog tržišta.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-01.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-01.png"
     },
     {
       "broj": 2,
       "naslov": "Srž uspješnog istraživanja",
       "tumacenje": "Slajd naglašava da uspješno istraživanje turističkog tržišta ne počinje prikupljanjem podataka, nego jasnim razumijevanjem problema koji treba riješiti. Istraživanje se ovdje ističe kao sustavan, logičan i metodičan proces, a ne stihijski čin, čime se studente upućuje na to da je definiranje problema temeljni prvi korak prije bilo kakve primjene metoda ili tehnika istraživanja. Ova poruka postavlja okvir za razumijevanje cjeline, jer sve daljnje faze istraživanja (od izvora podataka do interpretacije) proizlaze iz dobro postavljenog problema.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-02.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-02.png"
     },
     {
       "broj": 3,
       "naslov": "Sustavni proces u 7 faza",
       "tumacenje": "Slajd prikazuje sedam faza istraživanja turističkog tržišta prikazanih kao proces (Process Pipeline): definiranje problema i ciljeva, izrada plana (dizajna) istraživanja, prikupljanje podataka (terenski rad), obrada i analiza (deskriptivna/inferencijalna), interpretacija i zaključci, izrada izvješća i prezentacija te primjena i evaluacija. Prva faza, definiranje problema i ciljeva, istaknuta je kao ključna, dok je posljednja faza, primjena i evaluacija, označena kao ona koja se u praksi često zanemaruje. Metodološka napomena i strelica koja se vraća s pete na prvu fazu naglašavaju da proces nije strogo linearan, već iterativan, odnosno da se nalazi iz kasnijih faza mogu vratiti na redefiniranje problema. Ovaj prikaz važan je jer studentima daje cjelovit okvir svih koraka koje sustavno istraživanje treba proći kako bi rezultati bili primjenjivi u odlučivanju.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-03.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-03.png"
     },
     {
       "broj": 4,
       "naslov": "Upravljački vs. Istraživački problem",
       "tumacenje": "Slajd prikazuje razliku između onoga što je menadžmentu vidljivo (simptom odnosno upravljački problem, npr. pad popunjenosti, pad prihoda, porast negativnih recenzija) i onoga što je skriveno u tržištu (uzrok odnosno istraživački problem, npr. nekonkurentne cijene, zastarjela ponuda, promjena preferencija). Metafora ledenog brijega ilustrira da je vidljivi dio problema samo simptom, dok se stvarni uzrok nalazi ispod površine i mora se otkriti istraživanjem. Ovo razlikovanje je ključno jer istraživanje tržišta treba preformulirati uočeni simptom u konkretnu informaciju potrebnu za donošenje odluke, umjesto da se reagira samo na posljedicu.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-04.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-04.png"
     },
     {
       "broj": 5,
       "naslov": "Dijagnostika u praksi: Prazan hotel u podsezoni",
       "tumacenje": "Slajd na konkretnom primjeru pokazuje razliku između uočenog simptoma (pad popunjenosti obiteljskih hotela u Istri i na Kvarneru za 18% u razdoblju listopad–ožujak) i stvarnih uzroka koje treba tek istražiti. Naglašava se da fokusiranje samo na simptom vodi pogrešnim ulaganjima, dok istraživački fokus treba obuhvatiti više mogućih uzroka: cijene u odnosu na konkurenciju, sadržaj i cjelogodišnju ponudu destinacije, vidljivost odnosno marketing na emitivnim tržištima te promjenu preferencija ciljnog segmenta gostiju. Time se ilustrira uloga istraživanja tržišta u operativnom i strateškom odlučivanju te povezanost sezonalnosti s potrebom sustavne dijagnostike umjesto brzih zaključaka.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-05.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-05.png"
     },
     {
       "broj": 6,
       "naslov": "Arhitektura ciljeva istraživanja",
       "tumacenje": "Slajd prikazuje hijerarhijsku strukturu ciljeva istraživanja u obliku piramide, s naglaskom da ciljevi moraju biti jasni, mjerljivi i ostvarivi. Na vrhu je opći cilj koji definira središnju svrhu istraživanja (npr. utvrditi potencijal razvoja zdravstvenog turizma u kontinentalnoj Hrvatskoj), a ispod njega su posebni ciljevi koji razrađuju to područje na konkretna podpodručja poput mjerenja razine svijesti, spremnosti na plaćanje i preferiranih kanala informiranja. Ova arhitektura pomaže studentima razumjeti kako se opći marketinški problem operacionalizira u konkretne, provjerljive istraživačke zadatke koji usmjeravaju cijeli proces istraživanja turističkog tržišta.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-06.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-06.png"
     },
     {
       "broj": 7,
       "naslov": "Formuliranje pravih pitanja",
       "tumacenje": "Slajd na primjeru uspoređuje loše (preširoko) i bolje (precizno) istraživačko pitanje – umjesto općenitog \"Što gosti misle o nama?\" navodi se konkretno pitanje o razlozima izbora hotela na njemačkom i austrijskom tržištu u određenom razdoblju. Time se pokazuje da preširoko pitanje ne vodi prema poslovnoj odluci, dok precizno pitanje omogućuje usmjeravanje istraživanja na konkretan segment i vremenski okvir. Slajd zatim navodi četiri kriterija dobrog istraživačkog pitanja: jasnoća i preciznost, usmjerenost na odluke, realističnost s obzirom na vrijeme i resurse te usklađenost s GDPR-om i etikom. Ovo je važno jer ispravno definiranje pitanja predstavlja polaznu točku svakog istraživanja turističkog tržišta i izravno utječe na kvalitetu i primjenjivost dobivenih rezultata.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-07.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-07.png"
     },
     {
       "broj": 8,
       "naslov": "Mehanika hipoteze",
       "tumacenje": "Slajd objašnjava da je hipoteza privremeni, empirijski provjerljivi odgovor na istraživačko pitanje te da se, prema pravilu, ne temelji na želji menadžmenta nego na odnosu dviju varijabli. Kroz četiri primjera (H1-H4) prikazuje kako se taj odnos formulira: npr. wellness motiv vodi do značajno više dnevne potrošnje, ili percepcija gužve u ljetnim mjesecima smanjuje ukupno zadovoljstvo boravkom. Ovi primjeri pokazuju studentima kako se apstraktan koncept hipoteze prevodi u konkretan, mjerljiv odnos između dviju varijabli vezanih uz turističko ponašanje, što je ključan korak prije provedbe empirijskog istraživanja.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-08.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-08.png"
     },
     {
       "broj": 9,
       "naslov": "Dizajn istraživanja: Strateški okvir (Dio 1)",
       "tumacenje": "Slajd prikazuje prvih šest koraka strateškog okvira za dizajn istraživanja turističkog tržišta: naslov i uvod, definiranje problema i ciljeva, postavljanje hipoteza i istraživačkih pitanja, odabir vrste dizajna (izviđajno, opisno ili uzročno, odnosno kvalitativno/kvantitativno), izbor metodologije (ankete, intervjui, promatranje, senzori) i plan uzorkovanja (ciljna populacija, veličina i metoda izbora uzorka). Ovim se koracima operacionalizira sustavan proces prikupljanja i analize podataka spomenut u uvodu cjeline, a osobito je važno razlikovanje probabilističkih i drugih metoda uzorkovanja te vrsta dizajna istraživanja. Slajd time daje strukturirani pregled prve faze planiranja istraživanja prije prikupljanja i interpretacije podataka.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-09.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-09.png"
     },
     {
       "broj": 10,
       "naslov": "Dizajn istraživanja: Operativna izvedba (Dio 2) – Troškovnik",
       "tumacenje": "Ovaj dio slajda (točka 10.) prikazuje troškovnik kao element operativne izvedbe istraživanja, obuhvaćajući honorare, softver i putne troškove. Uz troškovnik su prikazani i drugi operativni elementi plana istraživanja: plan analize, vremenski plan (Ganttogram), tim i odgovornosti, etička pitanja (GDPR, anonimizacija, sigurna pohrana) te očekivani rezultat istraživanja. Ovi elementi su važni jer pokazuju da dobro osmišljeno istraživanje turističkog tržišta zahtijeva ne samo metodološku, već i financijsku, organizacijsku i etičku pripremu prije provedbe.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-10.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-10.png"
     },
     {
       "broj": 11,
       "naslov": "Studija slučaja: Overtourism u Dubrovniku",
       "tumacenje": "Slajd prikazuje konkretan primjer prekomjernog turizma u Dubrovniku, gdje kontekst čini prometno i prostorno preopterećenje povijesne jezgre uzrokovano kruzerima, organiziranim grupama i statusom UNESCO-ove svjetske baštine. Upravljački problem opisan je kroz simptome poput pada kvalitete života lokalnog stanovništva i smanjenja zadovoljstva stacionarnih gostiju zbog gužvi, što izravno pokazuje posljedice prostorne koncentracije turističke potražnje spomenute u sažetku cjeline. Kao odgovor na problem predstavljena je inicijativa „Respect the City\", koja uključuje ograničenje broja kruzera, najavu dolazaka autobusa i uvođenje vremenskih termina posjeta. Ovaj primjer studentima ilustrira zašto je sustavno istraživanje tržišta i praćenje pokazatelja (KPI) nužno za pravovremeno prepoznavanje i upravljanje negativnim posljedicama turističkog rasta.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-11.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-11.png"
     },
     {
       "broj": 12,
       "naslov": "Matrica rješenja: Kako istražiti gužvu?",
       "tumacenje": "Slajd prikazuje tablicu koja povezuje konkretna poslovna pitanja o gužvi u destinaciji s odgovarajućim istraživačkim metodama: percepcija stanovništva istražuje se opisnim istraživanjem putem anketa, granična točka pada zadovoljstva posjetitelja kvantitativnom analizom senzorskih podataka o kretanju, a alternativni doživljaji za rasterećenje jezgre izviđajnim istraživanjem kroz dubinske intervjue i fokus grupe. Time se ilustrira kako izbor istraživačke metode proizlazi izravno iz vrste poslovnog pitanja koje destinacija (DMO) treba riješiti. Poruka slajda, istaknuta u zaključnom okviru, jest da kompleksni problemi poput gužve zahtijevaju kombinaciju opisnog, izviđajnog i senzorskog istraživačkog dizajna, a ne oslanjanje na samo jednu metodu.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-12.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-12.png"
     },
     {
       "broj": 13,
       "naslov": "Odabir pravog pristupa (Interaktivna provjera)",
       "tumacenje": "Slajd prikazuje interaktivnu vježbu povezivanja u kojoj se tri konkretna scenarija iz prakse (nepoznavanje razloga slabih rezervacija wellness paketa, provjera razlike u potrošnji između skupina gostiju, testiranje utjecaja nove gastronomske ponude na namjeru ponovnog dolaska) povezuju s odgovarajućom istraživačkom metodologijom. Ponuđene su tri vrste pristupa: izviđajno istraživanje (kada su pitanja otvorena i tema nedovoljno poznata), opisno istraživanje (kada se testira razlika sredina, npr. prosječne potrošnje) i uzročno/eksperimentalno istraživanje (kada se ispituje utjecaj jedne varijable na drugu). Svrha slajda je da studenti nauče prepoznati vrstu problema i na temelju toga odabrati primjeren istraživački pristup, što je temeljna vještina prije samog planiranja istraživanja tržišta.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-13.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-13.png"
     },
     {
       "broj": 14,
       "naslov": "Završni test: Prepoznavanje simptoma",
       "tumacenje": "Slajd prikazuje testno pitanje kojim se provjerava razumijevanje razlike između upravljačkog problema (simptoma) i istraživačkog problema. Kao točan odgovor označena je opcija b) pad prihoda od prodaje izleta za 15%, uz napomenu da je to samo vidljiva posljedica, dok su opcije a) i c) primjeri istraživačkih problema koji objašnjavaju uzroke stanja. Ovo je važno za razumijevanje cjeline jer pokazuje kako se u praksi treba razlikovati zamjećena posljedica (simptom koji upravljač uočava) od dubljeg pitanja koje istraživanje tržišta treba postaviti da bi se otkrio uzrok problema.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-14.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-14.png"
     },
     {
       "broj": 15,
       "naslov": "Zlatna pravila arhitekture istraživanja",
       "tumacenje": "Slajd prikazuje tri temeljna pravila za dobar dizajn istraživanja, prikazana kroz metaforu stupova koji nose \"krov\" istraživanja. Prvo pravilo naglašava da se prije planiranja istraživanja mora ispravno dijagnosticirati upravljački problem, a ne pobrkati simptom s uzrokom. Drugo pravilo ističe da ciljevi i hipoteze moraju izravno proizlaziti iz problema i biti usklađeni s mjerljivim poslovnim potrebama, dok treće pravilo naglašava da je dizajn istraživanja poput operativnog plana čija kvaliteta izravno određuje vrijednost i upotrebljivost budućih poslovnih odluka. Ova pravila povezuju se s prije spomenutim konceptom sustavnog pristupa istraživanju turističkog tržišta kao alatu za smanjenje neizvjesnosti u odlučivanju.",
-      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-1/slajdovi/slajd-15.png"
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-2/slajdovi/slajd-15.png"
     }
   ]
 }
