@@ -1,0 +1,7 @@
+{
+  "_opis": "Naslovi medija koje se ne da izvesti iz imena datoteke. Nazivi u Storageu su ASCII (bez č, ć, š, đ, ž), pa se ovdje upisuje ispravan hrvatski naslov. Ključ je ime datoteke, vrijednost naslov u sučelju.",
+  "naslovi": {
+    "Trziste_kao_istraga.mp4": "Tržište kao istraga",
+    "Anatomija_istrazivanja.mp4": "Anatomija istraživanja"
+  }
+}

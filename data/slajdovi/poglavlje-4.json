@@ -1,0 +1,96 @@
+{
+  "poglavlje": 4,
+  "prezentacija": "Tourism Research Blueprint",
+  "slajdovi": [
+    {
+      "broj": 1,
+      "naslov": "Arhitektura turističkog istraživanja",
+      "tumacenje": "Ovo je naslovni slajd nastavne cjeline koji simbolički prikazuje proces istraživanja – od prikupljanja ulaznih podataka putem upitnika, preko transformacije informacija, do statističke obrade podataka. Podnaslov konkretizira sadržaj cjeline: odabir uzorka, dizajn instrumenata istraživanja i ovladavanje Likertovom skalom, čime se najavljuju ključne teme koje slijede u nastavku.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-01.png"
+    },
+    {
+      "broj": 2,
+      "naslov": "Temelj pouzdanih podataka",
+      "tumacenje": "Slajd poručuje da ni najbolje definiran istraživački problem ne daje pouzdane zaključke ako uzorak nije prikladan ili je instrument loše oblikovan. Matrica prikazuje odnos kvalitete uzorka i kvalitete instrumenta: samo kombinacija visoke kvalitete oba elementa vodi u \"zonu pouzdanih zaključaka\", dok sve ostale kombinacije nose rizik od pristranih, nevaljanih ili pogrešnih zaključaka. Donji dio slajda navodi specifične izazove uzorkovanja i oblikovanja instrumenata u turizmu – lokacije s velikim prometom, kratko vrijeme i umor putnika te jezične i kulturne barijere – koji dodatno otežavaju prikupljanje kvalitetnih podataka.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-02.png"
+    },
+    {
+      "broj": 3,
+      "naslov": "Dva stupa terenskog istraživanja",
+      "tumacenje": "Slajd metaforom dva stupa prikazuje dva temeljna, međusobno povezana područja obrađena u ovoj cjelini: uzorkovanje (pitanje TKO – koga pitamo) i oblikovanje instrumenata (pitanje KAKO – na koji način pitamo). Uzorkovanje se opisuje kao prijelaz s populacije, odnosno skupa svih jedinica o kojima želimo zaključivati, na uzorak kao njezin podskup koji se stvarno istražuje. Oblikovanje instrumenata odnosi se na izradu strukture upitnika, definiranje skala mjerenja i formulaciju pitanja prilagođenih specifičnoj publici, čime se osigurava da podaci prikupljeni od odabranog uzorka budu pouzdani i primjenjivi.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-03.png"
+    },
+    {
+      "broj": 4,
+      "naslov": "Matrica uzorkovanja: Teorija vs. Praksa",
+      "tumacenje": "Slajd u obliku tablice uspoređuje probabilističko i neprobabilističko uzorkovanje kroz četiri dimenzije: značajku, prednost, glavne metode i tursitičku realnost primjene. Probabilističko uzorkovanje ističe se poznatom vjerojatnošću ulaska svake jedinice u uzorak i mogućnošću generalizacije uz izračun pogreške uzorka (metode poput jednostavnog slučajnog, stratificiranog, sustavnog i klasterskog), no u turizmu je često neizvedivo zbog nedostatka potpunog popisa svih turista. Neprobabilističko uzorkovanje (prigodni, kvotni, namjerni uzorak, metoda snježne grude) izrazito je praktično i brzo te dominira u terenskom radu, ali zahtijeva oprez zbog inherentne pristranosti. Slajd tako zorno prikazuje zašto se u praksi turističkih istraživanja neprobabilističke metode koriste češće, unatoč metodološkim prednostima probabilističkih.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-04.png"
+    },
+    {
+      "broj": 5,
+      "naslov": "Fokus na praksu: Logika kvotnog uzorka",
+      "tumacenje": "Slajd prikazuje strukturni proces uzorkovanja pomoću lijevka kroz koji se iz cjelokupne populacije putnika odabire uzorak prema unaprijed određenim kvotama (npr. 30% UK, 20% Njemačka, 50% domaći), čime nastaje proporcionalni uzorak. Objašnjava se da kvotni uzorak dominira u praksi jer zbog nepostojanja popisa putnika na granicama i u zračnim lukama nije moguće provesti probabilistički uzorak, pa se strukturiranje podataka radi po ključnim obilježjima poput zemlje podrijetla ili smjera putovanja. Cilj ove neprobabilističke metode je smanjiti pristranost i osigurati zastupljenost ključnih emitivnih tržišta, iako tehnički uzorak ostaje slučajan tek prividno. Pravilo struke naglašava da unaprijed definirane kvote moraju odgovarati stvarnoj statistici turističkog prometa destinacije kako bi uzorak bio reprezentativan.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-05.png"
+    },
+    {
+      "broj": 6,
+      "naslov": "Matematika pouzdanosti",
+      "tumacenje": "Slajd prikazuje orijentacijski izračun veličine uzorka za velike populacije, poput standardnih turističkih tokova, koji pri razini pouzdanosti od 95% i margini pogreške od ±5% iznosi otprilike 350 do 400 ispitanika. Time se konkretizira teorijsko načelo iz cjeline da veličina uzorka ovisi o željenoj pouzdanosti, dopuštenoj pogrešci i veličini populacije. Zlatno pravilo na dnu slajda naglašava ključnu metodološku poruku da veći uzorak nikada ne kompenzira loš uzorkovni okvir, odnosno da preciznost istraživanja ovisi o kvaliteti dizajna uzorkovanja, a ne samo o broju prikupljenih podataka.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-06.png"
+    },
+    {
+      "broj": 7,
+      "naslov": "Anatomija savršenog upitnika",
+      "tumacenje": "Slajd prikazuje preporučeni redoslijed dijelova anketnog upitnika u obliku pet povezanih koraka: uvod i informirani pristanak, jednostavna uvodna pitanja, glavna pitanja i skale (motivi, zadovoljstvo, potrošnja), socio-demografska pitanja te zahvala. Naglašava se da glavna pitanja predstavljaju srž upitnika s najvećim kognitivnim opterećenjem, dok se osjetljiva demografska pitanja svjesno smještaju na kraj, nakon što je uspostavljeno povjerenje ispitanika. Time se slajd izravno nadovezuje na strukturu upitnika opisanu u cjelini o oblikovanju instrumenata istraživanja. Dodatno se ističe da dizajn upitnika zahtijeva jasan jezik bez žargona i obvezno pilot-testiranje prije terenske primjene.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-07.png"
+    },
+    {
+      "broj": 8,
+      "naslov": "Dizajn Likertove skale: Optimizacija raspona",
+      "tumacenje": "Slajd uspoređuje tri pristupa broju stupnjeva Likertove skale prema brzini ispunjavanja, preciznosti i umoru ispitanika: skalu s 5 stupnjeva, skalu sa 7 stupnjeva i skalu s parnim brojem stupnjeva (4 ili 6) koja nema srednju neutralnu točku. Skala od 5 stupnjeva ističe se kao preporučeni izbor za terenske turističke ankete i studentska istraživanja jer je jednostavna, brza i manje zamara ispitanika, dok je 7 stupnjeva korisno samo kada je potrebna veća osjetljivost mjerenja u kontroliranim uvjetima. Parni broj stupnjeva namjerno uklanja neutralnu opciju kako bi se ispitanika prisililo na zauzimanje stava. Ovaj slajd konkretizira metodološke smjernice za oblikovanje instrumenata istraživanja, posebice pravilan dizajn Likertove skale koji se spominje u ishodima učenja poglavlja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-08.png"
+    },
+    {
+      "broj": 9,
+      "naslov": "Zlatna pravila Likertove skale",
+      "tumacenje": "Slajd na primjeru pitanja o zadovoljstvu kvalitetom gastronomije prikazuje četiri temeljna pravila za pravilno oblikovanje Likertove skale: svaka tvrdnja mora mjeriti samo jednu dimenziju, polovi skale moraju biti pravi antonimi i savršeno simetrični, srednja vrijednost (3) mora predstavljati istinsku neutralnost, a smjer skale (1 negativno, 5 pozitivno) mora biti dosljedan kroz cijeli upitnik. Ova pravila su ključna jer njihovo nepoštivanje narušava valjanost mjerenja stavova i onemogućuje pouzdanu usporedbu odgovora ispitanika.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-09.png"
+    },
+    {
+      "broj": 10,
+      "naslov": "Vizualni formati na terenu",
+      "tumacenje": "Slajd prikazuje tri načina vizualnog oblikovanja skala mjerenja (npr. Likertove skale) u terenskim upitnicima: vertikalni format s kvačicama, pogodan za online i mobilne ankete zbog prilagodbe malim ekranima; horizontalni format s brojevima u nizu, koji štedi prostor na tiskanom papiru i pogodan je za izolirana pitanja; te tablični format odnosno bateriju pitanja u obliku matrice, gdje se atributi ocjenjuju u recima a ocjene 1-5 u stupcima. Tablični format istaknut je kao najpraktičniji za terenski rad jer omogućuje brzo ocjenjivanje više atributa pod istom uputom, a ujedno je koristan i za kasniji izračun pouzdanosti pomoću Cronbachove alfe. Ovaj slajd nadopunjuje gradivo o oblikovanju instrumenata istraživanja, pokazujući praktičnu primjenu skala mjerenja u dizajnu upitnika.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-10.png"
+    },
+    {
+      "broj": 11,
+      "naslov": "Klinika za greške I: Razbijeni Likert",
+      "tumacenje": "Slajd na primjeru pogrešno oblikovane Likertove skale (ocjenjivanje od 1 \"Loše\" do 5 \"Super\") pokazuje tipičnu grešku: asimetrične i nejasne polove koji nemaju jasan centar, jer \"Super\" nije prava suprotnost od \"Loše\". U dijagnozi se navode i druge greške poput previše stupnjeva (9+) ili promjene smjera skale tijekom upitnika, što zbunjuje ispitanike i stvara probleme u obradi podataka. Suprotno tome, desna strana prikazuje ispravno rješenje s uravnoteženim, bipolarnim antonimima (npr. 1 \"Uopće nisam zadovoljan\" do 5 \"U potpunosti sam zadovoljan\") uz pravilo da se u metodologiji uvijek navede točan tekst polova i zadrži isti smjer skale od prvog do zadnjeg pitanja. Ovaj primjer ilustrira ključni dio poglavlja o pravilnom dizajnu Likertove skale kao instrumenta istraživanja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-11.png"
+    },
+    {
+      "broj": 12,
+      "naslov": "Klinika za greške II: Toksična pitanja",
+      "tumacenje": "Slajd kroz tri primjera ilustrira kako prepoznati loše formulirana anketna pitanja usporedbom \"mutiranog pitanja\" i \"kliničke dijagnoze\" pogreške. Prvi primjer prikazuje dvostruko pitanje kombinirano s vodećim pitanjem, jer istovremeno pita o dvije stvari i sugerira poželjan odgovor. Drugi primjer je pitanje s pretpostavkom koje unaprijed podrazumijeva da je ispitanik posjetio muzej, dok treći primjer sadrži nejasne pojmove poput \"lokalne usluge\" i \"često\" koji ostavljaju previše prostora za subjektivno tumačenje. Ovakva analiza pomaže studentima da prilikom oblikovanja instrumenta izbjegnu čest tipične metodološke pogreške u formulaciji pitanja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-12.png"
+    },
+    {
+      "broj": 13,
+      "naslov": "Alternativni alati u terenskom radu",
+      "tumacenje": "Slajd predstavlja dva instrumenta koji nadopunjuju standardni anketni upitnik u terenskom istraživanju. Polustrukturirani intervju temelji se na unaprijed pripremljenom vodiču s ključnim temama i otvorenim pitanjima, ali ostavlja prostor za dublje sondiranje i spontanu interakciju s ispitanikom. Obrasci za promatranje predstavljaju strogo kvantitativni pristup bilježenju ponašanja turista, gdje se unaprijed definiraju elementi promatranja, način bilježenja i vremenski intervali, bez izravne interakcije s ispitanicima.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-13.png"
+    },
+    {
+      "broj": 14,
+      "naslov": "Studija slučaja: Zračne luke Split i Dubrovnik",
+      "tumacenje": "Slajd prikazuje primjenu metodologije uzorkovanja i oblikovanja instrumenata na konkretnom terenskom istraživanju u zračnim lukama. U kontekstu su navedeni izazovi terena (žurba gostiju, jezična raznolikost, sezonska varijacija, visoka stopa odbijanja), na koje se odgovara s dva stupa: kvotnim uzorkom prema zemlji porijekla, smjeru putovanja i terminu, uz praćenje ispunjenja kvota u stvarnom vremenu, te instrumentom u obliku pojednostavljenih Likertovih ljestvica od 5 stupnjeva prilagođenih umoru putnika. Primjer pokazuje kako se neprobabilističko (kvotno) uzorkovanje kombinira s kratkim, praktičnim instrumentom radi kvalitetnijih terenskih podataka, uz preporuku jasnih protokola i rotacije lokacija anketara za smanjenje pristranosti.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-14.png"
+    },
+    {
+      "broj": 15,
+      "naslov": "Kontrolna lista za izlazak na teren",
+      "tumacenje": "Slajd sažima cjelinu kroz praktičnu kontrolnu listu koju istraživač treba provjeriti prije terenskog prikupljanja podataka: veličinu i nepristranost uzorka (npr. cca. 400 ispitanika za pogrešku od ±5%), strukturu upitnika s logičnim slijedom pitanja (demografska pitanja na kraju) i informiranim pristankom, dosljednost Likertove skale sa simetričnim polovima i neutralnom točkom, izbjegavanje vodećih i dvostrukih pitanja te pilot-testiranje instrumenta. Zaključna poruka naglašava da kvaliteta analize izravno ovisi o integritetu uzorkovanja i oblikovanja instrumenata, čime se povezuju sve prethodno obrađene teme poglavlja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-4/slajdovi/slajd-15.png"
+    }
+  ]
+}

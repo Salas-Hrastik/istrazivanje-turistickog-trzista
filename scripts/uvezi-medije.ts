@@ -14,6 +14,8 @@
  *   npm run mediji -- --poglavlje=3            # upiši u bazu
  *   npm run mediji -- --poglavlje=3 --suho     # samo ispiši što bi upisao
  */
+import fs from 'node:fs';
+import path from 'node:path';
 import { supabaseAdmin } from '../lib/supabase';
 import { config, mapaCjeline } from '../lib/config';
 
@@ -31,8 +33,26 @@ function tipDatoteke(ime: string): Tip | null {
   return null;
 }
 
+/**
+ * Nazivi datoteka u Storageu su ASCII, pa iz njih nestaju hrvatski znakovi
+ * („Trziste_kao_istraga.mp4"). Ispravni naslovi drže se u registru u
+ * repozitoriju, da prežive i ponovni uvoz i praznu bazu.
+ */
+function registarNaslova(): Map<string, string> {
+  try {
+    const put = path.join(process.cwd(), 'data', 'naslovi-medija.json');
+    const json = JSON.parse(fs.readFileSync(put, 'utf8')) as { naslovi?: Record<string, string> };
+    return new Map(Object.entries(json.naslovi ?? {}));
+  } catch {
+    return new Map();
+  }
+}
+const NASLOVI = registarNaslova();
+
 /** „Psihologija_turizma.mp4" → „Psihologija turizma" */
 function naslovIzImena(ime: string): string {
+  const upisan = NASLOVI.get(ime);
+  if (upisan) return upisan;
   return ime.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ').trim();
 }
 
@@ -175,6 +195,10 @@ async function main() {
    */
   function naslovStavke(ime: string, tip: Tip, url: string): { naslov: string; zadrzan: boolean } {
     if (tip === 'audio') return { naslov: pog!.naslov, zadrzan: false };
+    // Registar je izričita odluka nastavnika i nadjačava i ono što je u bazi —
+    // inače bi zapis s izgubljenim dijakriticima ostao zauvijek „sređen".
+    const upisan = NASLOVI.get(ime);
+    if (upisan) return { naslov: upisan, zadrzan: false };
     const cuvani = raniji.get(url);
     if (cuvani && !genericanNaslov(cuvani)) return { naslov: cuvani, zadrzan: true };
     const izImena = naslovIzImena(ime);
