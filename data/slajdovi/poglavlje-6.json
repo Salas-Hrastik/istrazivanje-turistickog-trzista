@@ -1,0 +1,96 @@
+{
+  "poglavlje": 6,
+  "prezentacija": "Tourism Data to Decisions",
+  "slajdovi": [
+    {
+      "broj": 1,
+      "naslov": "Od podataka do odluka",
+      "tumacenje": "Ovo je naslovni slajd cjeline, s podnaslovom „Navigacija kroz turistička istraživanja: Prevođenje brojki u poslovne strategije\". Vizualno prikazuje transformaciju sirovih podataka (tablice brojki) preko procesa analize (kompas, kamera) u razumljive uvide i strategije (stilizirani grafički prikaz trendova). Time simbolički najavljuje temu poglavlja – put od sekundarnih i primarnih podataka do interpretacije, izvještavanja i primjene rezultata u donošenju poslovnih odluka.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-01.png"
+    },
+    {
+      "broj": 2,
+      "naslov": "Kognitivni jaz: Zašto istraživanja gube vrijednost?",
+      "tumacenje": "Slajd metaforom \"jaza\" prikazuje razliku između sirovih podataka (puko ponavljanje brojki, statistički žargon, nepregledne tablice) i stvarne vrijednosti istraživanja (jasan putokaz, prioritizirane akcije, prilagodba dionicima). Ističe se da istraživanje koje završi isključivo tablicama i grafikonima, a ne pretvori se u jasne informacije i preporuke, ima malu vrijednost za donositelje odluka. Poruka slajda uvodi u temu poglavlja – nužnost interpretacije rezultata i njihovog pretvaranja u konkretne preporuke, umjesto zadržavanja na razini sirovih podataka.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-02.png"
+    },
+    {
+      "broj": 3,
+      "naslov": "Lijevak interpretacije: Davanje značenja brojkama",
+      "tumacenje": "Slajd prikazuje model \"lijevka\" koji objašnjava proces interpretacije rezultata istraživanja u tri koraka: ulaz čine sirovi podaci (tablice, postoci, frekvencije), zatim se ti podaci propuštaju kroz filtere (istraživačka pitanja, ograničenja metode i praktična važnost), a izlaz je preporuka koja odgovara na pitanja što nalaz znači, zašto je važan i što treba učiniti. Desno je prikazan konkretan primjer iz prakse koji slijedi taj slijed: podatak o razlici u potrošnji gostiju motiviranih gastronomijom naspram onih motiviranih suncem i morem, njegova interpretacija te akcija u vidu razvoja eno-gastro paketa. Slajd time zorno pokazuje razliku između pukog iznošenja brojki i prave interpretacije koja vodi do konkretne preporuke.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-03.png"
+    },
+    {
+      "broj": 4,
+      "naslov": "Arhitektura stručnog izvještaja",
+      "tumacenje": "Slajd prikazuje tipičnu strukturu stručnog izvještaja kroz šest cjelina: naslovnicu s osnovnim metapodacima, Executive Summary (sažetak za upravu) kao najvažniji dio za donositelje odluka, uvod i metodologiju, nalaze i interpretaciju, zaključke i preporuke te priloge s detaljnim materijalima. Redoslijed blokova pokazuje logičan tijek izvještaja od formalnih podataka do konkretnih, prioritiziranih preporuka, dok isticanje Executive Summary-ja naglašava da ga upravo taj dio čitaju osobe koje odlučuju. Ovakva arhitektura studentima pomaže razumjeti kako organizirati vlastiti izvještaj o istraživanju tržišta na način prilagođen različitim dionicima.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-04.png"
+    },
+    {
+      "broj": 5,
+      "naslov": "Matrica formata: Stručni vs. Znanstveni pristup",
+      "tumacenje": "Slajd tablično uspoređuje stručni i znanstveni izvještaj prema četiri kriterija: ciljnoj publici, ključnom fokusu, strukturi i jeziku. Stručni izvještaj namijenjen je donositeljima odluka (Uprava, DMO), usmjeren je na konkretne preporuke i akcije, ima Executive Summary na početku te koristi poslovni, izravni jezik. Znanstveni izvještaj piše se za akademsku zajednicu, naglasak stavlja na doprinos spoznaji i metodološku transparentnost, slijedi IMRAD strukturu te koristi teorijski i terminološki strog jezik. Ova razlika važna je jer pokazuje da se ista istraživačka spoznaja mora prilagoditi publici kojoj je izvještaj namijenjen.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-05.png"
+    },
+    {
+      "broj": 6,
+      "naslov": "Matrica dionika: Prilagodba poruke publici",
+      "tumacenje": "Slajd prikazuje matricu triju skupina dionika istraživanja - upravu i donositelje odluka, stručni tim (DMO analitičare) i širu javnost s medijima - te za svaku skupinu navodi fokus interesa, zahtjeve u pogledu sadržaja i vodeće pravilo prilagodbe poruke. Uprava traži sažetak (Executive Summary), jasne preporuke i prioritete jer odgovara na pitanje \"što moramo učiniti i zašto\", stručni tim treba detaljne nalaze i cjelovitu metodologiju kako bi se moglo provjeriti \"kako smo došli do ovih brojki\", a šira javnost i mediji zahtijevaju infografike i vizualne sažetke koji jednom slikom prenose glavnu priču. Ovime se ilustrira ključno načelo iz poglavlja o prezentaciji i vizualizaciji podataka - da izvještaj i prezentaciju treba prilagoditi publici kojoj su namijenjeni.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-06.png"
+    },
+    {
+      "broj": 7,
+      "naslov": "Anatomija uvjerljive prezentacije",
+      "tumacenje": "Slajd prikazuje pet koraka pripovjedne strukture prezentacije rezultata istraživanja: kontekst, problem, otkriće, preporuka i sljedeći koraci, čime se naglašava da prezentacija treba voditi publiku kroz priču, a ne samo čitati izvještaj. Uz to su istaknuta dva pravila – malo teksta, visok kontrast i jasni grafikoni pri vizualizaciji, te ostavljanje prostora za pitanja jer je prezentacija dvosmjerna komunikacija. Ovo je važno jer povezuje nalaze istraživanja s konkretnim, prioritiziranim preporukama i sljedećim koracima implementacije, u skladu s načelima učinkovite prezentacije obrađenima u cjelini.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-07.png"
+    },
+    {
+      "broj": 8,
+      "naslov": "Vizualizacija podataka: Pravila jasnoće",
+      "tumacenje": "Slajd usporedbom \"DO's\" i \"DON'Ts\" primjera prikazuje kako izgleda dobra, a kako loša vizualizacija podataka. Lijevo je jasan stupčasti grafikon prihoda po kvartalima s visokim kontrastom, dok je desno primjer pretrpanog i zbunjujućeg kružnog (donut) dijagrama s previše kategorija i lošom čitljivošću. Ispod grafikona navedena su konkretna pravila: koristiti visok kontrast i čitljive fontove, transparentno navesti ograničenja istraživanja te temeljiti preporuke isključivo na prikazanim podacima, uz izbjegavanje pretrpanih tablica, skrivanja metodoloških nedostataka uzorka i korištenja iskrivljujućih 3D grafikona.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-08.png"
+    },
+    {
+      "broj": 9,
+      "naslov": "Primjena 1: Destinacijska segmentacija",
+      "tumacenje": "Slajd prikazuje primjer segmentacije tržišta destinacije pomoću dvodimenzijske matrice s osima \"Fokus: aktivnost/opuštanje\" i \"Sezonalnost: ljeto/cijela godina\". Unutar te matrice izdvojena su četiri segmenta gostiju (obitelji s djecom, wellness i relaksacija, cikloturizam/outdoor te eno-gastro segment), pri čemu je za svaki opisan tipičan atribut ponašanja i motiva. Ovakav prikaz ilustrira kako se rezultati istraživanja tržišta primjenjuju u praksi za oblikovanje homogenih segmenata prema kojima destinacija može prilagoditi ponudu i marketinške aktivnosti, što je ključno za targetiranje i pozicioniranje obrađeno u ovoj cjelini.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-09.png"
+    },
+    {
+      "broj": 10,
+      "naslov": "Primjena 2: Pozicioniranje i razvoj proizvoda",
+      "tumacenje": "Slajd prikazuje ciklički model (feedback loop) od četiri koraka za pozicioniranje destinacije i razvoj proizvoda: definiranje željenog imidža (ambicije), mjerenje stvarne percepcije tržišta istraživanjem, identifikaciju praznine između željene i stvarne percepcije te testiranje inovacija (novih proizvoda/paketa) prije ulaganja. Ovaj kontinuirani proces pokazuje kako se rezultati istraživanja tržišta konkretno primjenjuju u strateškom pozicioniranju destinacije i razvoju novih turističkih proizvoda, čime se zatvara krug od podataka do praktičnih poslovnih odluka. Primjer s gastro sadržajima i konceptom \"Gourmet vikend + bicikl\" ilustrira kako se praznine u ponudi otkrivaju i testiraju prije lansiranja na tržište.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-10.png"
+    },
+    {
+      "broj": 11,
+      "naslov": "Studija slučaja: Unutrašnja Istra",
+      "tumacenje": "Slajd prikazuje primjer primjene rezultata istraživanja na konkretnoj destinaciji – unutrašnjoj Istri, koja se strateški nastoji diferencirati od imidža obalnog masovnog turizma. Kontinuiranom primjenom istraživanja, uključujući lokalne studije i TOMAS istraživanje, identificiran je rast interesa za autentična iskustva izvan glavne ljetne sezone. Ovaj uvid postaje temelj vizije razvoja destinacije prema cjelogodišnjoj ponudi utemeljenoj na iskustvima, čime se ilustrira kako se nalazi istraživanja pretvaraju u konkretne strateške smjernice za pozicioniranje i razvoj proizvoda destinacije.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-11.png"
+    },
+    {
+      "broj": 12,
+      "naslov": "Od spoznaje do \"Gourmet & Outdoor\" brenda",
+      "tumacenje": "Slajd prikazuje primjer primjene rezultata istraživanja kroz tri koraka: sirovi nalaz, akcija i rezultat, primijenjena na segmentaciju, razvoj ponude i evaluaciju destinacijskog brenda. Konkretno se pokazuje kako podaci o potrošnji i motivaciji gostiju vode do identifikacije Gourmet i Outdoor segmenata kao strateškog prioriteta te razvoja specifičnih proizvoda vezanih uz vino i biciklizam. Time se ilustrira kako se nalazi istraživanja pretvaraju u konkretne marketinške i upravljačke informacije, odnosno preporuke koje rezultiraju usmjerenijim marketingom, boljom suradnjom javnog i privatnog sektora i ojačanim imidžem destinacije.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-12.png"
+    },
+    {
+      "broj": 13,
+      "naslov": "Interaktivna sinteza: Simulacija odluke",
+      "tumacenje": "Slajd prikazuje primjer kako se dva različita nalaza istraživanja (Nalaz A - segment \"Outdoor\" kao prilika s problemom pristupa, i Nalaz B - segment \"Sunce i more\" kao status quo s problemom gužve) sintetiziraju u konkretnu, utemeljenu odluku o ulaganju u shuttle prijevoz. Time se ilustrira ključni korak interpretacije rezultata: povezivanje nalaza s kontekstom (potrošnja, rast, problemi) radi donošenja prioritizirane i ostvarive preporuke, umjesto pukog nabrajanja podataka. Obrazloženje pokazuje kako se odabire između dvije opcije na temelju toga koja rješava strukturni problem rasta, a ne samo simptom (gužve).",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-13.png"
+    },
+    {
+      "broj": 14,
+      "naslov": "Vizualizacija u praksi: Ekomotivirani turisti",
+      "tumacenje": "Slajd prikazuje primjer infografike prilagođene DMO dionicima za brzu komunikaciju rezultata istraživanja o segmentu ekomotiviranih turista. Kroz četiri kategorije s ikonama (profil, potrošnja, zadovoljstvo, kanali) sažeto se prenose ključni nalazi o njihovim obilježjima, kao što su motiv održivosti, spremnost na plaćanje premium cijene, lojalnost destinaciji uz zelene politike te korištenje digitalnih kanala i eko-blogova. Ovo je konkretna ilustracija kako se rezultati segmentacije mogu vizualno i sažeto prezentirati široj publici, u skladu s načelom da infografika kombinira ikone, kratke poruke i ključne podatke za brzo razumijevanje.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-14.png"
+    },
+    {
+      "broj": 15,
+      "naslov": "Vrijednosni krug istraživanja",
+      "tumacenje": "Slajd prikazuje ciklički proces istraživanja kroz četiri faze koje se povezuju u središnjem pojmu Akcija: definiranje problema, prikupljanje podataka, strukturirana interpretacija i informirana odluka. Poruka je da sirova brojka predstavlja tek potencijal, a izvještaj je samo alat – prava vrijednost istraživanja ostvaruje se kada rezultati postanu ciljana akcija na tržištu. Ovim se sažima cjelokupna svrha poglavlja o izvještavanju, prezentaciji i primjeni rezultata, naglašavajući da interpretacija i primjena zaključuju krug koji se zatim ponovno pokreće novim pitanjima.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-6/slajdovi/slajd-15.png"
+    }
+  ]
+}
