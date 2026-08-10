@@ -1,0 +1,96 @@
+{
+  "poglavlje": 5,
+  "prezentacija": "Tourism Analytics Blueprint",
+  "slajdovi": [
+    {
+      "broj": 1,
+      "naslov": "Od sirovih podataka do strateških uvida",
+      "tumacenje": "Ovo je naslovni slajd poglavlja 5, koji shematski prikazuje put podataka kroz tri faze analitičkog procesa: od sirovih podataka (nestrukturirani skupovi podataka, senzorska očitanja, ankete i vanjski izvori, obilježeni visokom entropijom i šumom), preko obrade i transformacije (čišćenje, normalizacija, integracija te identifikacija obrazaca i korelacija), do konačnog strateškog uvida koji predstavlja jasan i djelotvoran zaključak kao temelj za odlučivanje, inovacije i konkurentsku prednost. Vizualno prikazuje ključnu ideju cjeline – da tek sustavna obrada i analiza pretvaraju prikupljene podatke u korisne spoznaje. Slajd služi kao uvodni pregled logike cijelog poglavlja o obradi i analizi podataka u turističkim istraživanjima.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-01.png"
+    },
+    {
+      "broj": 2,
+      "naslov": "Životni ciklus podataka",
+      "tumacenje": "Slajd prikazuje pet koraka kroz koje sirovi podaci prolaze da bi postali korisna informacija za odlučivanje: 1. priprema (čišćenje i kodiranje), 2. deskripcija (osnovni opis gostiju i njihova ponašanja), 3. bivarijatna analiza (istraživanje odnosa između pojava), 4. multivarijatna analiza (otkrivanje skrivenih segmenata) i 5. kvalitativna analiza (razumijevanje konteksta i razloga ponašanja). Poruka slajda je da podaci sami po sebi nisu informacija, već je potrebna postupna transformacija kroz sve navedene faze. Ovaj prikaz služi kao okvir za cijelu nastavnu cjelinu, jer svaka od pet faza odgovara jednom potpoglavlju koje će se detaljnije obraditi (priprema podataka, deskriptivna statistika, bivarijatni testovi, multivarijatna analiza i tematska/kvalitativna analiza).",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-02.png"
+    },
+    {
+      "broj": 3,
+      "naslov": "Faza 1: Tvornica čistih podataka",
+      "tumacenje": "Slajd prikazuje proces pripreme podataka kao \"tvornicu\" koja sirove podatke pretvara u čiste podatke kroz niz postupaka: kodiranje (pretvaranje teksta u brojeve, npr. spol 1=M, 2=Ž, Likertova ljestvica 1-5), provjeru raspona odnosno detekciju logičkih nedosljednosti (npr. dob 150 godina), tretman nedostajućih vrijednosti (missing values) te transformaciju asimetričnih varijabli (npr. logaritamska prilagodba ekstremne potrošnje). Ovaj vizualni prikaz objedinjuje ključne korake iz poglavlja 5.1 o pripremi i unosu podataka, naglašavajući da se svaka odluka o tretmanu podataka mora transparentno dokumentirati. Razumijevanje ovog slajda važno je jer pokazuje redoslijed i logiku čišćenja podataka prije bilo kakve statističke analize.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-03.png"
+    },
+    {
+      "broj": 4,
+      "naslov": "Faza 2: Nadzorna ploča deskriptivne statistike",
+      "tumacenje": "Slajd sažeto prikazuje tri temeljna aspekta deskriptivne statistike u obliku \"nadzorne ploče\": kategoričke varijable (fokus na udjelima i postocima, prikazano frekvencijama te tortnim i stupčastim grafikonima), numeričke varijable (fokus na središnjoj tendenciji, odnosno usporedbi aritmetičke sredine i medijana) i mjere disperzije (fokus na raspršenosti podataka kroz standardnu devijaciju, raspon, minimum i maksimum). Istaknuto je metodološko \"zlatno pravilo\" da se aritmetička sredina nikada ne smije izvještavati samostalno, bez mjere disperzije ili medijana, posebice kada je distribucija asimetrična, jer to može dati iskrivljenu sliku podataka. Ovaj slajd studentima daje pregledan okvir za odabir odgovarajućih alata deskriptivne statistike ovisno o tipu varijable koja se analizira.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-04.png"
+    },
+    {
+      "broj": 5,
+      "naslov": "Zamka prosjeka u turizmu: Sredina vs. Medijan",
+      "tumacenje": "Slajd grafički prikazuje distribuciju turističke potrošnje s izraženim dugim repom visokih vrijednosti, na kojoj su označene aritmetička sredina (142 €) i medijan (125 €). Pokazuje se da mali broj gostiju s ekstremnom, luksuznom potrošnjom umjetno podiže aritmetičku sredinu udesno, dok medijan kao središnja vrijednost ostaje otporan na te ekstremne vrijednosti i bolje predstavlja tipičnog gosta. Poruka za menadžere je da oslanjanje isključivo na prosjek može precijeniti platežnu moć stvarnog prosječnog gosta, što izravno ilustrira metodološku napomenu iz cjeline o potrebi izvještavanja i medijana uz aritmetičku sredinu kod asimetričnih distribucija.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-05.png"
+    },
+    {
+      "broj": 6,
+      "naslov": "Faza 3: Povezivanje točaka (Bivarijatna analiza)",
+      "tumacenje": "Slajd prikazuje prelazak s deskriptivne statistike na bivarijatnu analizu, odnosno testiranje povezanosti između dviju varijabli – u primjeru zemlje porijekla i vrste smještaja. Objašnjena je logika testiranja hipoteza: postavlja se pitanje jesu li pojave stvarno povezane ili se razlikuju samo slučajno, koristi se metoda odbacivanja nulte hipoteze (pretpostavke da nema povezanosti), a kriterij prihvaćanja je statistička značajnost, najčešće p < 0,05. Ovo je uvod u postupke poput hi-kvadrat testa koji se primjenjuju kada su obje varijable kategoričke, kao što je slučaj u prikazanom primjeru.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-06.png"
+    },
+    {
+      "broj": 7,
+      "naslov": "Bivarijatna matrica odluka",
+      "tumacenje": "Slajd prikazuje dijagram odlučivanja koji studentu pomaže odabrati odgovarajući bivarijatni statistički test ovisno o tipu podataka koji se uspoređuju. Ako su obje varijable kategoričke (npr. zemlja porijekla i vrsta smještaja), koristi se hi-kvadrat test koji mjeri samo postojanje veze, ne njezinu snagu ili smjer. Kada se uspoređuje kategorička varijabla s dvije skupine i numerička varijabla (npr. hotelski gosti vs. kampisti i prosječna potrošnja), primjenjuje se t-test koji uspoređuje aritmetičke sredine i zahtijeva normalnu distribuciju, dok se za dvije numeričke varijable (npr. zadovoljstvo gastronomijom i namjera preporuke) koristi korelacija koja mjeri snagu i smjer linearne veze u rasponu od –1 do +1. Ovaj prikaz je koristan sažetak koji povezuje teorijske postupke iz cjeline s praktičnim odabirom testa u analizi podataka.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-07.png"
+    },
+    {
+      "broj": 8,
+      "naslov": "Faza 4: Multivarijatni motor",
+      "tumacenje": "Slajd metaforički prikazuje kako se velik broj isprepletenih, kaotičnih ulaznih podataka (lijevo) putem multivarijatnih metoda transformira u jasno definirane, homogene skupine (obojeni klasteri desno). Poruka je da turistička stvarnost nije bivarijatna nego višedimenzionalna, pa su za razumijevanje složenih odnosa među varijablama potrebne napredne tehnike poput faktorske i klasterske analize. Te metode služe za otkrivanje skrivenih struktura u podacima te omogućuju naprednu segmentaciju tržišta i profiliranje gostiju za ciljane marketinške kampanje.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-08.png"
+    },
+    {
+      "broj": 9,
+      "naslov": "Arhitektura segmentacije: Faktorska vs. Klasterska analiza",
+      "tumacenje": "Slajd uspoređuje dvije multivarijatne tehnike koje se koriste u segmentaciji turističkog tržišta. Faktorska analiza ima cilj redukciju varijabli – grupira desetke atributa (stupaca) u manji broj latentnih dimenzija, npr. 20 anketnih pitanja o iskustvu svodi se na 3 faktora (Priroda, Gastronomija, Zabava). Klasterska analiza, s druge strane, ima cilj grupiranje ljudi – grupira same ispitanike (retke) u homogene, međusobno različite segmente, npr. 1000 ispitanika dijeli se u 3 persone (Eno-gastro istraživači, Obitelji, Outdoor entuzijasti). Razumijevanje ove razlike ključno je jer se obje tehnike često koriste zajedno u praksi segmentiranja tržišta.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-09.png"
+    },
+    {
+      "broj": 10,
+      "naslov": "Faza 5: Zašto? i Kako? (Kvalitativna analiza)",
+      "tumacenje": "Slajd vizualno suprotstavlja kvantitativni i kvalitativni pristup analizi podataka: kvantitativna analiza (tablice, postoci, grafovi) odgovara na pitanja što se događa i koliko često, jer brojevi opisuju frekvencije i mjere poput 75% ili omjere. Kvalitativna analiza, temeljena na tekstualnim iskazima ispitanika (npr. \"Osjećam da...\", \"Razlog je...\"), objašnjava zašto se nešto događa i otkriva dublje motive i iskustva gostiju. U donjem dijelu slajda naglašava se da analiza transkripata intervjua, fokus grupa i online recenzija zahtijeva drugačiji alat od statističkog softvera – primjerice NVivo za organizaciju kodova – ali da značenje i interpretaciju konteksta stvara isključivo istraživač, čime se povezuje s postupkom tematske analize spomenutim u ključnim pojmovima poglavlja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-10.png"
+    },
+    {
+      "broj": 11,
+      "naslov": "Lijevak tematske analize (Braun i Clarke)",
+      "tumacenje": "Slajd prikazuje pet faza tematske analize kvalitativnih podataka kroz metaforu lijevka koji sirove transkripte postupno pretvara u konačni izvještaj. Faze su: uranjanje (višekratno čitanje transkripata), kodiranje (dodjeljivanje oznaka dijelovima teksta), grupiranje kodova u šire teme, revizija koherentnosti i relevantnosti tema, te izvještavanje kroz narativ potkrijepljen citatima ispitanika. Ovaj prikaz konkretizira postupak tematske analize spomenut u ključnim pojmovima cjeline kao sustavan način identificiranja, analize i izvještavanja o temama u kvalitativnim podacima.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-11.png"
+    },
+    {
+      "broj": 12,
+      "naslov": "Studija slučaja: Nautički turizam (Zadar i Šibenik)",
+      "tumacenje": "Slajd kroz konkretan primjer istraživanja TOMAS Nautika prikazuje kako se elementi obrade podataka primjenjuju u praksi na području nautičkog turizma Zadra i Šibenika. Definira se problem (optimizacija ponude i komunikacije za nautičare), ulazni podaci prikupljeni Likertovim ljestvicama zadovoljstva (1-5) za atribute poput kvalitete marina, čistoće mora i omjera cijene i kvalitete, te se navode rezultati deskriptivne faze analize – visoke prosječne ocjene čistoće, ali velika disperzija (raspršenost) ocjena omjera cijene i kvalitete. Ovaj primjer je važan jer pokazuje kako se teorijski koncepti deskriptivne statistike (aritmetička sredina, standardna devijacija) primjenjuju za donošenje zaključaka o zadovoljstvu gostiju u stvarnom turističkom kontekstu.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-12.png"
+    },
+    {
+      "broj": 13,
+      "naslov": "Od statistike do strategije",
+      "tumacenje": "Slajd prikazuje kako se rezultati faktorske i klasterske analize povezuju u konkretan strateški uvid za DMO (destinacijsku menadžment organizaciju). Faktorskom analizom su desetci atributa svedeni na ključne dimenzije (npr. infrastruktura marine, prirodni ambijent, lokalni obalni doživljaj), dok je klasterskom analizom uzorak podijeljen u homogene segmente gostiju (Klaster A – tehnički nautičari usmjereni na vrhunsku marinu; Klaster B – hedonisti usmjereni na gastronomiju i autohtoni doživljaj). Spajanjem tih dviju multivarijatnih tehnika dolazi se do zaključka da podaci omogućuju precizniju prioritizaciju ulaganja i prilagodbu marketinga specifičnim segmentima, umjesto generičke promocije za sve goste. Time se ilustrira kako se statistička obrada podataka pretvara u primjenjivu poslovnu strategiju.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-13.png"
+    },
+    {
+      "broj": 14,
+      "naslov": "Brza provjera znanja: Koji alat koristite?",
+      "tumacenje": "Slajd je interaktivna vježba koja povezuje istraživačka pitanja s odgovarajućim statističkim alatom obrađenim u cjelini. Za kategoričke podatke (npr. udio gostiju po zemlji podrijetla) koriste se frekvencije i postoci, za usporedbu dviju skupina t-test, a za povezanost dviju kategoričkih varijabli hi-kvadrat test. Korelacija se primjenjuje za odnos zadovoljstva i namjere preporuke, klasterska analiza za segmentaciju gostiju prema motivima, a faktorska analiza za sažimanje većeg broja varijabli u osnovne dimenzije. Vježba pomaže studentima da uoče kada je koji statistički postupak metodološki opravdan.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-14.png"
+    },
+    {
+      "broj": 15,
+      "naslov": "Sažetak: Tri zlatna pravila analize",
+      "tumacenje": "Slajd sažima cjelinu kroz tri temeljna pravila obrade podataka, prikazana kao stupovi. Prvo pravilo \"smeće ulazi, smeće izlazi\" naglašava da transparentno kodiranje i čišćenje podataka moraju prethoditi analizi, jer nikakva metoda ne može ispraviti loše prikupljene podatke. Drugo pravilo upozorava da se deskriptivna statistika, poput aritmetičke sredine, ne smije tumačiti izolirano bez poznavanja distribucije i medijana, dok treće pravilo poručuje da odabir statističke metode (npr. hi-kvadrat, t-test, ANOVA) mora odgovarati istraživačkom pitanju, a ne obrnuto. Ovime se zaokružuju ključne poruke poglavlja prije prelaska na sljedeću temu – izvještavanje i primjenu rezultata.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-5/slajdovi/slajd-15.png"
+    }
+  ]
+}
