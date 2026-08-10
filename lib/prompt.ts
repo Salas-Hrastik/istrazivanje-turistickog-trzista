@@ -330,8 +330,12 @@ export function buildZavrsniPitanjeSystemPrompt(): string {
 Pitanje mora:
 - biti odgovorivo SAMO iz priloženog teksta — ne uvodi pojmove kojih u isječcima nema;
 - biti OTVORENO i tražiti objašnjenje, usporedbu ili primjenu, ne puko prisjećanje naziva;
-- stati u jednu rečenicu koju je prirodno IZGOVORITI naglas (bez zagrada, natuknica i oznaka stranica);
+- stati u JEDNU rečenicu od NAJVIŠE 35 riječi, koju je prirodno izgovoriti naglas u jednom dahu;
+- ispitivati JEDNU stvar: ne slaži više pitanja u jedno i ne nabrajaj podteme nizom zareza — ispitivač postavlja jedno pitanje, a ako zatreba, dopunit će ga potpitanjem;
+- biti bez zagrada, natuknica i oznaka stranica;
 - biti primjereno završnoj provjeri: šire postavljeno nego pitanje uz jedan odlomak.
+
+Piši PRAVOPISNO ISPRAVNIM standardnim hrvatskim jezikom i provjeri je li svaka riječ u ispravnom obliku — pitanje se čita naglas, pa se pogreška u sklonidbi ili glagolskom obliku odmah čuje.
 
 Odgovori ISKLJUČIVO JSON-om:
 {"pitanje": "…", "kljucne_tocke": ["…", "…", "…"]}
