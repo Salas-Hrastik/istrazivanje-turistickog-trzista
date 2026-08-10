@@ -320,56 +320,159 @@ code {
 
 /* Korice. Kad prava naslovnica bude gotova, ovdje dolazi <img> i pravilo se
    svodi na `display: block; width: 100%; height: auto`, jer visinu tada diktira
-   sama slika. Do tada se korice slažu iz CSS-a (.hero-korice-nacrt). */
+   sama slika. Do tada se korice slažu iz CSS-a (.hero-korice-nacrt).
+
+   Izvedba je SLIJEPI TISAK: bez ilustracije, sve nosi reljef i slog. Svaki
+   udubljeni element ima par sjena — tamnu na gornjem rubu i svijetlu na donjem
+   — jer tako oko čita utisnuto u papir; obrnut par čitao bi se kao izbočeno. */
 .hero-korice {
-  border-radius: 8px;
+  border-radius: 3px 8px 8px 3px;
   box-shadow: var(--sjena-jaka);
 }
 .hero-korice-nacrt {
+  position: relative;
+  aspect-ratio: 1 / 1.38;
+  /* Lanena podloga: topli bijeli karton, tamniji prema donjem desnom kutu kao
+     pod kosim svjetlom. */
+  background:
+    repeating-linear-gradient(0deg, rgba(90, 74, 48, 0.022) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(90, 74, 48, 0.022) 0 1px, transparent 1px 3px),
+    linear-gradient(152deg, #faf6ee 0%, #f2ebdd 52%, #e8dfcc 100%);
+  color: var(--more-900);
+  overflow: hidden;
+}
+
+/* Hrbat: uži tamniji pojas uz lijevi rub, s pregibom koji hvata svjetlo. */
+.korice-hrbat {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 26px;
+  background: linear-gradient(
+    90deg,
+    #d9cfb8 0%,
+    #e4dbc6 42%,
+    rgba(255, 255, 255, 0.85) 66%,
+    rgba(0, 0, 0, 0.05) 67%,
+    transparent 100%
+  );
+  border-right: 1px solid rgba(120, 103, 70, 0.16);
+}
+
+.korice-ploha {
+  position: relative;
+  height: 100%;
+  margin-left: 26px;
+  padding: 30px 28px 26px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  aspect-ratio: 1 / 1.35;
-  background: linear-gradient(160deg, #fff, var(--more-100));
-  color: var(--more-900);
-  padding: 22px;
 }
+
+/* Udubljeni okvir — klasična blindprege linija uvučena od ruba. */
+.korice-ploha::before {
+  content: '';
+  position: absolute;
+  inset: 16px 14px;
+  border-radius: 2px;
+  box-shadow:
+    inset 0 1px 0 rgba(120, 103, 70, 0.28),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.9),
+    inset 1px 0 0 rgba(120, 103, 70, 0.16),
+    inset -1px 0 0 rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+/* Slijepi motiv: mreža točaka u donjoj trećini, jedva vidljiva — podsjeća na
+   raster podataka, a da ništa ne tvrdi ni ne odvlači od naslova. */
+.korice-ploha::after {
+  content: '';
+  position: absolute;
+  right: 26px;
+  bottom: 62px;
+  width: 96px;
+  height: 48px;
+  background-image: radial-gradient(circle at 1px 1px, rgba(120, 103, 70, 0.22) 1px, transparent 1.4px);
+  background-size: 12px 12px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 .korice-vrh {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
 }
 .korice-znak {
-  width: 52px;
-  height: 52px;
-  flex: 0 0 52px;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
   object-fit: contain;
+  /* Znak je jedini otisak u boji; blaga sjena ga spušta na plohu papira. */
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.9));
 }
 .korice-izdavac {
-  font-size: 14px;
+  font-size: 13.5px;
   line-height: 1.3;
-  color: var(--more-800);
+  color: #6b5c42;
+  letter-spacing: 0.01em;
 }
+
 .korice-sredina {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 11px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 4px;
 }
 .korice-oznaka {
-  font-size: 14px;
-  letter-spacing: 0.1em;
+  font-size: 11.5px;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--pijesak-600);
   font-weight: 700;
+  white-space: nowrap;
+  /* Ton zlatotiska: topla mjed sa sjajem pri vrhu slova. */
+  background: linear-gradient(180deg, #d79a3d 0%, #b8791f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+/* Utisnuta crta: tanka tamna nit s bijelim odsjajem ispod. */
+.korice-crta {
+  width: 54px;
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(180deg, rgba(120, 103, 70, 0.42), rgba(120, 103, 70, 0.18));
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+.korice-crta-tanka {
+  width: 100%;
+  height: 1px;
+  background: rgba(120, 103, 70, 0.22);
 }
 .korice-naslov {
-  font-size: 25.5px;
+  font-size: 27px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.16;
+  letter-spacing: -0.012em;
+  color: #0b3d4b;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
+
 .korice-dno {
-  font-size: 14px;
-  color: var(--tekst-blijedi);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.korice-autor {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: #6b5c42;
 }
 
 /* --- Napredak ------------------------------------------------------------ */

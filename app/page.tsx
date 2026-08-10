@@ -89,23 +89,35 @@ export default async function NaslovnicaPage() {
             <VodicModal />
           </div>
         </div>
-        {/* Privremene korice, složene iz CSS-a. Kad naslovnica knjige bude
-            gotova, zamijeniti slikom u public/ (vidi docs/PREDLOZAK-NOVE-KNJIGE.md §8). */}
+        {/*
+          Korice u slijepom tisku: nema ilustracije, sve nosi reljef i slog.
+          Hrbat, udubljeni okvir i motiv rastera izvedeni su parom sjena —
+          tamna gore, svijetla dolje — kako otisak izgleda na pravom platnu.
+          Kad naslovnica knjige bude gotova, ovdje dolazi <img> (vidi
+          docs/PREDLOZAK-NOVE-KNJIGE.md §8).
+        */}
         <div className="hero-korice hero-korice-nacrt" aria-hidden="true">
-          <div className="korice-vrh">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/baltazar-logo.png" alt="" className="korice-znak" />
-            <span className="korice-izdavac">
-              Veleučilište
-              <br />
-              Baltazar Zaprešić
-            </span>
+          <span className="korice-hrbat" />
+          <div className="korice-ploha">
+            <div className="korice-vrh">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/baltazar-logo.png" alt="" className="korice-znak" />
+              <span className="korice-izdavac">
+                Veleučilište
+                <br />
+                Baltazar Zaprešić
+              </span>
+            </div>
+            <div className="korice-sredina">
+              <span className="korice-oznaka">Veleučilišni priručnik</span>
+              <span className="korice-crta" />
+              <span className="korice-naslov">Istraživanje turističkog tržišta</span>
+            </div>
+            <div className="korice-dno">
+              <span className="korice-crta korice-crta-tanka" />
+              <span className="korice-autor">{config.autorPrirucnika || config.studij}</span>
+            </div>
           </div>
-          <div className="korice-sredina">
-            <span className="korice-oznaka">Veleučilišni priručnik</span>
-            <span className="korice-naslov">Istraživanje turističkog tržišta</span>
-          </div>
-          <span className="korice-dno">{config.autorPrirucnika || config.studij}</span>
         </div>
       </section>
 
