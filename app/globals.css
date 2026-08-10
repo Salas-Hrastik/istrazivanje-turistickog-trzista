@@ -3812,3 +3812,267 @@ code {
     border-top: 1px solid var(--rub);
   }
 }
+
+/* ── Završna usmena provjera znanja ─────────────────────────────────────── */
+
+.zavrsna-uvod {
+  margin: 0 0 22px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--tekst-blijedi);
+  max-width: 62ch;
+}
+
+.zavrsni {
+  display: flex;
+  flex-direction: column;
+  background: var(--ploha);
+  border: 1px solid var(--rub);
+  border-radius: var(--radijus);
+  overflow: hidden;
+}
+
+.zavrsni-pocetak {
+  padding: 34px 26px;
+  text-align: center;
+}
+.zavrsni-znak {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+.zavrsni-naslov {
+  margin: 0 0 10px;
+  font-size: 21px;
+}
+.zavrsni-opis,
+.zavrsni-napomena {
+  margin: 0 auto 14px;
+  max-width: 56ch;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--tekst-blijedi);
+}
+.zavrsni-napomena {
+  font-size: 15px;
+}
+
+/* Traka napretka: točka po pitanju, obojena prema procjeni odgovora. */
+.zavrsni-traka {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  background: var(--more-050);
+  border-bottom: 1px solid var(--more-100);
+}
+.zavrsni-napredak {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--more-700);
+}
+.zavrsni-tocke {
+  display: inline-flex;
+  gap: 7px;
+}
+.zavrsni-tocka {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--more-100);
+  border: 1px solid var(--rub-jaci);
+}
+.zavrsni-tocka.tekuca {
+  background: var(--pijesak-500);
+  border-color: var(--pijesak-600);
+}
+.zavrsni-tocka.ispunjena.dobro {
+  background: #2e7d5b;
+  border-color: #2e7d5b;
+}
+.zavrsni-tocka.ispunjena.djelomicno {
+  background: var(--pijesak-600);
+  border-color: var(--pijesak-600);
+}
+.zavrsni-tocka.ispunjena.slabo {
+  background: #a8443a;
+  border-color: #a8443a;
+}
+
+.zavrsni-tijek {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 200px;
+  max-height: 52vh;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.zavrsni-replika {
+  border-radius: var(--radijus);
+  padding: 10px 14px;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.zavrsni-replika p {
+  margin: 4px 0 0;
+  white-space: pre-wrap;
+}
+.zavrsni-autor {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.zavrsni-student {
+  background: var(--more-900);
+  color: #fff;
+  align-self: flex-end;
+  max-width: 88%;
+}
+.zavrsni-student .zavrsni-autor {
+  color: var(--pijesak-500);
+}
+.zavrsni-ispitivac {
+  background: var(--more-050);
+  border: 1px solid var(--more-100);
+  color: var(--tekst);
+}
+.zavrsni-ispitivac .zavrsni-autor {
+  color: var(--more-700);
+}
+.zavrsni-stanje {
+  margin: 0;
+  font-size: 15px;
+  color: var(--tekst-blijedi);
+  font-style: italic;
+}
+
+.zavrsni-odgovor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 18px;
+  border-top: 1px solid var(--rub);
+}
+.zavrsni-znak-potpitanja {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--pijesak-600);
+}
+.zavrsni-gumbi {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.zavrsni-transkript {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--tekst);
+  background: var(--ploha);
+  border: 1px solid var(--rub-jaci);
+  border-radius: var(--radijus);
+  resize: vertical;
+}
+.zavrsni-transkript:disabled {
+  background: var(--more-050);
+  color: var(--tekst-blijedi);
+}
+
+.zavrsni-greska {
+  margin: 0;
+  padding: 10px 18px;
+  font-size: 15px;
+  color: #a8443a;
+}
+
+.zavrsni-sazetak {
+  padding: 18px;
+  border-top: 1px solid var(--rub);
+}
+.zavrsni-sazetak h3 {
+  margin: 0 0 14px;
+  font-size: 19px;
+}
+.zavrsni-popis {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.zavrsni-stavka {
+  padding: 12px 14px;
+  border-radius: var(--radijus);
+  background: var(--more-050);
+  border-left: 3px solid var(--more-100);
+}
+.zavrsni-stavka.dobro {
+  border-left-color: #2e7d5b;
+}
+.zavrsni-stavka.djelomicno {
+  border-left-color: var(--pijesak-600);
+}
+.zavrsni-stavka.slabo {
+  border-left-color: #a8443a;
+}
+.zavrsni-oznaka {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.zavrsni-stavka.dobro .zavrsni-oznaka {
+  color: #2e7d5b;
+}
+.zavrsni-stavka.djelomicno .zavrsni-oznaka {
+  color: var(--pijesak-600);
+}
+.zavrsni-stavka.slabo .zavrsni-oznaka {
+  color: #a8443a;
+}
+.zavrsni-opseg {
+  font-size: 13.5px;
+  color: var(--tekst-blijedi);
+}
+.zavrsni-pitanje-tekst {
+  margin: 6px 0 0;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.zavrsni-izostalo {
+  margin: 6px 0 0;
+  font-size: 14.5px;
+  color: var(--tekst-blijedi);
+}
+.zavrsni-preporuke {
+  margin-bottom: 18px;
+}
+.zavrsni-preporuke h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+.zavrsni-preporuke ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--tekst-blijedi);
+}
+
+@media (max-width: 640px) {
+  .zavrsni-tijek {
+    max-height: 46vh;
+  }
+  .zavrsni-pocetak {
+    padding: 26px 18px;
+  }
+}

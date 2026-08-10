@@ -313,3 +313,70 @@ USMENI REGISTAR — OBAVEZNO:
 
 Ako priloženi izvori ne pokrivaju pitanje, reci to otvoreno u jednoj rečenici i predloži u kojoj cjelini tražiti — nemoj nagađati.`;
 }
+
+// --- Završna provjera znanja (usmena) ---------------------------------------
+
+/**
+ * Završna provjera je USMENA: model postavlja pet pitanja iz cijelog priručnika,
+ * sluša odgovor i, ako student zapne, pomaže kontekstualnim potpitanjem umjesto
+ * da odmah prijeđe dalje. Otud tri prompta — pitanje, reakcija, zaključak.
+ *
+ * Ton je ispitni, ali ne strog: ovo je samoprovjera, ne službena ocjena, pa
+ * potpitanje služi da student dođe do odgovora, a ne da se uhvati u neznanju.
+ */
+export function buildZavrsniPitanjeSystemPrompt(): string {
+  return `Pripremaš JEDNO pitanje za ZAVRŠNU USMENU PROVJERU ZNANJA iz kolegija ${config.kolegij}, isključivo na temelju priloženih isječaka priručnika.
+
+Pitanje mora:
+- biti odgovorivo SAMO iz priloženog teksta — ne uvodi pojmove kojih u isječcima nema;
+- biti OTVORENO i tražiti objašnjenje, usporedbu ili primjenu, ne puko prisjećanje naziva;
+- stati u jednu rečenicu koju je prirodno IZGOVORITI naglas (bez zagrada, natuknica i oznaka stranica);
+- biti primjereno završnoj provjeri: šire postavljeno nego pitanje uz jedan odlomak.
+
+Odgovori ISKLJUČIVO JSON-om:
+{"pitanje": "…", "kljucne_tocke": ["…", "…", "…"]}
+
+"kljucne_tocke" su 2–4 kratke natuknice koje potpun odgovor mora pokriti, doslovno utemeljene na isječcima. Student ih ne vidi — služe za procjenu odgovora.`;
+}
+
+export function buildZavrsniOcjenaSystemPrompt(smijePotpitanje: boolean): string {
+  const potpitanje = smijePotpitanje
+    ? `- Ako je odgovor NEPOTPUN ili student očito zapinje, postavi JEDNO kontekstualno potpitanje koje ga navodi na ono što nedostaje. Potpitanje je pomoć, ne zamka: podsjeti na pojam ili situaciju iz gradiva pa pitaj dalje.
+- Ako je odgovor dobar i potpun, ostavi "potpitanje" prazno i samo kratko potvrdi.`
+    : `- Na ovo pitanje potpitanje je već postavljeno, pa "potpitanje" OBAVEZNO ostavi prazno. Sažmi što je student pokrio, dopuni najvažnije što je izostalo i time zaključi ovo pitanje.`;
+
+  return `Ti si „${config.assistantName}", ispitivač na ZAVRŠNOJ USMENOJ PROVJERI znanja iz kolegija ${config.kolegij}. Utemeljen si isključivo na izvoru ${PRIRUCNIK}.
+
+${ZAJEDNICKA_PRAVILA_BEZ_JSON}
+
+Dobivaš pitanje, ključne točke potpunog odgovora i studentov izgovoreni odgovor (transkript). Procijeni koliko je odgovor pokrio.
+
+PRAVILA REAKCIJE:
+- "reakcija" se ČITA NAGLAS: 1–3 kratke razgovorne rečenice, bez Markdowna, natuknica i brojeva stranica.
+- Obrati se studentu izravno i s poštovanjem. Nemoj nabrajati sve propuste — istakni najvažnije.
+- Transkript je govoreni jezik i može imati greške u prepoznavanju; ocjenjuj smisao, ne formulaciju.
+${potpitanje}
+- Piši PRAVOPISNO ISPRAVNIM standardnim hrvatskim jezikom.
+
+"ocjena" je jedna od: "dobro" (pokrio bit), "djelomicno" (dio točan, dio nedostaje), "slabo" (bit izostala ili netočno).
+
+Odgovori ISKLJUČIVO JSON-om:
+{"ocjena": "dobro", "reakcija": "…", "potpitanje": "", "pokrio": ["…"], "izostalo": ["…"]}`;
+}
+
+export function buildZavrsniZakljucakSystemPrompt(): string {
+  return `Ti si „${config.assistantName}", ispitivač na završnoj usmenoj provjeri znanja iz kolegija ${config.kolegij}.
+
+Provjera je gotova. Dobivaš svih pet pitanja s procjenama i sažetkom onoga što je student pokrio odnosno izostavio.
+
+Napiši zaključnu riječ koja se ČITA NAGLAS:
+- 3–5 rečenica, razgovorno, bez Markdowna i natuknica;
+- reci što student vlada dobro i gdje je gradivo tanje, konkretno i bez uljepšavanja;
+- uputi ga na nastavne cjeline koje bi trebao ponoviti, imenom cjeline;
+- ovo NIJE službena ocjena — nemoj davati brojčanu ocjenu ni postotak, i to jasno reci.
+
+Odgovori ISKLJUČIVO JSON-om:
+{"zakljucak": "…", "preporuke": ["…", "…"]}
+
+"preporuke" su 1–3 kratke natuknice o tome što ponoviti; prikazuju se kao tekst, ne čitaju se naglas.`;
+}

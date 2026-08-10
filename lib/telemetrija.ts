@@ -12,7 +12,17 @@
  */
 import { supabaseAdmin } from './supabase';
 
-export type DogadjajVrsta = 'chat' | 'usmena_pitanje' | 'usmena_ocjena' | 'kviz' | 'asr' | 'tts';
+export type DogadjajVrsta =
+  | 'chat'
+  | 'usmena_pitanje'
+  | 'usmena_ocjena'
+  | 'kviz'
+  | 'asr'
+  | 'tts'
+  /** Završna usmena provjera: priprema pitanja, procjena odgovora, zaključna riječ. */
+  | 'zavrsni_pitanja'
+  | 'zavrsni_ocjena'
+  | 'zavrsni_zakljucak';
 
 export interface TelemetrijaZapis {
   vrsta: DogadjajVrsta;
