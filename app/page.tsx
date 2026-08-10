@@ -166,6 +166,46 @@ export default async function NaslovnicaPage() {
           </div>
         </section>
       ))}
+
+      {/*
+        Provjere stoje na kraju sadržaja jer su zadnji korak kroz priručnik.
+        Dok su bile samo u zaglavlju, do njih se dolazilo tek ako se zna da
+        postoje — a sadržaj je mjesto na koje student gleda.
+      */}
+      <section className="dio-sekcija">
+        <h2 className="dio-naslov">Provjera znanja</h2>
+        <div className="poglavlja-lista">
+          <Link href="/usmena-vjezba" className="cjelina-kartica cjelina-kartica-provjera">
+            <div className="cjelina-vrh">
+              <span className="cjelina-znak-velik" aria-hidden="true">
+                🎙️
+              </span>
+            </div>
+            <h3>Usmena vježba</h3>
+            <p className="cjelina-meta">Jedno pitanje iz odabrane cjeline · bez ocjenjivanja</p>
+            <ul className="odjeljci-pregled">
+              <li>Asistent pita, vi odgovarate glasom</li>
+              <li>Povratna informacija s citiranim stranicama</li>
+              <li>Ponavljajte koliko god puta želite</li>
+            </ul>
+          </Link>
+
+          <Link href="/zavrsna-provjera" className="cjelina-kartica cjelina-kartica-provjera">
+            <div className="cjelina-vrh">
+              <span className="cjelina-znak-velik" aria-hidden="true">
+                🎓
+              </span>
+            </div>
+            <h3>Završna provjera znanja</h3>
+            <p className="cjelina-meta">Usmeni ispit · pet pitanja iz cijelog priručnika</p>
+            <ul className="odjeljci-pregled">
+              <li>Pitanja iz pet različitih cjelina, nasumično</li>
+              <li>Potpitanje ondje gdje odgovor zapne</li>
+              <li>Zaključna riječ i preporuke što ponoviti</li>
+            </ul>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

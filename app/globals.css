@@ -4076,3 +4076,17 @@ code {
     padding: 26px 18px;
   }
 }
+
+/* Kartice provjere znanja na kraju sadržaja — razlikuju se od cjelina bojom
+   ruba, jer nisu gradivo nego zadnji korak kroz priručnik. */
+.cjelina-kartica-provjera {
+  border-left: 4px solid var(--pijesak-500);
+}
+.cjelina-kartica-provjera:hover {
+  border-color: var(--pijesak-600);
+  border-left-color: var(--pijesak-600);
+}
+.cjelina-znak-velik {
+  font-size: 26px;
+  line-height: 1;
+}
