@@ -1,0 +1,78 @@
+{
+  "poglavlje": 7,
+  "prezentacija": "Tourism Research Trust Blueprint",
+  "slajdovi": [
+    {
+      "broj": 1,
+      "naslov": "Etika i GDPR u istraživanju turističkog tržišta",
+      "tumacenje": "Ovo je naslovni slajd nastavne cjeline 7, čiji podnaslov \"Arhitektura povjerenja: Od prikupljanja podataka do objektivnog izvještavanja\" najavljuje da će se obraditi cijeli proces istraživanja - od etičnog prikupljanja osobnih podataka ispitanika do nepristranog izvještavanja o rezultatima. Slajd je dekorativan i uvodan te sadrži logotip (štit i kompas) koji simbolizira zaštitu podataka i usmjerenost istraživanja, bez konkretnog stručnog sadržaja o etičkim načelima ili GDPR-u.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-01.png"
+    },
+    {
+      "broj": 2,
+      "naslov": "The Trust Blueprint",
+      "tumacenje": "Slajd prikazuje dijagram triju preklapajućih krugova koji simbolički prikazuju kako \"održivo povjerenje\" nastaje na sjecištu triju elemenata: zaštite ispitanika (sigurnost gostiju i lokalnog stanovništva), vjerodostojnosti istraživanja (točni, nepristrani i primjenjivi podaci) te reputacije naručitelja (zaštita brenda destinacije ili hotela). Tekst uz sliku naglašava da GDPR i zakonska usklađenost nisu samo administrativna obveza, već ključni alat za izgradnju tog povjerenja u Hrvatskoj i EU. Time se povezuju etička načela iz poglavlja (informirani pristanak, minimizacija podataka, zaštita ranjivih skupina) s idejom da etičko postupanje istovremeno štiti ispitanike, kvalitetu istraživanja i sve dionike turističkog sustava.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-02.png"
+    },
+    {
+      "broj": 3,
+      "naslov": "Temeljna načela GDPR-a u turizmu",
+      "tumacenje": "Slajd prikazuje sedam temeljnih načela GDPR-a relevantnih za istraživanje turističkog tržišta, prikazanih kroz kotačić: zakonitost i transparentnost, ograničenje svrhe, minimizacija podataka, točnost, ograničenje pohrane, sigurnost i odgovornost (pouzdanost). Svako načelo je pojašnjeno kratkim praktičnim primjerom iz turizma, npr. da se podaci ne smiju koristiti za skrivenu prodaju ili da voditelj obrade mora moći dokazati usklađenost s propisima. Ovaj vizualni prikaz sažima ključne zahtjeve GDPR-a koje istraživač mora poštovati pri prikupljanju i obradi podataka o gostima, čime se povezuje s etičkim načelima obrađenima u prethodnim dijelovima cjeline.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-03.png"
+    },
+    {
+      "broj": 4,
+      "naslov": "Rječnik ključnih pojmova",
+      "tumacenje": "Slajd u obliku matrice s četiri polja objašnjava ključne pojmove etike u istraživanju: informirani pristanak (privola) kao dobrovoljnu, informiranu i nedvosmislenu izjavu volje ispitanika o obradi podataka; ranjive skupine, poput djece ispod 16 godina koja trebaju privolu roditelja, te lokalno stanovništvo u područjima ugroženim overtourismom; DPO (službenika za zaštitu podataka) kao osobu koja nadzire usklađenost s GDPR-om; i objektivnost u izvještavanju, koja znači prikazivanje rezultata bez iskrivljavanja, selektivnog biranja podataka ili prikrivanja metodoloških ograničenja. Ovi pojmovi čine temeljni terminološki okvir potreban za razumijevanje etičkih i pravnih zahtjeva pri provedbi istraživanja turističkog tržišta.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-04.png"
+    },
+    {
+      "broj": 5,
+      "naslov": "Pravila terenskog rada: Specifičnosti u turizmu",
+      "tumacenje": "Slajd prikazuje četiri specifične situacije terenskog istraživanja u turizmu u kojima treba posebno paziti na etička načela: goste u žurbi (aerodromi, check-out) kod kojih pristanak pod pritiskom nije dobrovoljan, zaposlenike u turizmu čije sudjelovanje ne smije biti uvjetovano odnosom s poslodavcem, te dvaput istaknuta overtourism područja s lokalnim stanovništvom gdje visoka osjetljivost zahtijeva da istraživanje ne izlaže pojedince riziku niti pojačava napetosti. Svaka situacija naglašava načelo dobrovoljnosti i informiranog pristanka, pokazujući kako se opća etička pravila primjenjuju na konkretne, praktične kontekste terenskog rada u turizmu.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-05.png"
+    },
+    {
+      "broj": 6,
+      "naslov": "Anatomija savršenog informiranog pristanka",
+      "tumacenje": "Slajd na primjeru teksta obrasca privole prikazuje pet ključnih elemenata koje informirani pristanak mora sadržavati: transparentnost o tome tko provodi istraživanje, ograničenje svrhe, minimizaciju podataka (bez imena i e-mail adrese), ograničenje pohrane s točnim rokom čuvanja podataka te nedvosmislenu radnju pristanka (aktivna potvrda, moguć prekid u svakom trenutku). Time se izravno ilustriraju temeljna GDPR načela relevantna za istraživanje spomenuta u poglavlju 7.2.1, primijenjena na konkretan primjer teksta informiranog pristanka iz online ankete. Slajd je važan jer studentima pokazuje kako u praksi sastaviti obrazac privole usklađen s GDPR-om, što je jedan od ishoda učenja ove cjeline.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-06.png"
+    },
+    {
+      "broj": 7,
+      "naslov": "Anonimizacija vs. Pseudonimizacija",
+      "tumacenje": "Slajd vizualno uspoređuje dva postupka zaštite osobnih podataka u istraživanju. Kod anonimizacije podatak se nepovratno odvaja od osobe pa se ona više ne može identificirati, čime takvi podaci više ne potpadaju pod GDPR. Kod pseudonimizacije podatak se šifrira (npr. kodovi P1, P2 za intervjue), a identitet ispitanika čuva se u odvojenoj, sigurnoj bazi ključeva te se ponovno spajanje podatka s osobom može ostvariti samo uz taj ključ. Ova razlika ključna je za pravilnu primjenu GDPR-a i minimizaciju podataka pri obradi rezultata istraživanja turističkog tržišta.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-07.png"
+    },
+    {
+      "broj": 8,
+      "naslov": "Matrica prakse: Što činiti, a što izbjegavati",
+      "tumacenje": "Slajd prikazuje tablicu s četiri konkretna scenarija istraživanja u turizmu (anketa zadovoljstva u hotelu, integracija s eVisitor sustavom, online anketa s nagradnom igrom, dubinski intervjui) te za svaki uspoređuje praksu koju treba strogo izbjegavati s preporučenom GDPR-usklađenom praksom. Kroz primjere se ilustriraju načela anonimizacije i pseudonimizacije te minimizacije podataka – npr. korištenje anonimnog upitnika i agregiranih podataka umjesto bilježenja imena gosta, broja sobe ili izrade transkripata sa šiframa umjesto čuvanja audio snimki s punim imenima. Slajd je važan jer studentu na praktičnim primjerima pokazuje kako u svakodnevnim situacijama istraživanja turističkog tržišta primijeniti temeljna etička i GDPR načela obrađena u poglavlju.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-08.png"
+    },
+    {
+      "broj": 9,
+      "naslov": "Sigurnost i životni vijek podataka",
+      "tumacenje": "Slajd prikazuje tri faze upravljanja podacima u istraživanju: prikupljanje i pristup, sigurna pohrana te kraj životnog vijeka podataka (12-24 mjeseca). Za svaku fazu navedeno je operativno pravilo koje odgovara GDPR načelima cjelovitosti i povjerljivosti te ograničenja pohrane: pristup podacima ograničen je na princip nužnog znanja, podaci se čuvaju na poslužiteljima unutar EU/EEA, a nakon isteka projekta osobni podaci moraju biti trajno izbrisani ili anonimizirani. Ovaj prikaz je važan jer konkretizira kako se u praksi primjenjuje minimizacija podataka i ograničenje pohrane spomenuti u GDPR-u, čime se štiti privatnost ispitanika tijekom cijelog trajanja istraživačkog projekta.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-09.png"
+    },
+    {
+      "broj": 10,
+      "naslov": "Etičko izvještavanje: Objektivnost i poštenje",
+      "tumacenje": "Slajd usporedbom dvaju stupčastih grafikona prikazuje istu skupinu podataka na dva načina: manipulativna vizualizacija koristi skraćenu os y (od 80 do 90) kako bi razlika između vrijednosti izgledala dramatično veća nego što jest, dok objektivna vizualizacija prikazuje iste podatke s osi koja kreće od nule i time daje realan omjer. Time se ilustrira kako izbor skale i dizajna grafikona može iskriviti dojam o rezultatima istraživanja, čak i bez promjene samih brojki. U donjem dijelu navedena su „zlatna pravila izvještavanja\" – cjelovitost, kontekst i preciznost – koja upućuju na objektivnost u izvještavanju, tj. potrebu prikazivanja svih relevantnih rezultata, transparentno navođenje ograničenja metode i uzorka te jasno razlikovanje statističke značajnosti od stvarne, praktične važnosti u turizmu.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-10.png"
+    },
+    {
+      "broj": 11,
+      "naslov": "Studija slučaja: Prilagodba hrvatskih hotelskih lanaca (Valamar, Maistra)",
+      "tumacenje": "Slajd prikazuje slojeviti model upravljanja podacima gostiju na primjeru hrvatskih hotelskih lanaca, gdje se podaci razdvajaju u tri sloja: sloj 1 (ugovor o boravku – nužni podaci za rezervaciju i boravak gosta), sloj 2 (marketinška privola, slojevito i odvojeno za newsletter i personalizirane ponude, uz mogućnost Opt-outa) i sloj 3 (dijeljenje podataka s DMO-om i partnerima, koji se odvija isključivo u anonimiziranom ili agregiranom obliku). Ovim se u praksi primjenjuju načela minimizacije podataka, informiranog pristanka i anonimizacije iz GDPR-a, pokazujući kako se osjetljivi podaci gostiju štite pri prosljeđivanju vanjskim dionicima. Insight box dodatno naglašava jednostavno povlačenje privole (jednim klikom) i posebnu zaštitu podataka o djeci uz provjeru dobi i privolu roditelja, čime se ilustrira zaštita ranjivih skupina spomenuta u poglavlju o etici istraživanja.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-11.png"
+    },
+    {
+      "broj": 12,
+      "naslov": "Kontrolna lista za terenski rad",
+      "tumacenje": "Slajd prikazuje praktičnu kontrolnu listu od sedam etičkih i GDPR provjera koje treba obaviti prije i tijekom terenskog istraživanja: dokumentacija (informirani pristanak usklađen s GDPR-om), minimizacija podataka, dobrovoljnost sudjelovanja, sigurnost (rok čuvanja i pohrana na sigurnom EU poslužitelju), izvještavanje isključivo u agregiranom obliku, transparentnost putem kontakta službenika za zaštitu podataka (DPO) te edukacija anketara o pravilima ponašanja na terenu. Ova lista sažima ključna etička načela i zahtjeve GDPR-a obrađene u poglavlju te služi kao operativni alat za osiguravanje da se istraživanje provodi u skladu sa svim etičkim i pravnim standardima.",
+      "slika": "https://pkkmequifymzlvvmsjxt.supabase.co/storage/v1/object/public/Istr_tur_trzista/cjelina-7/slajdovi/slajd-12.png"
+    }
+  ]
+}
