@@ -18,7 +18,8 @@
     "mediji": "tsx --env-file=.env.local scripts/uvezi-medije.ts",
     "slajdovi": "tsx --env-file=.env.local scripts/tumaci-slajdove.ts",
     "nastavno": "tsx --env-file=.env.local scripts/uvezi-nastavno.ts",
-    "knjiga:mjere": "tsx --env-file=.env.local scripts/izmjeri-knjigu.ts"
+    "knjiga:mjere": "tsx --env-file=.env.local scripts/izmjeri-knjigu.ts",
+    "obrazlozenja": "tsx --env-file=.env.local scripts/dopuni-obrazlozenja.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

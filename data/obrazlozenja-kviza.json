@@ -1,0 +1,169 @@
+{
+  "_opis": "Obrazloženja uz kviz pitanja koja ih u priručniku nemaju, dopisana skriptom npm run obrazlozenja iz teksta priručnika. Ključ je tekst pitanja.",
+  "obrazlozenja": [
+    {
+      "pitanje": "Ako anketar na ulazu u nacionalni park ispituje svakog 10. posjetitelja koji kupi ulaznicu, koju metodu uzorkovanja primjenjuje?",
+      "obrazlozenje": "Odabir svakog k-tog elementa (u ovom slučaju svakog 10. posjetitelja) definicija je sustavnog uzorka, dok jednostavni slučajni uzorak zahtijeva potpunu listu populacije iz koje se nasumično biraju jedinice, a prigodni uzorak bi značio anketiranje bilo kojeg dostupnog prolaznika bez pravila poput svakog k-tog."
+    },
+    {
+      "pitanje": "Ako istraživač u izvješću namjerno izostavi rezultate koji pokazuju nezadovoljstvo gostiju kako bi ugodio naručitelju, krši:",
+      "obrazlozenje": "Riječ je o svjesnoj pristranosti motiviranoj željom ugoditi naručitelju, a rezultate treba prikazati cjelovito, bez biranja onih koji odgovaraju naručitelju, što je upravo zahtjev objektivnosti i profesionalnog integriteta u izvještavanju."
+    },
+    {
+      "pitanje": "Ako želite prikazati kretanje prosječne popunjenosti hotelskih kapaciteta po mjesecima kroz pet godina, koji je tip grafikona najprikladniji?",
+      "obrazlozenje": "Linijski grafikon koristi se za prikaz kontinuiranih trendova kroz vrijeme, poput kretanja popunjenosti kroz mjesece i godine, dok histogram prikazuje distribuciju varijable, a kružni dijagram udjele dijelova u cjelini, pa nisu prikladni za praćenje trenda."
+    },
+    {
+      "pitanje": "Ako želite utvrditi postoji li povezanost između dobi turista i iznosa njihove dnevne potrošnje, primijenit ćete:",
+      "obrazlozenje": "Dob i dnevna potrošnja su kontinuirane numeričke varijable pa se njihova povezanost mjeri korelacijskom analizom, dok se hi-kvadrat test primjenjuje samo kad su obje varijable kategoričke, a tematska analiza koristi se za kvalitativne podatke."
+    },
+    {
+      "pitanje": "DMO je kratica za:",
+      "obrazlozenje": "DMO označava organizaciju odgovornu za strateško upravljanje i marketing turističke destinacije, dok ostale ponuđene kratice nisu vezane za taj pojam u kontekstu istraživanja turističkog tržišta."
+    },
+    {
+      "pitanje": "Dobra preporuka treba biti:",
+      "obrazlozenje": "Preporuka mora biti konkretan, ostvariv prijedlog akcije utemeljen na nalazima, a ne općenita ili isključivo teorijska tvrdnja koja donositeljima odluka ne pokazuje što učiniti."
+    },
+    {
+      "pitanje": "Elastičnost potražnje ista je za sve segmente turista.",
+      "obrazlozenje": "Varira po segmentima; gosti s izraženim specifičnim motivom manje su cjenovno osjetljivi."
+    },
+    {
+      "pitanje": "eVisitor je primjer:",
+      "obrazlozenje": "EVisitor je nacionalni sustav elektroničke prijave i odjave turista koji podatke o dolascima i noćenjima daje u stvarnom vremenu, dakle riječ je o administrativnom, sekundarnom izvoru podataka, a ne o primarnom istraživanju poput ankete, eksperimenta ili fokus grupe."
+    },
+    {
+      "pitanje": "eVisitor omogućuje podatke o dolascima i noćenjima u stvarnom vremenu.",
+      "obrazlozenje": "EVisitor je nacionalni sustav elektroničke prijave i odjave turista koji podatke o dolascima i noćenjima daje upravo u stvarnom vremenu, za razliku od TOMAS istraživanja koja pružaju dublji uvid u motive i stavove, ali ne u trenutnom vremenskom okviru."
+    },
+    {
+      "pitanje": "eVisitor primarno bilježi:",
+      "obrazlozenje": "EVisitor je sustav prijave i odjave turista koji u stvarnom vremenu bilježi dolaske, noćenja i strukturu gostiju, dok motive dolaska, zadovoljstvo i potrošnju izvan smještaja ne obuhvaća, pa se za takve podatke koristi anketa poput TOMAS-a."
+    },
+    {
+      "pitanje": "Executive Summary primarno je namijenjen:",
+      "obrazlozenje": "Executive Summary je sažetak izvještaja namijenjen upravo donositeljima odluka, dok istraživači i anketari nisu njegova ciljna publika jer njima trebaju detaljniji metodološki podaci, a ne sažeta preporuka za odlučivanje."
+    },
+    {
+      "pitanje": "Faktorska analiza služi za redukciju varijabli na latentne dimenzije.",
+      "obrazlozenje": "Kada postoji veći broj stavova ili atributa, faktorska analiza pomaže reducirati ih na manji broj latentnih dimenzija, primjerice povezanih sa infrastrukturom, ambijentom ili osobljem, čime se sažima struktura podataka."
+    },
+    {
+      "pitanje": "Ganttogram se u planu istraživanja koristi za:",
+      "obrazlozenje": "Ganttogram je tablični ili grafički prikaz faza istraživanja s pripadajućim rokovima, dio je vremenskog plana istraživanja, dok se veličina uzorka i statističko testiranje određuju u drugim elementima plana (plan uzorkovanja i plan analize podataka)."
+    },
+    {
+      "pitanje": "GDPR se primjenjuje i na potpuno anonimizirane podatke.",
+      "obrazlozenje": "Anonimizirani podaci više ne podliježu GDPR-u."
+    },
+    {
+      "pitanje": "Hi-kvadrat test koristi se za usporedbu aritmetičkih sredina dviju skupina.",
+      "obrazlozenje": "Za to se koristi t-test."
+    },
+    {
+      "pitanje": "Informirani pristanak mora biti dobrovoljan, konkretan, informiran i nedvosmislen.",
+      "obrazlozenje": "Ovi elementi proizlaze iz GDPR-a i etičkih načela istraživanja: ispitanik prije sudjelovanja mora biti dobrovoljno i jasno informiran o svrsi, provoditelju i korištenju podataka, a pristanak ne smije biti prešutan ili nejasan nego izričito i konkretno dan."
+    },
+    {
+      "pitanje": "Istraživanje kojim se nastoji utvrditi kako smanjenje proračuna za oglašavanje utječe na pad broja rezervacija naziva se:",
+      "obrazlozenje": "Ovdje se utvrđuje uzročno-posljedična veza između dvije varijable (proračun za oglašavanje i broj rezervacija), što je upravo svrha kauzalnog istraživanja, dok eksplorativno služi za razumijevanje nedovoljno definiranog problema, a deskriptivno samo opisuje pojavu bez utvrđivanja uzročnosti."
+    },
+    {
+      "pitanje": "Istraživanje tržišta i marketing informacijski sustav isti su pojmovi.",
+      "obrazlozenje": "Istraživanje je jedna od komponenti MIS-a."
+    },
+    {
+      "pitanje": "Koja je glavna prednost fokus grupa u odnosu na anketiranje?",
+      "obrazlozenje": "Fokus grupe su kvalitativna metoda usmjerena na dubinsko razumijevanje motiva, stavova i emocija posjetitelja, dok statistička generalizacija i niži trošak po ispitaniku obilježavaju kvantitativne metode poput anketiranja, ne fokus grupe."
+    },
+    {
+      "pitanje": "Koja je glavna prednost sekundarnih podataka?",
+      "obrazlozenje": "Sekundarni izvori poput eVisitora, DZS-a ili HTZ-a već postoje, pa su dostupni uz nizak trošak i brzo se koriste, za razliku od primarnih podataka koje treba tek prikupljati. Nisu nastali za konkretan problem pa nisu nužno savršeno prilagođeni niti jamče reprezentativnost, a analiza je i dalje potrebna."
+    },
+    {
+      "pitanje": "Koja je glavna svrha uvodnog dijela anketnog upitnika?",
+      "obrazlozenje": "Uvodni dio upitnika predstavlja istraživača i svrhu istraživanja, jamči anonimnost i daje uputu za popunjavanje, dok se osobni podaci poput imena i OIB-a ne prikupljaju jer bi to narušilo anonimnost, a rezultati se u uvodu ne iznose."
+    },
+    {
+      "pitanje": "Koja je osnovna svrha formuliranja hipoteza u planu istraživanja?",
+      "obrazlozenje": "Hipoteza je pretpostavka koja se empirijski provjerava podacima, a ne jamstvo unaprijed poznatog ishoda niti alat za izračun troškova, koji se određuje zasebno u troškovniku plana istraživanja."
+    },
+    {
+      "pitanje": "Koja je primarna uloga marketing informacijskog sustava (MIS) u destinacijskom marketingu?",
+      "obrazlozenje": "MIS je organizirani sustav koji osigurava relevantne informacije menadžmentu; kreativni i kadrovski aspekti nisu njegova funkcija."
+    },
+    {
+      "pitanje": "Koja od navedenih karakteristika NIJE tipična osobitost turističkog tržišta?",
+      "obrazlozenje": "Turističke usluge su nematerijalne, što je upravo jedna od ključnih osobitosti."
+    },
+    {
+      "pitanje": "Koja razina primjene istraživanja obuhvaća formuliranje destinacijskih strategija i upravljanje nosivim kapacitetom?",
+      "obrazlozenje": "Strateška razina obuhvaća formuliranje destinacijskih strategija, upravljanje nosivim kapacitetom, održivi razvoj i brendiranje, dok se operativna odnosi na dnevne odluke (cijene, kapaciteti), a taktička na segmentaciju i razvoj proizvoda."
+    },
+    {
+      "pitanje": "Koja se mjera centralne tendencije izračunava kao najčešća vrijednost u skupu podataka?",
+      "obrazlozenje": "Mod je po definiciji najučestaliji odgovor u skupu podataka, dok aritmetička sredina predstavlja prosječnu vrijednost, a medijan središnju vrijednost poredanog niza — nijedna od te dvije mjere ne odražava učestalost pojavljivanja."
+    },
+    {
+      "pitanje": "Koje osnovno načelo GDPR-a nalaže da se u anketama ne prikupljaju osobni podaci koji nisu nužni za analizu?",
+      "obrazlozenje": "Načelo minimizacije podataka nalaže prikupljanje isključivo onih podataka koji su nužni za svrhu istraživanja, dok se reprezentativnost i slučajni izbor odnose na metodologiju uzorkovanja, a ne na zaštitu osobnih podataka."
+    },
+    {
+      "pitanje": "Koji od navedenih NIJE komponenta tipičnog MIS-a u turizmu?",
+      "obrazlozenje": "Zakonsko reguliranje cijena smještaja nije funkcija MIS-a jer taj sustav služi prikupljanju, pohrani i distribuciji informacija za odlučivanje, a ne propisivanju cijena; interni podaci, marketinška inteligencija i istraživanje tržišta su njegove uobičajene komponente."
+    },
+    {
+      "pitanje": "Medijan je otporniji na ekstremne vrijednosti od aritmetičke sredine.",
+      "obrazlozenje": "Medijan je središnja vrijednost poredanog niza pa ekstremno visoke ili niske vrijednosti ne utječu na njega, dok aritmetičku sredinu takve vrijednosti povlače u svoju stranu, npr. kod desno asimetrične distribucije potrošnje."
+    },
+    {
+      "pitanje": "Mjerna skala s tvrdnjom i stupnjevima slaganja od „1 – U potpunosti se ne slažem\" do „5 – U potpunosti se slažem\" naziva se:",
+      "obrazlozenje": "Riječ je o Likertovoj skali jer se sastoji od tvrdnje i stupnjeva slaganja od 1 do 5, dok semantički diferencijal koristi bipolarno suprotstavljene pridjeve, a nominalna skala samo razvrstava kategorije bez ocjene intenziteta slaganja."
+    },
+    {
+      "pitanje": "Nematerijalnost turističkih usluga povećava:",
+      "obrazlozenje": "Turist ne može isprobati odmor prije kupnje, pa se zbog te nematerijalnosti povećava percipirani rizik i oslanjanje na recenzije i preporuke, dok skladištenje, standardizacija i homogenost nisu obilježja koja iz nematerijalnosti proizlaze."
+    },
+    {
+      "pitanje": "Nematerijalnost usluga smanjuje važnost online recenzija.",
+      "obrazlozenje": "Povećava njihovu važnost, jer gost ne može uslugu ispitati unaprijed."
+    },
+    {
+      "pitanje": "Podaci o povijesti rezervacija i potrošnji gostiju iz hotelskog CRM sustava smatraju se:",
+      "obrazlozenje": "CRM baza nastaje unutar samog poduzeća pa je riječ o internom izvoru, a podaci su prikupljeni ranije za poslovne svrhe (praćenje rezervacija, prodaju), a ne posebno za ovo istraživanje, čime su sekundarni. Nisu eksterni jer ne dolaze izvan organizacije, niti primarni jer nisu prikupljeni za konkretan istraživački problem."
+    },
+    {
+      "pitanje": "Postupak grupiranja ispitanika u homogene skupine na temelju sličnih odgovora naziva se:",
+      "obrazlozenje": "Klasterska analiza grupira goste u segmente koji su unutar sebe slični, a međusobno različiti, dakle upravo homogene skupine prema sličnim odgovorima. Kodiranje je priprema podataka za analizu, a faktorska analiza reducira varijable na latentne dimenzije, što nije isto što i grupiranje ispitanika."
+    },
+    {
+      "pitanje": "Praksa u kojoj se lažna anketa koristi s primarnim ciljem prodaje turističkog aranžmana naziva se:",
+      "obrazlozenje": "SUGGing je naziv za zlouporabu istraživanja kao paravana za prodaju, gdje se anketa lažno predstavlja kao znanstveno istraživanje, a stvarni cilj je prodajni razgovor. Anonimizacija se odnosi na zaštitu identiteta ispitanika, a stratifikacija na tehniku uzorkovanja, pa nemaju veze s ovom zlouporabom."
+    },
+    {
+      "pitanje": "Proces u kojem se na temelju rezultata istraživanja određuju ciljne skupine turista kojima će se destinacija primarno obraćati naziva se:",
+      "obrazlozenje": "Targetiranje je odabir segmenata na koje će se usmjeriti marketinški napor, odnosno usmjeravanje proračuna na najisplativija tržišta i segmente, dok se uzorkovanje odnosi na odabir jedinica za istraživanje, a kodiranje na obradu podataka, ne na odabir ciljnih skupina."
+    },
+    {
+      "pitanje": "Prva i najvažnija faza procesa istraživanja jest:",
+      "obrazlozenje": "To je najvažnija i najteža faza jer se u njoj simptom pretvara u istraživački problem iz kojeg proizlaze ciljevi, dok su prikupljanje podataka, analiza i prezentacija tek naredni koraci koji ovise o kvaliteti te definicije."
+    },
+    {
+      "pitanje": "Sezonalnost u hrvatskom turizmu najviše utječe na:",
+      "obrazlozenje": "Longitudinalna istraživanja omogućuju praćenje promjena kroz sezone i godine."
+    },
+    {
+      "pitanje": "Što od navedenog predstavlja upravljački problem (simptom), a ne istraživački problem?",
+      "obrazlozenje": "Pad prihoda od prodaje izleta za 15% samo je vidljiva posljedica (simptom) u poslovanju, dok istraživački problem traži uzroke te pojave, poput analize razloga zašto gosti ne kupuju izborne pakete ili utvrđivanja zadovoljstva ponudom, koji preusmjeravaju fokus na informacije potrebne za odlučivanje."
+    },
+    {
+      "pitanje": "TOMAS istraživanja provode se isključivo u ljetnim mjesecima.",
+      "obrazlozenje": "TOMAS Hrvatska 2022./2023. obuhvatio je razdoblje od lipnja 2022. do lipnja 2023."
+    },
+    {
+      "pitanje": "TOMAS istraživanja u Hrvatskoj primarno prikupljaju podatke o:",
+      "obrazlozenje": "TOMAS su longitudinalna istraživanja stavova i potrošnje turista."
+    }
+  ]
+}

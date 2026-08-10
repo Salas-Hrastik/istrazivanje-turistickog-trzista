@@ -20,6 +20,7 @@ import { readDocx } from '../lib/docx';
 import { segmentirajPrirucnik, type SegLekcija, type SegPoglavlje } from '../lib/prirucnik';
 import { config } from '../lib/config';
 import { supabaseAdmin } from '../lib/supabase';
+import { kljucPitanja, ucitajObrazlozenja } from '../lib/obrazlozenja';
 
 const ARGS = process.argv.slice(2);
 const SUHO = ARGS.includes('--suho');
@@ -71,6 +72,16 @@ interface Pitanje {
 }
 
 /**
+ * Autorovo obrazloženje nastavlja rečenicu započetu odgovorom („Netočno — za to
+ * se koristi t-test."). Kad se odgovor odvoji u vlastito polje, ostatak u
+ * sučelju stoji sam i mora početi velikim slovom.
+ */
+function velikoPocetno(t: string): string {
+  const s = t.trim();
+  return s ? s[0].toLocaleUpperCase('hr') + s.slice(1) : s;
+}
+
+/**
  * Tvrdnja s odgovorom „Točno." ili „Netočno — obrazloženje.". Kviz prikazuje
  * proizvoljan broj ponuđenih odgovora, pa tvrdnja postaje pitanje s dvije
  * opcije umjesto da se izgubi.
@@ -93,7 +104,7 @@ function izvuciTocnoNetocno(lekcija: SegLekcija): Pitanje[] {
       pitanje: m[2].trim(),
       odgovori: ['Točno', 'Netočno'],
       tocanIndex: tocno ? 0 : 1,
-      objasnjenje: rj[2].trim(),
+      objasnjenje: velikoPocetno(rj[2]),
       stranica: b[i].stranica,
     });
     i++;
@@ -136,7 +147,7 @@ function izvuciPitanja(lekcija: SegLekcija): Pitanje[] {
       pitanje: m[2].trim(),
       odgovori,
       tocanIndex: tocan,
-      objasnjenje: rj[2].trim(),
+      objasnjenje: velikoPocetno(rj[2]),
       stranica: b[i].stranica,
     });
     i = j;
@@ -172,6 +183,7 @@ async function main() {
   const bankaTN = dodaci?.lekcije.find((l) => /^Točno \/ Netočno$/i.test(l.naslov));
 
   const sb = supabaseAdmin();
+  const dopisana = ucitajObrazlozenja();
   let ukupno = { ciljevi: 0, kartice: 0, pitanja: 0 };
 
   for (const p of nastavna) {
@@ -217,12 +229,24 @@ async function main() {
       ...(p.broj === 1 && banka ? izvuciPitanja(banka) : []),
       ...(p.broj === 1 && bankaTN ? izvuciTocnoNetocno(bankaTN) : []),
     ];
-    const pitanja = sirova.map(promijesaj).map((q) => ({
+    // Isto pitanje zna stajati i u cjelini i u banci pitanja iz Dodataka. Ostaje
+    // ono iz cjeline — upućuje na gradivo, ne na popis na kraju knjige.
+    const vidjena = new Set<string>();
+    const jedinstvena = sirova.filter((q) => {
+      const k = kljucPitanja(q.pitanje);
+      if (vidjena.has(k)) return false;
+      vidjena.add(k);
+      return true;
+    });
+
+    const pitanja = jedinstvena.map(promijesaj).map((q) => ({
       poglavlje_id: red.id,
       pitanje: q.pitanje,
       odgovori: q.odgovori,
       tocan_index: q.tocanIndex,
-      objasnjenje: q.objasnjenje,
+      // Autorovo obrazloženje ima prednost; gdje ga nema, uzima se dopisano
+      // (`npm run obrazlozenja`), da ponovni uvoz ne obriše taj rad.
+      objasnjenje: q.objasnjenje || dopisana.get(kljucPitanja(q.pitanje)) || '',
       stranica_ref: strRef(q.stranica, q.stranica),
       odobreno: true,
       izvor_unosa: 'nastavnik',
