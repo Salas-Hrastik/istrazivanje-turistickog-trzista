@@ -121,6 +121,36 @@ cjeline 1 (46 → 42 zapisa), a autorova obrazloženja iz banke točno/netočno
 počinjala su malim slovom jer nastavljaju rečenicu započetu odgovorom
 („Netočno — za to se koristi t-test.").
 
+### 4.2b Neujednačen broj pitanja po cjelini — nacrti čekaju odluku
+
+Autor je napisao od 3 (cjelina 4) do 15 pitanja (cjelina 1), pa je kviz negdje
+ozbiljna provjera, a negdje tri klika. `npm run nacrti -- --kviz` sada **nadopunjuje
+cjelinu do 10 pitanja**: dohvati što autor već ima, to pošalje modelu uz uputu da
+ne ponavlja iste pojmove, i traži samo razliku do cilja (`--cilj=N`).
+
+Nastalo je **32 nacrta**; s autorovih 42 to je 74 pitanja, po 10 u svakoj cjelini
+osim prve (15) i šeste (9). **Ništa od toga student ne vidi** — nacrti imaju
+`odobreno = false`, a sva tri upita prema studentu filtriraju `odobreno = true`.
+
+Pregled i objava idu kroz `npm run nacrti:pregled` (dosad je trebao ručni SQL):
+
+```bash
+npm run nacrti:pregled                          # ispiši sve, s odgovorima
+npm run nacrti:pregled -- --odobri --poglavlje=4
+npm run nacrti:pregled -- --odbaci --poglavlje=4
+```
+
+Dvije stvari koje pri pregledu vrijedi znati. Dodaci su isključeni iz generiranja
+— ondje su kazalo i prilozi, pa su prva pitanja ispitivala aparat knjige („što
+označava kratica DPO"), ne gradivo. I: cjelina 6 ima 9 umjesto 10 jer je izbačeno
+pitanje o brendu Istra Gourmet — ispitivalo je pamćenje naziva, a tri ponuđena
+odgovora (Istra Outdoor/Wellness/Adventure) u priručniku ne postoje.
+
+Preostaje jedno preklapanje za vašu prosudbu: „obrezane osi" pojavljuju se kao
+točan odgovor u cjelini 6 (vizualizacija) i cjelini 7 (etika). Priručnik ih
+doista obrađuje na oba mjesta, pa je možda u redu — ali student koji radi oba
+kviza isti nalaz dobiva dvaput.
+
 ### 4.3 Pitanja koja aplikacija ne zna prikazati
 
 Kviz podržava isključivo pitanje s **točno četiri** ponuđena odgovora i jednim

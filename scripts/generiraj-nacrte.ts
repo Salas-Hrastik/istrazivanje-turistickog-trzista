@@ -22,14 +22,16 @@ import { askClaudeJson } from '../lib/claude';
 import { retrieve } from '../lib/retrieval';
 import { supabaseAdmin } from '../lib/supabase';
 import { PRIRUCNIK } from '../lib/prompt';
+import { kljucPitanja } from '../lib/obrazlozenja';
 
 const ARGS = process.argv.slice(2);
 const RADI_CILJEVE = ARGS.includes('--ciljevi');
 const RADI_KARTICE = ARGS.includes('--kartice');
 const RADI_KVIZ = ARGS.includes('--kviz');
 const SAMO_POGLAVLJE = ARGS.find((a) => a.startsWith('--poglavlje='))?.split('=')[1];
+/** Koliko pitanja cjelina ukupno treba imati, računajući i autorova. */
+const CILJ_PITANJA = Number(ARGS.find((a) => a.startsWith('--cilj='))?.split('=')[1]) || 10;
 
-const PITANJA_PO_CJELINI = 8;
 const KARTICA_PO_CJELINI = 10;
 /** Sažetak cjeline zna biti dug; modelu ide početak, a ostatak stiže kroz isječke. */
 const SAZETAK_LIMIT = 12000;
@@ -175,7 +177,9 @@ async function main() {
 
     if (RADI_CILJEVE) await ciljevi(cjelina, kontekst);
     if (RADI_KARTICE) await kartice(cjelina, kontekst);
-    if (RADI_KVIZ) await kviz(cjelina, kontekst);
+    // Dodaci nisu nastavna cjelina: ondje su kazalo, prilozi i literatura, pa bi
+    // pitanja ispitivala aparat knjige („što označava kratica DPO"), ne gradivo.
+    if (RADI_KVIZ && cjelina.broj <= 7) await kviz(cjelina, kontekst);
   }
 
   console.log('\n[nacrti] Nacrti NISU vidljivi studentima dok ih nastavnik ne odobri:');
@@ -282,6 +286,27 @@ Vrati do ${KARTICA_PO_CJELINI} kartica, poredanih onako kako se pojmovi pojavlju
 // --- Kviz pitanja -----------------------------------------------------------
 async function kviz(c: Cjelina, kontekst: string) {
   const sb = supabaseAdmin();
+
+  // Autorova pitanja su mjerilo: nacrt samo NADOPUNJUJE cjelinu do cilja i ne
+  // smije ponoviti ono što u priručniku već stoji.
+  const { data: postojeca } = await sb
+    .from('kviz_pitanja')
+    .select('pitanje')
+    .eq('poglavlje_id', c.id)
+    .eq('izvor_unosa', 'nastavnik');
+  const vec = (postojeca ?? []).map((p) => p.pitanje);
+  const treba = Math.max(0, CILJ_PITANJA - vec.length);
+  if (treba === 0) {
+    console.log(
+      `[nacrti] Cjelina ${c.broj} „${c.naslov}": ${vec.length} autorovih pitanja — nadopuna nije potrebna.`,
+    );
+    return;
+  }
+
+  const izbjegni = vec.length
+    ? `\n\nU CJELINI VEĆ POSTOJE OVA PITANJA — ne ponavljaj ih ni u drukčijoj formulaciji, i ne provjeravaj isti pojam kojim se ona bave:\n${vec.map((p) => `- ${p}`).join('\n')}\n\nTraži gradivo cjeline koje ta pitanja NE pokrivaju.`
+    : '';
+
   const system = `${OGRADA}
 
 Pripremaš NACRT kviza za jednu nastavnu cjelinu. Pitanja moraju pokriti cijelu cjelinu, ne samo jedan odjeljak.
@@ -289,9 +314,12 @@ Pravila za svako pitanje:
  - točno 4 ponuđena odgovora, točno jedan točan;
  - odgovor mora biti nedvojbeno provjerljiv u priloženom tekstu;
  - netočne opcije moraju biti uvjerljive, ali jasno netočne prema priručniku;
- - objašnjenje je jedna rečenica, uz oznaku stranice.
+ - objašnjenje je jedna do dvije rečenice, bez navođenja stranice u tekstu objašnjenja;
+ - ne počinji objašnjenje s Točan odgovor je — student već vidi koji je točan;
+ - u tekstu pitanja NE piši prema priručniku ni prema autoru — student zna iz kojeg gradiva uči, pa pitaj izravno;
+ - točan odgovor RASPOREDI po pozicijama, ne stavljaj ga uvijek na isto mjesto.${izbjegni}
 
-Vrati ${PITANJA_PO_CJELINI} pitanja:
+Vrati točno ${treba} pitanja:
 {"pitanja": [{"pitanje": "…", "odgovori": ["…","…","…","…"], "tocan_index": 0, "objasnjenje": "…", "stranica_ref": "str. 24–25", "odjeljak": "4.4"}]}`;
 
   const rez = await askClaudeJson<{
@@ -322,8 +350,32 @@ Vrati ${PITANJA_PO_CJELINI} pitanja:
       p.tocan_index >= 0 &&
       p.tocan_index <= 3,
   );
-  if (valjana.length === 0) {
-    console.warn(`[nacrti] Cjelina ${c.broj} — model nije vratio valjana pitanja.`);
+  // Model ne raspoređuje točan odgovor unatoč uputi — u praksi ga gura na prvo
+  // ili drugo mjesto, a četvrto ostaje prazno. Miješa se isto kao autorova
+  // pitanja u `npm run nastavno`, jer inače student pogađa položaj.
+  for (const p of valjana) {
+    const idx = p.odgovori.map((_, i) => i);
+    for (let i = idx.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [idx[i], idx[j]] = [idx[j], idx[i]];
+    }
+    p.odgovori = idx.map((i) => p.odgovori[i]);
+    p.tocan_index = idx.indexOf(p.tocan_index);
+  }
+
+  // Model zna ponoviti postojeće pitanje unatoč uputi; posljednja brana.
+  const poznata = new Set(vec.map(kljucPitanja));
+  const nova = valjana
+    .filter((p) => {
+      const k = kljucPitanja(p.pitanje);
+      if (poznata.has(k)) return false;
+      poznata.add(k);
+      return true;
+    })
+    .slice(0, treba);
+
+  if (nova.length === 0) {
+    console.warn(`[nacrti] Cjelina ${c.broj} — model nije vratio nova valjana pitanja.`);
     return;
   }
 
@@ -332,7 +384,7 @@ Vrati ${PITANJA_PO_CJELINI} pitanja:
 
   await sb.from('kviz_pitanja').delete().eq('poglavlje_id', c.id).eq('izvor_unosa', 'nacrt').eq('odobreno', false);
   const { error } = await sb.from('kviz_pitanja').insert(
-    valjana.map((p) => ({
+    nova.map((p) => ({
       poglavlje_id: c.id,
       odjeljak_id: p.odjeljak ? poOznaci.get(p.odjeljak) ?? null : null,
       pitanje: p.pitanje,
@@ -345,7 +397,10 @@ Vrati ${PITANJA_PO_CJELINI} pitanja:
     })),
   );
   if (error) throw new Error(`kviz (cjelina ${c.broj}): ${error.message}`);
-  console.log(`[nacrti] Cjelina ${c.broj} „${c.naslov}": ${valjana.length} nacrta pitanja`);
+  console.log(
+    `[nacrti] Cjelina ${c.broj} „${c.naslov}": ${vec.length} autorovih + ${nova.length} nacrta = ${vec.length + nova.length}`,
+  );
+  for (const p of nova) console.log(`      · ${p.pitanje}`);
 }
 
 main().catch((err) => {
