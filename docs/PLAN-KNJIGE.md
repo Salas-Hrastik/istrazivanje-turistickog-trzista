@@ -89,14 +89,37 @@ Word upiše stvarnu paginaciju — tada ponoviti `npm run struktura` i `npm run 
 i citati postaju točni. Isto vrijedi ako udžbenik ide u prijelom: mjerodavne su
 stranice konačnog izdanja.
 
-### 4.2 Točan odgovor je gotovo uvijek „b"
+### 4.2 Točan odgovor je gotovo uvijek „b" — riješeno
 
 Izmjereno na pitanjima s ispisanim rješenjem: **27 od 37** ima točan odgovor pod
 „b". Sučelje miješa redoslijed *pitanja*, ali ne i *odgovora unutar pitanja*, pa
 student koji to primijeti pogađa slovo umjesto gradiva.
 
-Rješenje je u uvozniku: pri unosu **promiješati ponuđene odgovore** i preračunati
-`tocan_index`. Time se ne dira autorov tekst.
+Uvoznik sada pri unosu **miješa ponuđene odgovore** (Fisher–Yates) i preračunava
+`tocan_index`; autorov tekst ostaje netaknut. Nakon uvoza točan odgovor stoji na
+pozicijama 12 · 16 · 11 · 3 od 42 pitanja — četvrta je rjeđa samo zato što
+pitanja točno/netočno imaju dvije ponuđene tvrdnje.
+
+### 4.2a Obrazloženja uz pitanja — riješeno
+
+Autor je obrazloženje napisao uz 12 pitanja, uz ostala nije, pa je student koji
+promaši dobivao samo „netočno", bez razloga. `npm run obrazlozenja` dopisuje ih
+iz teksta priručnika: za svako pitanje dohvati isječke te cjeline i traži jednu
+do dvije rečenice **isključivo iz njih**; ako podloge nema, ne piše ništa. Sada
+**41 od 42** pitanja ima obrazloženje.
+
+Jedino preostalo („Prema Kolb (2025), suvremeno istraživanje u turizmu treba
+integrirati…") poziva se na izvor koji je u priručniku samo naslov u literaturi
+— ponuđeni točan odgovor u tekstu nema podlogu. To je autorova odluka: dopisati
+odlomak u poglavlje 1 ili pitanje maknuti.
+
+Dopisano se sprema u [`../data/obrazlozenja-kviza.json`](../data/obrazlozenja-kviza.json)
+i uvoznik ga primjenjuje, pa ponovni `npm run nastavno` taj rad ne briše.
+
+Usput riješeno: banka pitanja iz Dodataka ponavljala je četiri pitanja iz
+cjeline 1 (46 → 42 zapisa), a autorova obrazloženja iz banke točno/netočno
+počinjala su malim slovom jer nastavljaju rečenicu započetu odgovorom
+(„Netočno — za to se koristi t-test.").
 
 ### 4.3 Pitanja koja aplikacija ne zna prikazati
 
@@ -123,11 +146,23 @@ vrsti.
 
 ## 6. Što slijedi
 
-1. Novi Supabase projekt → `supabase/schema.sql` → `.env.local`.
-2. `npm run ingest` — tekst i ugradnje.
-3. Nova skripta za uvoz ishoda, ključnih pojmova i pitanja iz DOCX-a (§3), s
-   miješanjem odgovora (§4.2).
-4. `npm run rag:debug` — izmjeriti pragove pokrića i uskladiti `ragMinScore`.
-5. Multimedija: po jedan video, audio i prezentacija na cjelinu (7 × 3).
-6. Korice i paleta boja.
-7. `npm run knjiga:mjere` — usporedba s predloškom.
+Napravljeno:
+
+1. ✅ Novi Supabase projekt → `supabase/schema.sql` → `.env.local`, objavljeno na
+   Vercelu.
+2. ✅ `npm run ingest` — tekst i ugradnje (151 isječak).
+3. ✅ `npm run nastavno` — 42 ishoda, 72 kartice, 42 pitanja, s miješanjem
+   odgovora (§4.2) i dopisanim obrazloženjima (§4.2a).
+4. ✅ `npm run rag:debug` — pragovi izmjereni i upisani u `lib/config.ts`.
+
+Otvoreno:
+
+5. **Multimedija** — cjeline 1–4 gotove (video, audio, prezentacija s
+   tumačenjima slajdova). Za 5–7 datoteke još nisu u Storageu; kad budu,
+   `npm run mediji -- --poglavlje=N` pa `npm run slajdovi -- --poglavlje=N`.
+6. **Korice i paleta boja** — korice su još složene iz CSS-a, paleta naslijeđena
+   od prethodne knjige.
+7. **Prava paginacija** (§4.1) — čeka da se udžbenik otvori i spremi u Wordu.
+8. **Nove vrste pitanja** (§4.3) — spajanje parova, razvrstavanje, kratki
+   odgovor.
+9. `npm run knjiga:mjere` — usporedba s predloškom.
