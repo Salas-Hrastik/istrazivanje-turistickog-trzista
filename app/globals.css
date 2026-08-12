@@ -337,7 +337,7 @@ code {
   background:
     repeating-linear-gradient(0deg, rgba(90, 74, 48, 0.022) 0 1px, transparent 1px 3px),
     repeating-linear-gradient(90deg, rgba(90, 74, 48, 0.022) 0 1px, transparent 1px 3px),
-    linear-gradient(152deg, #faf6ee 0%, #f2ebdd 52%, #e8dfcc 100%);
+    linear-gradient(152deg, #fbf8f1 0%, #f5efe3 55%, #ece4d3 100%);
   color: var(--more-900);
   overflow: hidden;
 }
@@ -414,7 +414,7 @@ code {
 .korice-izdavac {
   font-size: 13.5px;
   line-height: 1.3;
-  color: #6b5c42;
+  color: #5a4c34;
   letter-spacing: 0.01em;
 }
 
@@ -429,30 +429,29 @@ code {
   padding-bottom: 4px;
 }
 .korice-oznaka {
-  font-size: 11.5px;
-  letter-spacing: 0.15em;
+  font-size: 12.5px;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
   font-weight: 700;
   white-space: nowrap;
-  /* Ton zlatotiska: topla mjed sa sjajem pri vrhu slova. */
-  background: linear-gradient(180deg, #d79a3d 0%, #b8791f 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  /* Tamna mjed, puna boja. Gradijentni zlatotisak izgledao je vjernije, ali je
+     na lanenoj podlozi davao kontrast 2,3∶1 — ispod praga i za velik tekst, a
+     ovo su sitni razmaknuti verzali, najteži slučaj za čitanje. Puna tinta
+     nosi 5,2∶1. */
+  color: #7a5210;
 }
 /* Utisnuta crta: tanka tamna nit s bijelim odsjajem ispod. */
 .korice-crta {
   width: 54px;
   height: 2px;
   border-radius: 1px;
-  background: linear-gradient(180deg, rgba(120, 103, 70, 0.42), rgba(120, 103, 70, 0.18));
+  background: linear-gradient(180deg, rgba(105, 88, 56, 0.55), rgba(105, 88, 56, 0.24));
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 .korice-crta-tanka {
   width: 100%;
   height: 1px;
-  background: rgba(120, 103, 70, 0.22);
+  background: rgba(105, 88, 56, 0.3);
 }
 .korice-naslov {
   font-size: 27px;
@@ -472,7 +471,7 @@ code {
 .korice-autor {
   font-size: 13px;
   letter-spacing: 0.06em;
-  color: #6b5c42;
+  color: #5a4c34;
 }
 
 /* --- Napredak ------------------------------------------------------------ */
