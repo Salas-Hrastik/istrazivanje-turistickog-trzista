@@ -322,23 +322,32 @@ code {
    svodi na `display: block; width: 100%; height: auto`, jer visinu tada diktira
    sama slika. Do tada se korice slažu iz CSS-a (.hero-korice-nacrt).
 
-   Izvedba je SLIJEPI TISAK: bez ilustracije, sve nosi reljef i slog. Svaki
-   udubljeni element ima par sjena — tamnu na gornjem rubu i svijetlu na donjem
-   — jer tako oko čita utisnuto u papir; obrnut par čitao bi se kao izbočeno. */
+   Izvedba je PLATNENI UVEZ s bijelim tiskom. Prva verzija bila je lanena, u
+   slijepom tisku, i izgledala je vjernije otisku — ali je nadnaslov na svijetloj
+   podlozi nosio 5,2∶1, a ovdje 6,3∶1, dok naslov ide s 8,9∶1 na 11,8∶1.
+
+   Reljef radi na paru sjena: tamna na gornjem rubu, svijetla na donjem. Obrnut
+   par oko bi pročitalo kao izbočeno, a ne utisnuto. */
 .hero-korice {
   border-radius: 3px 8px 8px 3px;
-  box-shadow: var(--sjena-jaka);
 }
 .hero-korice-nacrt {
   position: relative;
   aspect-ratio: 1 / 1.38;
-  /* Lanena podloga: topli bijeli karton, tamniji prema donjem desnom kutu kao
-     pod kosim svjetlom. */
+  /* Tamno tirkizno platno s tkanjem; kut pada u dublji ton kao pod kosim svjetlom. */
   background:
-    repeating-linear-gradient(0deg, rgba(90, 74, 48, 0.022) 0 1px, transparent 1px 3px),
-    repeating-linear-gradient(90deg, rgba(90, 74, 48, 0.022) 0 1px, transparent 1px 3px),
-    linear-gradient(152deg, #fbf8f1 0%, #f5efe3 55%, #ece4d3 100%);
-  color: var(--more-900);
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.02) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0 1px, transparent 1px 3px),
+    linear-gradient(152deg, #0a4351 0%, #073644 55%, #04262f 100%);
+  /* Rub listova uz desnu stranicu i svjetlosni obrub. Bez njih se tamne korice
+     na tirkiznom zaglavlju stope s podlogom i prestanu biti predmet — to je i
+     ono što na polici razdvaja tamnu knjigu od tamne pozadine. */
+  margin-right: 18px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.14),
+    18px 0 0 -2px #e6dcc6,
+    19px 0 0 -2px rgba(0, 0, 0, 0.28),
+    0 18px 42px rgba(0, 0, 0, 0.45);
   overflow: hidden;
 }
 
@@ -349,13 +358,13 @@ code {
   width: 26px;
   background: linear-gradient(
     90deg,
-    #d9cfb8 0%,
-    #e4dbc6 42%,
-    rgba(255, 255, 255, 0.85) 66%,
-    rgba(0, 0, 0, 0.05) 67%,
+    #031e26 0%,
+    #062e3a 42%,
+    rgba(255, 255, 255, 0.16) 66%,
+    rgba(0, 0, 0, 0.35) 67%,
     transparent 100%
   );
-  border-right: 1px solid rgba(120, 103, 70, 0.16);
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .korice-ploha {
@@ -368,22 +377,22 @@ code {
   justify-content: space-between;
 }
 
-/* Udubljeni okvir — klasična blindprege linija uvučena od ruba. */
+/* Utisnuti okvir — klasična linija uvučena od ruba. */
 .korice-ploha::before {
   content: '';
   position: absolute;
   inset: 16px 14px;
   border-radius: 2px;
   box-shadow:
-    inset 0 1px 0 rgba(120, 103, 70, 0.28),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.9),
-    inset 1px 0 0 rgba(120, 103, 70, 0.16),
-    inset -1px 0 0 rgba(255, 255, 255, 0.7);
+    inset 0 1px 0 rgba(0, 0, 0, 0.45),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.14),
+    inset 1px 0 0 rgba(0, 0, 0, 0.3),
+    inset -1px 0 0 rgba(255, 255, 255, 0.1);
   pointer-events: none;
 }
 
-/* Slijepi motiv: mreža točaka u donjoj trećini, jedva vidljiva — podsjeća na
-   raster podataka, a da ništa ne tvrdi ni ne odvlači od naslova. */
+/* Motiv: mreža točaka u donjem desnom kutu — naznaka rastera podataka, tiha
+   koliko da ne odvlači od naslova. */
 .korice-ploha::after {
   content: '';
   position: absolute;
@@ -391,9 +400,9 @@ code {
   bottom: 62px;
   width: 96px;
   height: 48px;
-  background-image: radial-gradient(circle at 1px 1px, rgba(120, 103, 70, 0.22) 1px, transparent 1.4px);
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.16) 1px, transparent 1.4px);
   background-size: 12px 12px;
-  opacity: 0.6;
+  opacity: 0.9;
   pointer-events: none;
 }
 
@@ -403,18 +412,22 @@ code {
   align-items: center;
   gap: 11px;
 }
+/* Znak stoji na svijetloj naljepnici: na platno se papirna naljepnica lijepi,
+   pa je to uvezački postupak, a ne zakrpa — i znak ostaje čitljiv. */
 .korice-znak {
   width: 46px;
   height: 46px;
   flex: 0 0 46px;
   object-fit: contain;
-  /* Znak je jedini otisak u boji; blaga sjena ga spušta na plohu papira. */
-  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.9));
+  background: #f5efe3;
+  border-radius: 3px;
+  padding: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 .korice-izdavac {
   font-size: 13.5px;
   line-height: 1.3;
-  color: #5a4c34;
+  color: #d3e0e4;
   letter-spacing: 0.01em;
 }
 
@@ -433,33 +446,32 @@ code {
   letter-spacing: 0.13em;
   text-transform: uppercase;
   font-weight: 700;
+  /* Rub listova sužava plohu za 18 px; bez ovoga se nadnaslov lomi u dva retka. */
   white-space: nowrap;
-  /* Tamna mjed, puna boja. Gradijentni zlatotisak izgledao je vjernije, ali je
-     na lanenoj podlozi davao kontrast 2,3∶1 — ispod praga i za velik tekst, a
-     ovo su sitni razmaknuti verzali, najteži slučaj za čitanje. Puna tinta
-     nosi 5,2∶1. */
-  color: #7a5210;
+  /* Zlatotisak na platnu: 6,3∶1, dovoljno i za sitne razmaknute verzale. */
+  color: #eda945;
 }
-/* Utisnuta crta: tanka tamna nit s bijelim odsjajem ispod. */
+/* Utisnuta crta: tamna nit sa svijetlim odsjajem ispod. */
 .korice-crta {
   width: 54px;
   height: 2px;
   border-radius: 1px;
-  background: linear-gradient(180deg, rgba(105, 88, 56, 0.55), rgba(105, 88, 56, 0.24));
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.14));
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 .korice-crta-tanka {
   width: 100%;
   height: 1px;
-  background: rgba(105, 88, 56, 0.3);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: none;
 }
 .korice-naslov {
   font-size: 27px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: -0.012em;
-  color: #0b3d4b;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: #f7f2e8;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
 }
 
 .korice-dno {
@@ -471,7 +483,7 @@ code {
 .korice-autor {
   font-size: 13px;
   letter-spacing: 0.06em;
-  color: #5a4c34;
+  color: #bcd0d6;
 }
 
 /* --- Napredak ------------------------------------------------------------ */
