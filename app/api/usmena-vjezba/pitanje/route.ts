@@ -3,6 +3,7 @@ import { zahtijevajKorisnika } from '@/lib/auth';
 import { supabaseAdmin } from '@/lib/supabase';
 import { retrieve, dovoljnoKonteksta, toCitations } from '@/lib/retrieval';
 import { buildPitanjeSystemPrompt } from '@/lib/prompt';
+import { nasumicniOdjeljakGradiva } from '@/lib/gradivo';
 import { askClaudeJson, nedovoljnoKonteksta } from '@/lib/claude';
 import { mjeri, zabiljezi } from '@/lib/telemetrija';
 import { odgovorNaGresku } from '@/lib/greske';
@@ -43,14 +44,17 @@ async function GETImpl(request: NextRequest) {
     .eq('poglavlje_id', pog.id)
     .order('redoslijed');
 
-  const odjeljak = odjeljci?.length
-    ? odjeljci[Math.floor(Math.random() * odjeljci.length)]
-    : null;
+  const odjeljak = nasumicniOdjeljakGradiva(odjeljci);
   const kutovi = ['definicija i pojmovi', 'primjeri i primjena', 'usporedba i razlike', 'proces i faze'];
   const kut = kutovi[Math.floor(Math.random() * kutovi.length)];
   const upit = odjeljak ? `${odjeljak.oznaka} ${odjeljak.naslov} — ${kut}` : `${pog.naslov} — ${kut}`;
 
-  const chunks = await retrieve(upit, { poglavljeId: pog.id, topK: 6 });
+  let chunks = await retrieve(upit, { poglavljeId: pog.id, topK: 8 });
+  // Naslov cjeline je pouzdana rezerva: dohvat po njemu prolazi u svakoj cjelini,
+  // pa slab pogodak na razini odjeljka ne ostavi studenta bez pitanja.
+  if (!dovoljnoKonteksta(chunks) && odjeljak) {
+    chunks = await retrieve(`${pog.naslov} — ${kut}`, { poglavljeId: pog.id, topK: 8 });
+  }
 
   if (!dovoljnoKonteksta(chunks)) {
     await zabiljezi({
@@ -62,7 +66,7 @@ async function GETImpl(request: NextRequest) {
     });
     return NextResponse.json(
       nedovoljnoKonteksta(
-        'Za ovu cjelinu još nema ingestiranog sadržaja priručnika, pa ne mogu postaviti pitanje. Nastavnik treba pokrenuti ingest (npm run ingest).',
+        'Za ovu cjelinu trenutačno ne mogu sastaviti pitanje. Pokušajte ponovno — ako se ponavlja, možda gradivo cjeline nije ingestirano (npm run ingest).',
       ),
     );
   }

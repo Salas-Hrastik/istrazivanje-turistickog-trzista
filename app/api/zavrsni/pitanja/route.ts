@@ -3,6 +3,7 @@ import { zahtijevajKorisnika } from '@/lib/auth';
 import { supabaseAdmin } from '@/lib/supabase';
 import { retrieve, dovoljnoKonteksta, toCitations } from '@/lib/retrieval';
 import { buildZavrsniPitanjeSystemPrompt } from '@/lib/prompt';
+import { nasumicniOdjeljakGradiva } from '@/lib/gradivo';
 import { askClaudeJson } from '@/lib/claude';
 import { mjeri, zabiljezi } from '@/lib/telemetrija';
 import { odgovorNaGresku } from '@/lib/greske';
@@ -41,16 +42,6 @@ function promijesaj<T>(niz: T[]): T[] {
 }
 
 /**
- * Odjeljci koji nisu gradivo: aparat poglavlja i njegove vježbe. Iz njih se ne
- * ispituje — pitanje iz popisa literature besmisleno je, a iz interaktivne
- * provjere bi samo ponovilo pitanje iz kviza. Mjereno na priručniku, takvih je
- * pet od trinaest odjeljaka po poglavlju, pa bi nasumičan izbor u njih upadao
- * pretjerano često i cjelina bi ostajala bez pitanja.
- */
-const NIJE_GRADIVO =
-  /^(uvod|ključni pojmovi|ishodi učenja|preporučeno daljnje čitanje|literatura|interaktivna provjera znanja|praktični zadatak)/i;
-
-/**
  * GET /api/zavrsni/pitanja
  *
  * Priprema pet pitanja za završnu usmenu provjeru — svako iz DRUGE nastavne
@@ -87,8 +78,7 @@ async function GETImpl() {
       .eq('poglavlje_id', pog.id)
       .order('redoslijed');
 
-    const gradivo = (odjeljci ?? []).filter((o) => !NIJE_GRADIVO.test(o.naslov ?? ''));
-    const odjeljak = gradivo.length ? gradivo[Math.floor(Math.random() * gradivo.length)] : null;
+    const odjeljak = nasumicniOdjeljakGradiva(odjeljci);
 
     // Naslov cjeline je pouzdana rezerva: dohvat po njemu prolazi u svakoj
     // cjelini, pa slab pogodak na razini odjeljka ne ruši pitanje.
