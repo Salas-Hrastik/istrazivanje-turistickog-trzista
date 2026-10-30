@@ -4,6 +4,12 @@ import { AIEDUKA_ACCESS_COOKIE, verifyAiedukaAccessToken } from "@/lib/aieduka-a
 const PLATFORM_SLUG = "istrazivanje-turistickog-trzista";
 const PUBLIC_PATHS = ["/aktivacija", "/api/aieduka/activate", "/robots.txt", "/favicon.ico", "/.well-known/"];
 const GUEST_COOKIE = "gost_id";
+
+/**
+ * PRIVREMENO: slobodan pristup bez AIEduka koda, dok se AIEDUKA_ACCESS_TOKEN_SECRET
+ * ovoga Vercel projekta ne uskladi s aieduka.hr. Vratiti na false nakon toga.
+ */
+const SLOBODAN_PRISTUP = true;
 const ONE_YEAR = 60 * 60 * 24 * 365;
 
 function isPublicPath(pathname: string) {
@@ -15,7 +21,7 @@ export async function middleware(request: NextRequest) {
   if (isPublicPath(pathname)) return NextResponse.next();
 
   const token = request.cookies.get(AIEDUKA_ACCESS_COOKIE)?.value;
-  if (!(await verifyAiedukaAccessToken(token, PLATFORM_SLUG))) {
+  if (!SLOBODAN_PRISTUP && !(await verifyAiedukaAccessToken(token, PLATFORM_SLUG))) {
     if (pathname.startsWith("/api/")) {
       return NextResponse.json({ error: "Za korištenje platforme potreban je aktivan pristup." }, { status: 401 });
     }
