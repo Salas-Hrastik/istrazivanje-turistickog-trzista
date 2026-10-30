@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { supabaseAdmin } from './supabase';
+import { DODACI_BROJ } from './prirucnik';
 
 export interface Odjeljak {
   id: string;
@@ -42,12 +43,23 @@ export async function getPoglavlja(): Promise<PoglavljeSaOdjeljcima[]> {
   // jednako kao prazna baza, pa se pri postavljanju traži na krivom mjestu.
   if (e1) throw new Error(`Dohvat poglavlja nije uspio: ${e1.message}`);
   if (!poglavlja) return [];
-  if (e2) return poglavlja.map((p) => ({ ...p, odjeljci: [] }));
+  if (e2) return poredakKolegija(poglavlja).map((p) => ({ ...p, odjeljci: [] }));
 
-  return poglavlja.map((p) => ({
+  return poredakKolegija(poglavlja).map((p) => ({
     ...p,
     odjeljci: (odjeljci ?? []).filter((o) => o.poglavlje_id === p.id),
   }));
+}
+
+/**
+ * Redoslijed cjelina na naslovnici i u navigaciji prethodna/sljedeća: po broju,
+ * ali Dodaci (banka pitanja, prilozi, literatura) uvijek na kraju — i kad se
+ * kolegiju doda cjelina s većim brojem (npr. 9 · TOMAS, data/cjeline/).
+ */
+function poredakKolegija<T extends { broj: number }>(poglavlja: T[]): T[] {
+  return [...poglavlja].sort(
+    (a, b) => Number(a.broj === DODACI_BROJ) - Number(b.broj === DODACI_BROJ) || a.broj - b.broj,
+  );
 }
 
 /**
@@ -112,17 +124,37 @@ export interface Slajd {
   tumacenje: string;
 }
 
+/** Tumačenja slajdova jedne prezentacije; `prezentacija` = naslov medija. */
+export interface SetSlajdova {
+  prezentacija: string;
+  slajdovi: Slajd[];
+}
+
 /**
  * Tumačenja slajdova stoje kao podatak u repozitoriju (kao data/sadrzaj.json),
  * a ne u bazi — vežu se uz konkretnu datoteku prezentacije, pa ih je korisno
  * verzionirati zajedno s kodom. Pripremaju se skriptom `npm run slajdovi`.
+ *
+ * Cjelina može imati više prezentacija: uz poglavlje-N.json čitaju se i
+ * poglavlje-N-<oznaka>.json, a svaki se set uz medij veže po naslovu.
  */
-function ucitajSlajdove(broj: number): Slajd[] {
+function ucitajSlajdove(broj: number): SetSlajdova[] {
   try {
-    const put = path.join(process.cwd(), 'data', 'slajdovi', `poglavlje-${broj}.json`);
-    if (!fs.existsSync(put)) return [];
-    const json = JSON.parse(fs.readFileSync(put, 'utf8')) as { slajdovi?: Slajd[] };
-    return json.slajdovi ?? [];
+    const mapa = path.join(process.cwd(), 'data', 'slajdovi');
+    if (!fs.existsSync(mapa)) return [];
+    const uzorak = new RegExp(`^poglavlje-${broj}(-[\\w-]+)?\\.json$`);
+    return fs
+      .readdirSync(mapa)
+      .filter((ime) => uzorak.test(ime))
+      .sort()
+      .map((ime) => {
+        const json = JSON.parse(fs.readFileSync(path.join(mapa, ime), 'utf8')) as {
+          prezentacija?: string;
+          slajdovi?: Slajd[];
+        };
+        return { prezentacija: json.prezentacija ?? '', slajdovi: json.slajdovi ?? [] };
+      })
+      .filter((s) => s.slajdovi.length > 0);
   } catch {
     return [];
   }

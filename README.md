@@ -28,6 +28,7 @@ Stack: **Next.js 14 (App Router) + Supabase (Postgres + pgvector) + Claude
 | Cjelina | Stanje |
 | --- | --- |
 | Struktura kolegija: 11 cjelina, 60 odjeljaka, stvarni brojevi stranica | ✅ `data/sadrzaj.json` |
+| Cjelina 9 · TOMAS Hrvatska 2025./2026. (izvan priručnika; studija slučaja nacionalnog istraživanja) | ✅ `data/cjeline/poglavlje-9-tomas.md` → `npm run ingest:cjelina` |
 | Ingest priručnika (DOCX → cjeline, sažetci, odjeljci, isječci, ugradnje) | ✅ `npm run ingest` |
 | Ingest dopunskih izvora (PDF) | ✅ `npm run ingest:dopunski` |
 | Hibridni RAG (pgvector + full-text) + rerank manjim modelom | ✅ `lib/retrieval.ts` |
